@@ -21,6 +21,49 @@ DLM Desktop is a local-first Windows library by Ertelun for organizing, finding,
 > **r88 Public Betaでは、任意の手元フォルダを新規作品として登録する standalone Manual Local Intake は提供しません。**
 > 一部の既存Provider-handoff画面にはローカルフォルダ選択・検証の補助がありますが、それ自体は新規ローカル作品のLibrary登録を完了する機能ではありません。
 
+## Screenshots
+
+以下は公開用のsynthetic demo libraryです。顧客データ、購入履歴、実アカウント情報、著作権保護された作品画像は使用していません。
+
+### Library overview
+
+![DLM Desktop library overview showing a synthetic local library](screenshot-library-overview.png)
+
+<table>
+<tr>
+<td width="50%">
+
+**作者別グルーピング**
+
+<img src="screenshot-library-grouping.png" alt="DLM Desktop library grouped by synthetic creator names">
+
+</td>
+<td width="50%">
+
+**作品詳細**
+
+<img src="screenshot-work-detail.png" alt="DLM Desktop work detail panel for a synthetic demo work">
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+**Viewer**
+
+<img src="screenshot-viewer.png" alt="DLM Viewer displaying a synthetic demo page">
+
+</td>
+<td width="50%">
+
+**Settings / Backup & Restore**
+
+<img src="screenshot-settings-backup.png" alt="DLM Desktop settings showing library root and backup restore controls">
+
+</td>
+</tr>
+</table>
+
 ## Public Beta
 
 Public Beta 1は **Windows x64 / ZIP / unsigned** で公開中です。ARM64はPublic Beta 1の対象外です。
