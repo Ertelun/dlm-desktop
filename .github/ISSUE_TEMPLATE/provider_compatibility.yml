@@ -1,0 +1,101 @@
+name: Provider compatibility
+description: Report a compatibility failure in an already-supported DLsite or DMM/FANZA flow.
+title: "[Provider compatibility] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form only when an existing qualified provider-assisted flow no longer works as expected.
+
+        This form is not for requesting new providers, new automation, DRM bypass, viewer extraction, batch download, account automation, or unsupported delivery modes.
+
+        Do not include account names, passwords, cookies, tokens, signed download URLs, purchase-history screenshots, or purchased files.
+
+  - type: dropdown
+    id: provider
+    attributes:
+      label: Provider
+      options:
+        - DLsite
+        - DMM/FANZA
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: DLM Desktop version
+      placeholder: Public Beta r88
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Where did the existing flow fail?
+      options:
+        - Provider page did not open correctly
+        - User login page did not work correctly
+        - Official Download action did not start normally
+        - Download completed but DLM did not register the work
+        - Archive validation / import failed
+        - Library registration completed incorrectly
+        - Other compatibility regression in the existing qualified flow
+    validations:
+      required: true
+
+  - type: textarea
+    id: product_type
+    attributes:
+      label: Product / delivery type
+      description: |
+        Describe only what is necessary, such as game / comic / voice / ordinary downloadable ZIP.
+        Do not provide purchase history or account-identifying information.
+      placeholder: Example: ordinary downloadable game ZIP
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Download
+        2. Select provider
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant error text / sanitized logs
+      description: |
+        Optional. Remove sensitive information.
+        Never post passwords, cookies, tokens, signed/private download URLs, account IDs, purchase-history screenshots, or purchased payloads.
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope confirmation
+      options:
+        - label: This is a regression/problem in an already-supported provider flow, not a request for a new provider or new automation.
+          required: true
+        - label: I understand protected/viewer-only/official-player-only/DRM-controlled delivery modes are outside DLM acquisition scope.
+          required: true
+        - label: I removed credentials, tokens, account identifiers, private URLs, purchase history, and purchased files.
+          required: true
