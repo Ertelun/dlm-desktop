@@ -60,7 +60,7 @@ body:
       description: |
         Describe only what is necessary, such as game / comic / voice / ordinary downloadable ZIP.
         Do not provide purchase history or account-identifying information.
-      placeholder: Example: ordinary downloadable game ZIP
+      placeholder: "Example: ordinary downloadable game ZIP"
 
   - type: textarea
     id: steps
