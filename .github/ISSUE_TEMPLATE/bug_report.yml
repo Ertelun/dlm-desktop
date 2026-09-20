@@ -1,0 +1,106 @@
+name: Bug report
+description: Report a reproducible problem in an existing DLM Desktop feature.
+title: "[Bug] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a problem in DLM Desktop.
+
+        This form is for reproducible bugs in existing features.
+        Feature requests and individual improvement requests are not accepted through this form.
+
+        Do not include passwords, cookies, tokens, provider account identifiers, purchased payloads, full library databases, or unnecessary sensitive local paths.
+
+  - type: input
+    id: version
+    attributes:
+      label: DLM Desktop version
+      description: Example: Public Beta r88
+      placeholder: Public Beta r88
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      description: Example: Windows 11 25H2, build 26200.x
+      placeholder: Windows 11 ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Startup / launch
+        - Library
+        - Viewer
+        - Manual Local Intake
+        - Backup / Restore
+        - Settings
+        - Download / provider surface
+        - SmartScreen / ZIP startup
+        - Other existing feature
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Please provide the shortest reproducible sequence.
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reproducibility
+    attributes:
+      label: Reproducibility
+      options:
+        - Always
+        - Often
+        - Sometimes
+        - Once
+        - Unknown
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or screenshots
+      description: |
+        Optional. Remove sensitive information before posting.
+        Do not upload provider credentials/tokens, purchased payloads, full library databases, or unnecessary private paths.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I am reporting a problem in an existing feature, not a feature request.
+          required: true
+        - label: I removed passwords, cookies, tokens, account identifiers, purchased payloads, and other sensitive information.
+          required: true
