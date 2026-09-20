@@ -4,9 +4,9 @@
 
 DLM Desktop (Doujin Library Manager Desktop) is a local-first Windows library by Ertelun for organizing, finding, and viewing digital works you keep on your PC.
 
-**Public Beta · Windows x64 · unsigned · by Ertelun**
+**Public Beta preparation · Windows x64 · unsigned · by Ertelun**
 
-> 初回Public Betaの正規配布元は、この `Ertelun/dlm-desktop` GitHub Releasesのみです。
+> Public Beta binary distribution is not live yet. When released, the canonical distribution source will be this repository's GitHub Releases.
 
 ## 主な機能
 
@@ -18,11 +18,11 @@ DLM Desktop (Doujin Library Manager Desktop) is a local-first Windows library by
 
 ## Public Beta
 
-初回Public Betaは **Windows x64 / ZIP配布 / unsigned** です。ARM64は初回Betaの対象外です。
+初回Public Betaは **Windows x64 / ZIP配布 / unsigned** を予定しています。ARM64は初回Betaの対象外です。
 
-このPublic Betaはコード署名されていないため、WindowsでUnknown PublisherまたはMicrosoft Defender SmartScreenの警告が表示される場合があります。公式Ertelun GitHub Releaseから取得したこととSHA-256を確認したうえで、実行するかをご判断ください。
+このPublic Betaはコード署名されていないため、WindowsでUnknown PublisherまたはMicrosoft Defender SmartScreenの警告が表示される場合があります。公開後は、この公式Ertelun GitHub Releaseから取得したこととSHA-256を確認したうえで、実行するかをご判断ください。
 
-**配布ZIP SHA-256**
+Frozen r88 candidate package SHA-256:
 
 `207a69e9af681b6d75d968886669e33ec7f722a864dc56c797bd364822884f4e`
 
@@ -40,23 +40,14 @@ DLsite / DMM・FANZAの対応する通常ダウンロードでは、DLM内の公
 
 ## Free Public Beta
 
-**DLM Desktop Public Beta（Windows x64）は無料です。**
-
-DLM Coreのローカル利用に、支払い・DLMアカウント・サブスクリプションは必要ありません。Provider-assisted acquisitionでは、各サービスの正規ログインが必要になる場合があります。
+初回Public Betaは無料です。DLM Coreのローカル利用に、支払い・DLMアカウント・サブスクリプションは必要ありません。
 
 初回Betaでは、支払い、PWYW、サブスクリプション、アプリ内広告、有料プロモーション、分析SDK/テレメトリSDKを有効化しません。
 
 ## Feedback / Security
 
-- 通常の不具合・互換性・機能要望: `{BUG_REPORT_URL}`
-- Provider互換性: `{PROVIDER_COMPATIBILITY_REPORT_URL}`
-- Security vulnerability: `{PRIVATE_SECURITY_REPORT_URL}`
-
-公開前に上記トークンを実URLへ置換してください。
-
-## Privacy / Security
-
+- [Normal feedback / bug reports](https://github.com/Ertelun/dlm-desktop/issues)
+- [Security policy](SECURITY.md)
 - [Privacy](PRIVACY.md)
-- [Security](SECURITY.md)
 - [Known Limitations](KNOWN_LIMITATIONS.md)
 - [Release provenance](PROVENANCE.json)

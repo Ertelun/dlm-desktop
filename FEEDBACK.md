@@ -1,20 +1,15 @@
 # Feedback
 
-Use separate routes for normal product feedback and security reports.
+Use GitHub Issues for normal product feedback:
 
-## Normal feedback
+https://github.com/Ertelun/dlm-desktop/issues
 
-Bug report:
+Recommended categories before Public Beta publication:
 
-`{{BUG_REPORT_URL}}`
-
-Provider compatibility:
-
-`{{PROVIDER_COMPATIBILITY_REPORT_URL}}`
-
-Feature / UX feedback:
-
-`{{FEATURE_FEEDBACK_URL}}`
+- Bug report
+- Provider compatibility
+- Feature / UX feedback
+- Install / SmartScreen / trust issue
 
 When reporting a normal issue, provide only the minimum information needed to reproduce it.
 
@@ -28,8 +23,4 @@ Do not post:
 - sensitive local paths;
 - unnecessary adult-work metadata.
 
-## Security
-
-Security vulnerabilities should use the private route:
-
-`{{PRIVATE_SECURITY_REPORT_URL}}`
+Security vulnerabilities should not be filed as public Issues. See [SECURITY.md](SECURITY.md).
