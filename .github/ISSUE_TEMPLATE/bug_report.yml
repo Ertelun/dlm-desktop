@@ -17,7 +17,7 @@ body:
     id: version
     attributes:
       label: DLM Desktop version
-      description: Example: Public Beta r88
+      description: "Example: Public Beta r88"
       placeholder: Public Beta r88
     validations:
       required: true
@@ -26,7 +26,7 @@ body:
     id: windows
     attributes:
       label: Windows version
-      description: Example: Windows 11 25H2, build 26200.x
+      description: "Example: Windows 11 25H2, build 26200.x"
       placeholder: Windows 11 ...
     validations:
       required: true
