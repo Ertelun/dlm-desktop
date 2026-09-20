@@ -12,9 +12,11 @@ Frozen r88 candidate package SHA-256:
 
 Please do **not** post sensitive security vulnerabilities, credentials, tokens, private account information, purchased payloads, or sensitive local paths in a public Issue.
 
-Private vulnerability reporting will be enabled for this repository before Public Beta publication. Once enabled, use GitHub's **Security → Report a vulnerability** flow.
+Private vulnerability reporting is enabled for this repository.
 
-Until that private route is enabled, do not publish sensitive vulnerability details in public Issues.
+Use GitHub's Security → Report a vulnerability flow to submit sensitive vulnerability reports privately.
+
+Do not post sensitive vulnerability details, credentials, tokens, provider account information, purchased payloads, or sensitive local paths in public Issues.
 
 ## Distribution authenticity
 
