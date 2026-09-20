@@ -2,9 +2,9 @@
 
 ## Supported release
 
-The first Public Beta is being prepared for Windows x64.
+DLM Desktop Public Beta 1 is available for Windows x64.
 
-Frozen r88 candidate package SHA-256:
+Public Beta 1 package SHA-256:
 
 `207a69e9af681b6d75d968886669e33ec7f722a864dc56c797bd364822884f4e`
 
@@ -20,12 +20,16 @@ Do not post sensitive vulnerability details, credentials, tokens, provider accou
 
 ## Distribution authenticity
 
-The canonical first-Beta distribution source will be this repository's GitHub Releases.
+The canonical Public Beta 1 distribution source is this repository's GitHub Release:
+
+`v0.1.0-beta.1`
+
+https://github.com/Ertelun/dlm-desktop/releases/tag/v0.1.0-beta.1
 
 SHA-256 verifies byte identity with the published package. It does not by itself guarantee software safety.
 
 ## Unsigned Beta
 
-The first Public Beta is unsigned. Windows may display Unknown Publisher or Microsoft Defender SmartScreen warnings.
+Public Beta 1 is unsigned. Windows may display Unknown Publisher or Microsoft Defender SmartScreen warnings.
 
 Users should verify the canonical source and published SHA-256 and decide whether they are comfortable proceeding. Do not interpret this document as an instruction to ignore Windows security warnings.
