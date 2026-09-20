@@ -14,7 +14,7 @@ Please do **not** post sensitive security vulnerabilities, credentials, tokens, 
 
 Private vulnerability reporting is enabled for this repository.
 
-Use GitHub's Security → Report a vulnerability flow to submit sensitive vulnerability reports privately.
+Use GitHub's **Security → Report a vulnerability** flow to submit sensitive vulnerability reports privately.
 
 Do not post sensitive vulnerability details, credentials, tokens, provider account information, purchased payloads, or sensitive local paths in public Issues.
 

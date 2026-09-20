@@ -1,15 +1,24 @@
 # Feedback
 
-Use GitHub Issues for normal product feedback:
+Public issue intake is intentionally narrow.
+
+Accepted public reports:
+- reproducible bugs in existing DLM Desktop features;
+- compatibility regressions in already-qualified DLsite / DMM-FANZA provider-assisted flows.
+
+Not accepted as a public issue category:
+- new feature requests;
+- individual UX improvement requests;
+- new provider requests;
+- provider account automation;
+- batch/automatic download requests;
+- DRM bypass;
+- viewer extraction;
+- unsupported delivery-mode requests.
+
+Use GitHub Issues:
 
 https://github.com/Ertelun/dlm-desktop/issues
-
-Recommended categories before Public Beta publication:
-
-- Bug report
-- Provider compatibility
-- Feature / UX feedback
-- Install / SmartScreen / trust issue
 
 When reporting a normal issue, provide only the minimum information needed to reproduce it.
 
@@ -23,4 +32,4 @@ Do not post:
 - sensitive local paths;
 - unnecessary adult-work metadata.
 
-Security vulnerabilities should not be filed as public Issues. See [SECURITY.md](SECURITY.md).
+Security vulnerabilities must use GitHub Private Vulnerability Reporting. See [SECURITY.md](SECURITY.md).

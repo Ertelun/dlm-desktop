@@ -10,11 +10,13 @@ DLM Desktop (Doujin Library Manager Desktop) is a local-first Windows library by
 
 ## 主な機能
 
-- ローカルライブラリで作品を整理・検索
+- ローカルライブラリで登録済み作品を整理・検索
 - 対応形式をローカルで閲覧
-- 既に手元にある作品を手動取り込み
 - DLMのユーザー状態をBackup / Restore
 - DLsite / DMM・FANZAの対応する通常ダウンロードでは、公式ページ上のユーザー操作後にアーカイブ検証とローカルライブラリ登録を支援
+
+> **r88 Public Betaでは、任意の手元フォルダを新規作品として登録する standalone Manual Local Intake は提供しません。**
+> 一部の既存Provider-handoff画面にはローカルフォルダ選択・検証の補助がありますが、それ自体は新規ローカル作品のLibrary登録を完了する機能ではありません。
 
 ## Public Beta
 
@@ -47,6 +49,7 @@ DLsite / DMM・FANZAの対応する通常ダウンロードでは、DLM内の公
 ## Feedback / Security
 
 - [Normal feedback / bug reports](https://github.com/Ertelun/dlm-desktop/issues)
+- [Feedback guidance](FEEDBACK.md)
 - [Security policy](SECURITY.md)
 - [Privacy](PRIVACY.md)
 - [Known Limitations](KNOWN_LIMITATIONS.md)
