@@ -12,11 +12,11 @@
     "file": "DLD-160-Desktop-win-x64-HOTFIX-r2-localbuild-r98.zip",
     "sha256": "b3174d3206f53005192cac50423950625b3b8de9d4fec619a18255b93ed7b7cf"
   },
-  "status": "PUBLICATION_HOLD",
+"status": "PUBLISHED",
   "canonicalRepository": "Ertelun/dlm-desktop",
   "releaseTag": "v0.1.0-beta.2",
   "signing": "unsigned",
   "price": "free",
   "monetizationActivation": false,
-  "requiresOwnerGo": true
+  "requiresOwnerGo": false
 }
