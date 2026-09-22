@@ -2,7 +2,7 @@
 
 DLM Desktop is designed around local library use.
 
-For the first Public Beta:
+For the current Public Beta:
 
 - Core local use does not require a mandatory DLM account.
 - No monetization analytics SDK or telemetry SDK is activated.

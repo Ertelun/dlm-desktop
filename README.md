@@ -4,9 +4,9 @@
 
 DLM Desktop is a local-first Windows library by Ertelun for organizing, finding, and viewing digital works you keep on your PC.
 
-**Public Beta 1 · Windows x64 · ZIP · unsigned · by Ertelun**
+**Public Beta 2 · Windows x64 · ZIP · unsigned · by Ertelun**
 
-[Public Beta 1をダウンロード](https://github.com/Ertelun/dlm-desktop/releases/tag/v0.1.0-beta.1)
+[Public Beta 2をダウンロード](https://github.com/Ertelun/dlm-desktop/releases/tag/v0.1.0-beta.2)
 
 配布元はこの公式Ertelun GitHub Releaseです。SHA-256はReleaseページとsidecarで確認できます。
 
@@ -18,7 +18,7 @@ DLM Desktop is a local-first Windows library by Ertelun for organizing, finding,
 - DLMユーザー状態のBackup / Restore
 - DLsite / DMM・FANZAの対応する通常ダウンロードでは、公式ページ上のユーザー操作後にアーカイブ検証とローカルライブラリ登録を支援
 
-> **r88 Public Betaでは、任意の手元フォルダを新規作品として登録する standalone Manual Local Intake は提供しません。**
+> **Public Beta 2では、任意の手元フォルダを新規作品として登録する standalone Manual Local Intake は提供しません。**
 > 一部の既存Provider-handoff画面にはローカルフォルダ選択・検証の補助がありますが、それ自体は新規ローカル作品のLibrary登録を完了する機能ではありません。
 
 ## Screenshots
@@ -66,15 +66,17 @@ DLM Desktop is a local-first Windows library by Ertelun for organizing, finding,
 
 ## Public Beta
 
-Public Beta 1は **Windows x64 / ZIP / unsigned** で公開中です。ARM64はPublic Beta 1の対象外です。
+Public Beta 2は **Windows x64 / ZIP / unsigned** で公開します。ARM64はPublic Beta 2の対象外です。
 
 このPublic Betaはコード署名されていないため、WindowsでUnknown PublisherまたはMicrosoft Defender SmartScreenの警告が表示される場合があります。この公式Ertelun GitHub Releaseから取得したこととSHA-256を確認したうえで、実行するかをご判断ください。
 
-Public Beta 1 package SHA-256:
+Public Beta 2 package SHA-256:
 
-`207a69e9af681b6d75d968886669e33ec7f722a864dc56c797bd364822884f4e`
+`b3174d3206f53005192cac50423950625b3b8de9d4fec619a18255b93ed7b7cf`
 
 SHA-256の一致は公開した配布物とのbyte同一性確認であり、単独でソフトウェアの安全性を保証するものではありません。
+
+大容量作品では、整合性検証・展開・物理コピー・最終SHA-256検証のため、Download完了後からLibrary登録まで数分以上かかる場合があります。Public Beta 2では最終整合性検証を省略していません。
 
 ## Provider-assisted acquisition
 
@@ -88,9 +90,9 @@ DLsite / DMM・FANZAの対応する通常ダウンロードでは、DLM内の公
 
 ## Free Public Beta
 
-Public Beta 1は無料です。DLM Coreのローカル利用に、支払い・DLMアカウント・サブスクリプションは必要ありません。
+Public Beta 2は無料です。DLM Coreのローカル利用に、支払い・DLMアカウント・サブスクリプションは必要ありません。
 
-Public Beta 1では、支払い、PWYW、サブスクリプション、アプリ内広告、有料プロモーション、分析SDK/テレメトリSDKを有効化していません。
+Public Beta 2では、支払い、PWYW、サブスクリプション、アプリ内広告、有料プロモーション、分析SDK/テレメトリSDKを有効化していません。
 
 ## Feedback / Security
 
