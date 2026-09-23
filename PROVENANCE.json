@@ -33,7 +33,7 @@
     "packageSha256": "b3174d3206f53005192cac50423950625b3b8de9d4fec619a18255b93ed7b7cf",
     "reason": "JA/EN UI localization refresh and localization-runtime fixes on the qualified r98 baseline"
   },
-  "status": "PREPARED_FOR_IN_PLACE_RELEASE_UPDATE",
+  "status": "PUBLISHED",
   "canonicalRepository": "Ertelun/dlm-desktop",
   "releaseTag": "v0.1.0-beta.2",
   "signing": "unsigned",
