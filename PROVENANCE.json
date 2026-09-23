@@ -1,18 +1,39 @@
 {
-  "schema": "dld-public-beta-release-surface-bootstrap-v1",
+  "schema": "dld-public-beta-release-surface-v2",
   "product": "DLM Desktop",
   "publisher": "Ertelun",
   "stage": "Public Beta 2",
   "target": "win-x64",
+  "releaseUpdate": "2026-09-23-ja-en-refresh",
   "source": {
-    "file": "DLD-160-WINDOWS-LOCAL-BUILD-r98-2026-09-22.zip",
-    "sha256": "d7730d5419ab045a54a135e705df9c96a98a5be77a5e1bb6a7dc7388a8ebde00"
+    "file": "DLM-EN-r98-customer-ui-r7-2026-09-23.zip",
+    "sha256": "0ec1770b87d2a9ea766b546f70b551ed5ce1cbd3d96c1524fb1f1614224899f5",
+    "baseline": "DLD-160 r98"
   },
   "package": {
     "file": "DLD-160-Desktop-win-x64-HOTFIX-r2-localbuild-r98.zip",
-    "sha256": "b3174d3206f53005192cac50423950625b3b8de9d4fec619a18255b93ed7b7cf"
+    "sha256": "66dd0661298a7f8bc906a29fc4e8f99a5406ea346989a936ab11737c76165272",
+    "builtAt": "2026-09-23T07:59:41.7640131+09:00",
+    "sdk": "10.0.401"
   },
-"status": "PUBLISHED",
+  "localization": {
+    "uiLanguages": [
+      "system",
+      "ja",
+      "en"
+    ],
+    "fixedResourcePairs": 221,
+    "fixedXamlReferences": 262,
+    "scope": "customer-visible presentation",
+    "providerMetadataMachineTranslation": false
+  },
+  "replaces": {
+    "releaseTag": "v0.1.0-beta.2",
+    "packageFile": "DLD-160-Desktop-win-x64-HOTFIX-r2-localbuild-r98.zip",
+    "packageSha256": "b3174d3206f53005192cac50423950625b3b8de9d4fec619a18255b93ed7b7cf",
+    "reason": "JA/EN UI localization refresh and localization-runtime fixes on the qualified r98 baseline"
+  },
+  "status": "PREPARED_FOR_IN_PLACE_RELEASE_UPDATE",
   "canonicalRepository": "Ertelun/dlm-desktop",
   "releaseTag": "v0.1.0-beta.2",
   "signing": "unsigned",

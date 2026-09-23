@@ -5,6 +5,8 @@
 - Public Beta 2 is **unsigned** and may trigger Unknown Publisher / SmartScreen warnings.
 - Distribution is a **ZIP package**, not an installer.
 - The only canonical Public Beta binary source is `Ertelun/dlm-desktop` GitHub Releases.
+- DLM UI language can be selected from **System / Japanese / English**; changing the UI language requires an application restart.
+- Localization applies to DLM customer-visible UI. Work titles, creator names, and provider-supplied metadata remain in their original language and are not machine-translated.
 - Provider-site behavior can change independently of DLM Desktop.
 - Provider-assisted acquisition is limited to qualified ordinary-download flows.
 - Protected, viewer-only, official-player-only, DRM-controlled and otherwise unsupported delivery modes remain on provider official routes.
