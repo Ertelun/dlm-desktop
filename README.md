@@ -4,41 +4,114 @@
 
 DLM Desktop is a local-first Windows library by Ertelun for organizing, finding, and viewing digital works you keep on your PC.
 
-**Public Beta 2 · 日本語 / English · Windows x64 · ZIP · unsigned · by Ertelun**
+**1.3.2（r213）正式リリース / Stable release · 日本語 / English · Windows x64 · ZIP · unsigned · free**
 
-[Public Beta 2をダウンロード / Download Public Beta 2](https://github.com/Ertelun/dlm-desktop/releases/tag/v0.1.0-beta.2)
+[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.2/DLM-Desktop-v1.3.2-r213-win-x64-Compact.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.2) · [更新内容 / Release notes](RELEASE_NOTES-r213-JA-EN.md)
 
-配布元はこの公式Ertelun GitHub Releaseです。SHA-256はReleaseページとsidecarで確認できます。
+配布元はこのErtelun GitHub Releaseです。ダウンロードするファイルは **`DLM-Desktop-v1.3.2-r213-win-x64-Compact.zip`** です。
 
-The official Ertelun GitHub Release above is the canonical download source. Verify the SHA-256 shown on the Release page and in the checksum sidecar.
+This Ertelun GitHub Release is the canonical distribution source. Download **`DLM-Desktop-v1.3.2-r213-win-x64-Compact.zip`**.
 
-## Language / 言語
+## 起動方法 / Getting started
 
-- UI language: **System / 日本語 / English**
-- 言語設定の変更後はDLM Desktopを再起動して反映します。
-- Changing the UI language requires restarting DLM Desktop.
-- アプリのUI表示を切り替える機能であり、作品名・作者名・Provider由来メタデータを機械翻訳するものではありません。
-- This setting localizes DLM UI chrome; work titles, creator names, and provider-supplied metadata remain in their original language.
+1. 以前のDLM Desktopを終了します。 / Close any previously running DLM Desktop.
+2. ZIPを新しい空のフォルダにすべて展開します。 / Extract the entire ZIP into a new, empty folder.
+3. `DoujinLibraryManagerDesktop.exe` を起動します。 / Run `DoujinLibraryManagerDesktop.exe`.
+
+展開直後の最上位は次の3項目です。DLLやランタイムは `app/` にまとめています。EXEと `app/` を同じフォルダに置いてください。
+
+The extracted root contains these three items. DLLs and the bundled runtime live in `app/`; keep it beside the EXE.
+
+```text
+DoujinLibraryManagerDesktop.exe
+README.txt
+app/
+```
+
+.NETランタイムは同梱しています。埋め込みブラウザには **Microsoft Edge WebView2 Runtime** が必要です。詳細資料と依存ソフトウェアのライセンス表記は `app/docs/` にあります。既存のユーザー設定とライブラリを利用できます。
+
+The .NET runtime is bundled. The embedded browser requires **Microsoft Edge WebView2 Runtime**. Detailed documentation and dependency notices are in `app/docs/`. Existing user settings and libraries can be used with this release.
 
 ## 主な機能 / Main features
 
-- 登録済みローカルライブラリの整理・検索 / Organize and search registered local libraries
-- 画像/PDF等の対応形式をローカル閲覧 / View supported local image/PDF content
-- 閲覧位置の保存・再開 / Save and resume reading position
-- DLMユーザー状態のBackup / Restore
-- DLsite / DMM・FANZAの対応する通常ダウンロードでは、公式ページ上のユーザー操作後にアーカイブ検証とローカルライブラリ登録を支援
-- For supported ordinary downloads from DLsite / DMM・FANZA, DLM assists with archive validation and local-library registration after the user performs the official-site login/download action
+- 登録済みライブラリの整理・検索・作者別表示 / Organize, search, and group registered libraries by creator.
+- 画像・PDF等の対応形式をローカルで閲覧し、閲覧位置を保存・再開 / View supported local image/PDF content and resume reading.
+- DLMユーザー状態のBackup / Restore / Back up and restore DLM user state.
+- DLsite、DMM/FANZA、itch.io、BOOTH、Gumroad、GOGの公式画面で操作したダウンロードの保存・検証・登録を補助 / Assist with saving, validating, and registering supported downloads initiated by the user on official store pages.
+- Fantia、pixivFANBOX、Patreon、Ci-enでは、選択した1投稿についてユーザーが明示的に保存した画像・添付ファイルをまとめて登録 / Group images and attachments explicitly saved by the user from a selected post.
 
-> **Public Beta 2では、任意の手元フォルダを新規作品として登録する standalone Manual Local Intake は提供しません。**
-> **Public Beta 2 does not ship standalone Manual Local Intake for registering arbitrary local folders as new works.**
->
-> 一部の既存Provider-handoff画面にはローカルフォルダ選択・検証の補助がありますが、それ自体は新規ローカル作品のLibrary登録を完了する機能ではありません。
+対応範囲は配信形式によって異なります。[Provider Capabilities](PROVIDER_CAPABILITIES.md) で各フローを確認してください。任意の手元フォルダを新規作品として登録する独立したManual Local Intakeは提供していません。一部の作品詳細画面にあるフォルダ選択は、既存の取得フローの検証補助です。
 
-## Screenshots
+Support depends on the delivery mode; see [Provider Capabilities](PROVIDER_CAPABILITIES.md). Standalone registration of arbitrary local folders is not provided. Folder selection in some work-detail screens is a validation helper for existing acquisition flows.
 
-以下は公開用のsynthetic demo libraryです。顧客データ、購入履歴、実アカウント情報、著作権保護された作品画像は使用していません。
+## 1.3.2の変更点 / Changes in 1.3.2
 
-The screenshots use a synthetic demo library and contain no customer data, purchase history, real account information, or copyrighted work imagery.
+- 一時的なデバッグログボタンを削除 / Remove the temporary debug-log button.
+- DLsiteの `part1.exe` と後続partファイルを同一作品の「分割ダウンロード」フォルダへ原本のまま保存 / Keep DLsite multipart downloads together under the same work without joining or automatically running them.
+- Gumroad/GOGの作品情報・サムネイル取得、FANBOXの保存先作成、Patreon/Ci-en等の複数画像保存を修正 / Fix Gumroad/GOG metadata and thumbnails, FANBOX save-directory creation, and multiple-image saves without overwriting distinct files.
+- Fantiaの表示回復用キャッシュ処理、Ci-enからDLsite作品・予告作品へのリンク引き継ぎを追加 / Add Fantia display recovery and handoff of supported Ci-en links to DLsite work/announcement pages.
+- GOG受付確定の操作と保存・確認中の件数を目立つ位置へ表示 / Make GOG finalization and downloading/verifying counts more visible.
+
+**GOGは必要なファイルをすべて保存してから「GOG受付を確定して登録」を押してください。** ファイルを同一作品として登録する区切りをユーザーが指定します。保存・確認中は確定できません。
+
+**For GOG, save all required files, then click “Finalize GOG intake and register” (`GOG受付を確定して登録`).** This marks the files to group as one work. Finalization waits until downloads and validation finish.
+
+## 言語 / Language
+
+- UI language: **System / 日本語 / English**. 変更後は再起動して反映します。 / Restart DLM Desktop after changing the language.
+- 作品名・作者名・サイト由来メタデータは元の言語のままです。 / Work titles, creator names, and provider metadata remain in their original language.
+
+## 配布物と検証 / Package and verification
+
+Windows x64向けのZIP配布です。ARM64はこのリリースの検証対象に含めていません。この配布物は **コード署名なし** です。WindowsでUnknown Publisher / SmartScreenの表示が出る場合があります。
+
+This release is a Windows x64 ZIP. ARM64 has not been qualified. The package is **unsigned**; Windows may show Unknown Publisher / SmartScreen notices.
+
+ZIPのSHA-256 / ZIP SHA-256:
+
+```text
+a145ac780de0dfe715d4bfc8540a436a815d42f21f8466131b30ad53ebc39ded
+```
+
+[SHA256SUMS.txt](SHA256SUMS.txt) とRelease添付のチェックサムでも確認できます。SHA-256は公開したファイルとの同一性を確認するためのものです。
+
+The checksum is also available in [SHA256SUMS.txt](SHA256SUMS.txt) and the release checksum asset. It verifies identity with the published file.
+
+Releaseビルドは警告0・エラー0、全17テストプロジェクトが成功しました。配布ZIPを日本語・空白を含むパスへ展開し、起動と同梱ランタイムの読み込みを確認しています。詳細は [検証記録 / Verification](RELEASE_VERIFICATION-r213.json) と [Provenance](PROVENANCE.json) にあります。記録した検査範囲についての結果であり、全サイトの全配信形式に対する動作保証ではありません。
+
+The Release build completed with zero warnings/errors and all 17 test projects passed. Launch and bundled-runtime loading were verified from the extracted ZIP in a path containing Japanese characters and spaces. See [Verification](RELEASE_VERIFICATION-r213.json) and [Provenance](PROVENANCE.json) for the scope of these checks; they do not qualify every delivery mode on every site.
+
+このリポジトリは配布物・公開資料の提供用です。GitHubが自動生成する “Source code” ZIP/TARはこの公開リポジトリの資料であり、アプリのビルドソースではありません。
+
+This repository hosts distribution files and public documentation. GitHub's automatically generated “Source code” ZIP/TAR contains this repository's documentation, not the application's build source.
+
+## 利用範囲 / Use and support
+
+ログイン・購入・ダウンロード開始はユーザーが公式画面で操作します。閲覧専用・公式プレイヤー専用・DRM管理のコンテンツは各サービスの公式手段を利用してください。投稿の一括巡回・バックグラウンド同期は提供していません。
+
+Users perform sign-in, purchases, and download initiation on official pages. Viewer-only, official-player-only, and DRM-controlled content remains on provider official routes. Post crawling and background synchronization are not provided.
+
+**DLM DesktopはErtelunによる独立したアプリケーションであり、対応サイトの公式アプリ・提携製品ではありません。**
+
+**DLM Desktop is an independent application by Ertelun and is not an official, affiliated, or endorsed product of the listed providers.**
+
+1.3.2は無料です。コアのローカル利用に支払い・DLMアカウント・サブスクリプションは必要ありません。大容量作品の検証・コピー・登録には時間がかかる場合があります。Backup / RestoreはDLMユーザー状態を対象とし、元の作品ファイル全体のバックアップではありません。
+
+Version 1.3.2 is free. Core local use requires no payment, DLM account, or subscription. Validation, copying, and registration of large works may take time. Backup / Restore covers DLM user state rather than all original work files.
+
+- [不具合報告 / Bug reports](https://github.com/Ertelun/dlm-desktop/issues) · [Feedback guidance](FEEDBACK.md)
+- [Known limitations](KNOWN_LIMITATIONS.md) · [Privacy](PRIVACY.md) · [Security policy](SECURITY.md)
+- [1.3.2 release notes](RELEASE_NOTES-r213-JA-EN.md) · [Previous Public Beta 2 notes](RELEASE_NOTES-r98-JA-EN.md)
+
+公開Issueには再現可能な既存機能の不具合を最小限の情報で報告してください。脆弱性はGitHubの **Security → Report a vulnerability** を使用し、資格情報・購入データ・個人情報を公開しないでください。
+
+Report reproducible bugs in existing features with minimal information. Use GitHub **Security → Report a vulnerability** for sensitive security reports; keep credentials, purchased content, and personal information private.
+
+## 参考画面 / Reference screenshots
+
+以下は以前のPublic Betaで撮影した公開用synthetic demo libraryです。1.3.2の最新画面とは一部異なります。顧客データ・購入履歴・実アカウント情報・作品の実画像は使用していません。
+
+These synthetic demo screenshots were captured for an earlier Public Beta and may differ from 1.3.2. They contain no customer data, purchase history, real account information, or actual work imagery.
 
 ### Library overview
 
@@ -78,68 +151,3 @@ The screenshots use a synthetic demo library and contain no customer data, purch
 </td>
 </tr>
 </table>
-
-## Public Beta
-
-Public Beta 2は **Windows x64 / ZIP / unsigned** です。ARM64はPublic Beta 2の対象外です。
-
-Public Beta 2 ships as an **unsigned Windows x64 ZIP**. ARM64 is not qualified for this Beta.
-
-このPublic Betaはコード署名されていないため、WindowsでUnknown PublisherまたはMicrosoft Defender SmartScreenの警告が表示される場合があります。この公式Ertelun GitHub Releaseから取得したこととSHA-256を確認したうえで、実行するかをご判断ください。
-
-Because this Beta is unsigned, Windows may show an Unknown Publisher or Microsoft Defender SmartScreen warning. Confirm that the package came from the official Ertelun GitHub Release and verify its SHA-256 before deciding whether to run it.
-
-Current Public Beta 2 package SHA-256:
-
-`66dd0661298a7f8bc906a29fc4e8f99a5406ea346989a936ab11737c76165272`
-
-SHA-256の一致は公開した配布物とのbyte同一性確認であり、単独でソフトウェアの安全性を保証するものではありません。
-
-A matching SHA-256 verifies byte identity with the published package; it does not by itself guarantee software safety.
-
-大容量作品では、整合性検証・展開・物理コピー・最終SHA-256検証のため、Download完了後からLibrary登録まで数分以上かかる場合があります。Public Beta 2では最終整合性検証を省略していません。
-
-## Provider-assisted acquisition
-
-DLsite / DMM・FANZAの対応する通常ダウンロードでは、DLM内の公式ページでユーザー自身がログイン・Download操作を行い、その後のアーカイブ検証とローカルライブラリ登録をDLMが支援します。
-
-For supported ordinary downloads from DLsite / DMM・FANZA, the user signs in and starts the official download on the provider page. DLM then assists with archive validation and local-library registration.
-
-閲覧専用・公式プレイヤー専用・DRM管理・その他DLMが対応していない配信方式は、各サービスの公式手段をご利用ください。
-
-Viewer-only, official-player-only, DRM-controlled, and other unsupported delivery modes remain on each provider's official route.
-
-**DLM DesktopはErtelunによる独立したアプリケーションであり、DLsiteおよびDMM/FANZAの公式アプリ・提携製品ではありません。**
-
-**DLM Desktop is an independent application by Ertelun and is not an official, affiliated, or endorsed application or product of DLsite, DMM, or FANZA.**
-
-詳しくは [Provider Capabilities](PROVIDER_CAPABILITIES.md) と [Known Limitations](KNOWN_LIMITATIONS.md) を確認してください。
-
-## Free Public Beta
-
-Public Beta 2は無料です。DLM Coreのローカル利用に、支払い・DLMアカウント・サブスクリプションは必要ありません。
-
-Public Beta 2 is free. Core local use does not require payment, a DLM account, or a subscription.
-
-Public Beta 2では、支払い、PWYW、サブスクリプション、アプリ内広告、有料プロモーション、分析SDK/テレメトリSDKを有効化していません。
-
-## Feedback / Security
-
-公開Issueで受け付ける主なカテゴリは次の2つです。
-
-- 既存機能の再現可能な不具合
-- 既に対応しているDLsite / DMM・FANZAフローの互換性問題
-
-Public issues are primarily for reproducible bugs in existing functionality and compatibility issues in already-supported DLsite / DMM・FANZA flows.
-
-新機能要望・個別UX改善要望は、Public Betaでは原則として受付対象としていません。
-
-- [Normal feedback / bug reports](https://github.com/Ertelun/dlm-desktop/issues)
-- [Feedback guidance](FEEDBACK.md)
-- [Security policy](SECURITY.md)
-- [Privacy](PRIVACY.md)
-- [Known Limitations](KNOWN_LIMITATIONS.md)
-- [Release provenance](PROVENANCE.json)
-- [Public Beta 2 r98 JA/EN release notes](RELEASE_NOTES-r98-JA-EN.md)
-
-セキュリティ脆弱性は公開Issueへ投稿せず、GitHubの **Security → Report a vulnerability** からPrivate Vulnerability Reportingを使用してください。

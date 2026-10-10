@@ -1,35 +1,29 @@
 # Security Policy
 
-## Supported release
+## Current release
 
-DLM Desktop Public Beta 2 is available for Windows x64.
+DLM Desktop **1.3.2（r213）** is the current formal Windows x64 release.
 
-Public Beta 2 package SHA-256:
+Canonical distribution: [v1.3.2](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.2).
 
-`b3174d3206f53005192cac50423950625b3b8de9d4fec619a18255b93ed7b7cf`
+Package: `DLM-Desktop-v1.3.2-r213-win-x64-Compact.zip`
+
+SHA-256:
+
+```text
+a145ac780de0dfe715d4bfc8540a436a815d42f21f8466131b30ad53ebc39ded
+```
+
+Published checks are described in [RELEASE_VERIFICATION-r213.json](RELEASE_VERIFICATION-r213.json). They describe the recorded test scope and are not an external security certification. A matching SHA-256 verifies file identity rather than software safety.
 
 ## Reporting a vulnerability
 
-Please do **not** post sensitive security vulnerabilities, credentials, tokens, private account information, purchased payloads, or sensitive local paths in a public Issue.
+Private vulnerability reporting is enabled for this repository. Use GitHub **Security → Report a vulnerability**, or [submit a private report](https://github.com/Ertelun/dlm-desktop/security/advisories/new).
 
-Private vulnerability reporting is enabled for this repository.
-
-Use GitHub's **Security → Report a vulnerability** flow to submit sensitive vulnerability reports privately.
-
-Do not post sensitive vulnerability details, credentials, tokens, provider account information, purchased payloads, or sensitive local paths in public Issues.
+Do not post sensitive vulnerabilities, credentials, cookies/tokens, private account information, purchased content, full library databases, or sensitive local paths in public Issues.
 
 ## Distribution authenticity
 
-The canonical Public Beta 2 distribution source is this repository's GitHub Release:
+Use this repository's GitHub Releases and the published checksum to identify the distributed package. This release is **unsigned**; Windows may show Unknown Publisher / Microsoft Defender SmartScreen notices. Confirm the source and checksum when deciding whether to run it.
 
-`v0.1.0-beta.2`
-
-https://github.com/Ertelun/dlm-desktop/releases/tag/v0.1.0-beta.2
-
-SHA-256 verifies byte identity with the published package. It does not by itself guarantee software safety.
-
-## Unsigned Beta
-
-Public Beta 2 is unsigned. Windows may display Unknown Publisher or Microsoft Defender SmartScreen warnings.
-
-Users should verify the canonical source and published SHA-256 and decide whether they are comfortable proceeding. Do not interpret this document as an instruction to ignore Windows security warnings.
+Historical Beta releases remain available for reference. The current release and checksum are identified above; earlier artifacts have separate hashes.

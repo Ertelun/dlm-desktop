@@ -4,7 +4,7 @@ Public issue intake is intentionally narrow.
 
 Accepted public reports:
 - reproducible bugs in existing DLM Desktop features;
-- compatibility regressions in already-qualified DLsite / DMM-FANZA provider-assisted flows.
+- compatibility regressions in the supported site-assisted flows described in [PROVIDER_CAPABILITIES.md](PROVIDER_CAPABILITIES.md).
 
 Not accepted as a public issue category:
 - new feature requests;
