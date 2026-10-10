@@ -1,35 +1,15 @@
 # Security Policy
 
-## Supported release
+Current supported distribution: **DLM Desktop 1.3.3 (r214), Windows x64**.
 
-DLM Desktop Public Beta 2 is available for Windows x64.
+Canonical download: [Ertelun GitHub Release v1.3.3](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.3).
 
-Public Beta 2 package SHA-256:
+Package SHA-256: `bdb35761f3d6244b04ea51347c6158830885ded039f2f113fa9c55e3ffd65d14`.
 
-`b3174d3206f53005192cac50423950625b3b8de9d4fec619a18255b93ed7b7cf`
+The distribution is unsigned. Windows may show Unknown Publisher or SmartScreen warnings. Verify the official source and checksum before deciding whether to run it. A checksum verifies package identity and does not by itself guarantee safety.
 
-## Reporting a vulnerability
+Please report sensitive vulnerabilities privately through GitHub **Security → Report a vulnerability**. Do not post credentials, tokens, private account information, purchased files or sensitive local paths in public issues. Private vulnerability reporting is enabled for this repository.
 
-Please do **not** post sensitive security vulnerabilities, credentials, tokens, private account information, purchased payloads, or sensitive local paths in a public Issue.
+現在の対象はDLM Desktop 1.3.3（r214）、Windows x64です。配布元とSHA-256を確認してください。コード署名は付けていません。
 
-Private vulnerability reporting is enabled for this repository.
-
-Use GitHub's **Security → Report a vulnerability** flow to submit sensitive vulnerability reports privately.
-
-Do not post sensitive vulnerability details, credentials, tokens, provider account information, purchased payloads, or sensitive local paths in public Issues.
-
-## Distribution authenticity
-
-The canonical Public Beta 2 distribution source is this repository's GitHub Release:
-
-`v0.1.0-beta.2`
-
-https://github.com/Ertelun/dlm-desktop/releases/tag/v0.1.0-beta.2
-
-SHA-256 verifies byte identity with the published package. It does not by itself guarantee software safety.
-
-## Unsigned Beta
-
-Public Beta 2 is unsigned. Windows may display Unknown Publisher or Microsoft Defender SmartScreen warnings.
-
-Users should verify the canonical source and published SHA-256 and decide whether they are comfortable proceeding. Do not interpret this document as an instruction to ignore Windows security warnings.
+機密性のある脆弱性は、GitHubのSecurity → Report a vulnerabilityから非公開で報告してください。認証情報、トークン、購入ファイル、機密のローカルパスなどを公開Issueへ投稿しないでください。

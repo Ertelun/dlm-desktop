@@ -17,8 +17,8 @@ body:
     id: version
     attributes:
       label: DLM Desktop version
-      description: "Example: Public Beta r88"
-      placeholder: Public Beta r88
+      description: "Example: 1.3.3 (r214)"
+      placeholder: 1.3.3 (r214)
     validations:
       required: true
 

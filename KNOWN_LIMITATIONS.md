@@ -1,20 +1,12 @@
-# Known Limitations — Public Beta 2
+# Known Limitations — DLM Desktop 1.3.3
 
-- Public Beta 2 shipping scope is **Windows x64**.
-- ARM64 is **not** qualified for Public Beta 2.
-- Public Beta 2 is **unsigned** and may trigger Unknown Publisher / SmartScreen warnings.
-- Distribution is a **ZIP package**, not an installer.
-- The only canonical Public Beta binary source is `Ertelun/dlm-desktop` GitHub Releases.
-- DLM UI language can be selected from **System / Japanese / English**; changing the UI language requires an application restart.
-- Localization applies to DLM customer-visible UI. Work titles, creator names, and provider-supplied metadata remain in their original language and are not machine-translated.
-- Provider-site behavior can change independently of DLM Desktop.
-- Provider-assisted acquisition is limited to qualified ordinary-download flows.
-- Protected, viewer-only, official-player-only, DRM-controlled and otherwise unsupported delivery modes remain on provider official routes.
-- Login and official Download actions remain user-operated.
-- **Standalone Manual Local Intake of arbitrary local works is not shipped as a completed Library-registration feature in Public Beta 2.**
-- Some provider-handoff UI can select and validate a local folder, but that validation helper does not by itself complete new local-work promotion/registration.
-- Very large archives may take several minutes after download because integrity validation, extraction, physical copy and final SHA-256 verification are intentionally retained.
-- Backup / Restore in this Beta is for **DLM user state**; it is not a backup of all original purchased works.
-- Users with important libraries should maintain independent backups of irreplaceable original files.
-- Public Beta compatibility/usability are still being improved.
-- No update cadence is promised by this Beta.
+- Windows x64、ZIP、コード署名なし。ARM64はこの版の検証対象外です。 / Windows x64 ZIP, unsigned; ARM64 is outside this release's qualification.
+- appフォルダを本体EXEの隣に置いてください。.NET同梱、ブラウザにはWebView2 Runtimeが必要です。 / Keep app beside the EXE. .NET is bundled; the browser requires WebView2 Runtime.
+- 日英の言語変更はアプリ画面へ即時反映します。作品情報は機械翻訳しません。WebページとWindows標準ファイル選択画面はそれぞれの言語設定に従います。 / Application language changes apply immediately. Work metadata is not machine-translated. Web pages and Windows file dialogs use their own language settings.
+- 各サービスの仕様は独立して変わるため、対応する通常配信に範囲を限定しています。 / Provider behavior can change independently; assistance is limited to supported delivery modes.
+- ログイン・購入・ダウンロード開始はユーザー操作です。保護された配信などは公式手段を利用してください。 / Login, purchases and downloads remain user actions. Protected delivery stays on official routes.
+- GOGは必要なファイル一式の保存・検証完了後、受付確定が必要です。 / GOG requires explicit finalization after the complete file set finishes saving and validation.
+- DLsite分割ファイルの結合・インストーラー自動実行は行いません。 / Multipart merging and automatic installer execution are not provided.
+- 任意の手元フォルダを新規作品登録する独立した手動取り込みは提供していません。 / Standalone registration of arbitrary local folders is not provided.
+- 大きなアーカイブは整合性検証・展開・コピー・最終照合に時間がかかります。 / Large archives take time to validate, extract, copy and verify.
+- ユーザー設定バックアップは作品ファイルのバックアップを含みません。 / User-state backups do not include original work files.

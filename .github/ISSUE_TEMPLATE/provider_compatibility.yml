@@ -1,5 +1,5 @@
 name: Provider compatibility
-description: Report a compatibility failure in an already-supported DLsite or DMM/FANZA flow.
+description: Report a compatibility failure in an already-supported provider flow.
 title: "[Provider compatibility] "
 labels: []
 body:
@@ -19,6 +19,14 @@ body:
       options:
         - DLsite
         - DMM/FANZA
+        - itch.io
+        - BOOTH
+        - Gumroad
+        - GOG
+        - Fantia
+        - pixivFANBOX
+        - Patreon
+        - Ci-en
     validations:
       required: true
 
@@ -26,7 +34,7 @@ body:
     id: version
     attributes:
       label: DLM Desktop version
-      placeholder: Public Beta r88
+      placeholder: 1.3.3 (r214)
     validations:
       required: true
 

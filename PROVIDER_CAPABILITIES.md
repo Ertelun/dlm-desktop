@@ -1,31 +1,26 @@
-# Provider Capabilities — Public Beta 2
+# Provider Capabilities — DLM Desktop 1.3.3
 
-DLM DesktopのProvider-assisted acquisitionは、対応範囲を限定した補助機能です。
+ログイン、購入、ダウンロード開始は、ユーザー自身が各サービスの公式画面で操作します。取得できる配信形式を限定し、保存したファイルを検証してローカルライブラリへ登録します。
 
-| Capability | DLsite | DMM/FANZA | Public wording |
-|---|---|---|---|
-| Official page browsing inside DLM | Qualified flow | Qualified flow | 公式ページをDLM内で表示 |
-| Provider login | User-operated | User-operated | ログインはユーザー自身が公式ページ上で行います |
-| Official Download action | User-operated | User-operated | Download操作はユーザー自身が行います |
-| Qualified ordinary downloadable archive | Supported in current Beta flow | Supported in current Beta flow | 対応する通常ダウンロードを取り込み支援 |
-| Archive validation before Library registration | DLM-managed | DLM-managed | 取得ファイルを検証後にライブラリ登録 |
-| Provider-handoff local folder selection / validation | Limited helper only | Limited helper only | 一部の既存Provider-handoffでローカルフォルダの選択・安全検証を補助 |
-| Standalone Manual Local Intake of arbitrary local works | **Not shipped in Public Beta 2** | **Not shipped in Public Beta 2** | 任意の手元作品を新規Library登録する完成機能としては提供しない |
-| Protected / viewer-only content | Provider official route | Provider official route | 対象外。公式の閲覧手段を利用 |
-| Official-player-only / DRM-controlled modes | Provider official route | Provider official route | 対象外。公式のプレイヤー/配信手段を利用 |
-| Private API / account automation | Not claimed | Not claimed | Supported capabilityとして宣伝しない |
-| Provider affiliation / partnership | None | None | Non-affiliation文必須 |
+Sign-in, purchases and download initiation are user actions on official pages. Acquisition assistance is limited to supported delivery modes; files are validated before local registration.
 
-**DLM DesktopはErtelunによる独立したアプリケーションであり、DLsiteおよびDMM/FANZAの公式アプリ・提携製品ではありません。**
+| 配信元 / Provider | 対応する経路 / Supported route |
+|---|---|
+| DLsite | 通常の対応アーカイブと分割ファイル。part1.exe・後続partを原本のまま同じ作品へ保存。 / Supported ordinary archives and multipart originals grouped under one work. |
+| DMM/FANZA | 対応する通常ダウンロードの保存・検証・登録。 / Supported ordinary-download validation and registration. |
+| itch.io / BOOTH | 対応アーカイブと確認済みの単体ファイル形式。 / Supported archives and reviewed direct-file formats. |
+| Gumroad | 公式ライブラリやコンテンツ画面から明示的に開始した対応ファイル。 / Supported files explicitly downloaded from official library/content pages. |
+| GOG | Offline Backup Game Installerの.exe/.bin等を保存し、ユーザーが受付を確定して1作品へ登録。 / Save the required offline installer files, then explicitly finalize intake as one work. |
+| Fantia / pixivFANBOX / Patreon / Ci-en | 選択した投稿で明示的に保存した画像・添付ファイルをまとめて登録。 / Group supported images and attachments explicitly saved from the selected post. |
 
-避ける表現:
+Ci-enの対応するDLsite作品・予告作品リンクは、DLsite画面へ引き継ぎます。DLsiteの分割ファイルの結合、インストーラーの自動実行は行いません。
 
-- 既に手元にある任意作品を手動取り込み可能
-- 公式DLsite連携
-- FANZA公式対応
-- 完全対応 / 全作品対応
-- 自動ダウンロード / 一括ダウンロード
-- universal downloader
-- DRM解除
-- viewer extraction
-- provider account automation
+Supported Ci-en links to DLsite work/announcement pages open in the DLsite screen. Multipart merging and automatic installer execution are not provided.
+
+保護された配信、公式プレイヤー専用、DRM管理などの対象外の方式は、各サービスの公式手段をご利用ください。任意のローカルフォルダを新規作品として登録する独立した手動取り込みは提供していません。既存取得フローのフォルダ選択・検証補助とは別です。
+
+Protected, official-player-only, DRM-controlled and unsupported delivery modes remain on official provider routes. Standalone registration of arbitrary local folders is not shipped; local folder selection in existing handoff flows is a validation helper.
+
+DLMは各サービスの公式アプリ・提携製品ではありません。全作品・全配信形式への対応やアカウント自動操作を保証するものではありません。
+
+DLM is not an official or affiliated provider application. Support is not universal across works or delivery modes and does not include provider-account automation.
