@@ -8,6 +8,8 @@ DLM Desktop is a local Windows library by Ertelun for organizing, finding and vi
 
 [Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.4/DLM-Desktop-v1.3.4-r215-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.4) · [更新内容 / Release notes](RELEASE_NOTES-r215-JA-EN.md)
 
+**[マニュアル / User manual](MANUAL.md)** · [日本語](manual/ja.md) · [English](manual/en.md)
+
 ## 起動方法 / Getting started
 
 1. 以前のDLM Desktopを終了します。 / Close any previously running DLM Desktop.
