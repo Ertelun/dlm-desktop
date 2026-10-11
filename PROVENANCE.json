@@ -49,7 +49,7 @@
   },
   "replaces": {
     "withdrawnTag": "v1.3.3",
-    "reason": "Run-origin pointer navigation caused InvalidOperationException in the shared preview mouse handler; earlier public releases are retained as drafts"
+    "reason": "Run-origin pointer navigation caused InvalidOperationException in the shared preview mouse handler; v1.3.3 is retained as a withdrawn draft"
   },
   "scope": "Local Codex validation and real Windows pointer navigation; no service-wide live certification is claimed."
 }
