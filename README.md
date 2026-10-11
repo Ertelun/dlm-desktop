@@ -64,7 +64,7 @@ See [Provider Capabilities](PROVIDER_CAPABILITIES.md) and [Known Limitations](KN
 
 Fixes the crash when clicking text to navigate from Library to Settings, Continue reading and Download. The shared preview mouse handler now safely follows both WPF inline content and visual elements.
 
-公開 ZIP の DLL で同じクラッシュを再現し、修正版 ZIP の DLL で201項目の実 WPF クリック回帰テストが通ることを確認しました。通常起動でも、文字部分のクリックで全画面を往復できています。1.3.3と以前の配布は公開を取り下げて保存し、検証済みの1.3.4を最新の公開版にします。
+公開 ZIP の DLL で同じクラッシュを再現し、修正版 ZIP の DLL で201項目の実 WPF クリック回帰テストが通ることを確認しました。通常起動でも、文字部分のクリックで全画面を往復できています。1.3.3と以前の配布は公開を取り下げてドラフトとして保存し、検証済みの1.3.4だけを公開しています。
 
 The exact public 1.3.3 DLL reproduces the exception. The DLL extracted from the repaired ZIP passes 201 real-WPF pointer/navigation checks, and normal startup passes coordinate clicks through all four destinations. Earlier releases are retained as withdrawn drafts; the verified 1.3.4 is the current public release.
 
