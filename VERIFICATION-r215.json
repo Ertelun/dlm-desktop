@@ -1,0 +1,197 @@
+{
+  "status": "PASS",
+  "product": "DLM Desktop",
+  "version": "1.3.4",
+  "revision": "r215",
+  "sdk": "10.0.401",
+  "platform": "win-x64",
+  "signing": "unsigned",
+  "source_manifest_sha256": "ed53598e56c279d0c4aedcf34a86131fde861ba23cf05b8bc1a86d4af9f0632e",
+  "strict_test_projects_passed": 19,
+  "test_results": [
+    {
+      "project": "DlmDesktop.AutomaticSafeSnapshotContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.BrowserDownloadContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.CompactListRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.ImportPromotionContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.LibraryRelocationContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.LocalizationContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.LocalizationRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.LocalProvenanceContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.ManualIntakeContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.MembershipPostWorkContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.NavigationRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.SecurityBoundaryContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.SmokeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.UserStateBackupContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.WatchFolderContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDownloader.HostContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDownloader.NetworkSafetyContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDownloader.ProviderCapabilityContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDownloader.StagingContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    }
+  ],
+  "pointer_navigation_checks": 201,
+  "localization_contract_assertions": 8355,
+  "localization_runtime_checks": 161,
+  "localization_screens": 15,
+  "security_boundary_assertions": 150,
+  "provider_policy_assertions": 172,
+  "native_parser_assertions": 39,
+  "packaged_self_test": "PASS",
+  "packaged_smoke_window": "PASS",
+  "downloader_host_self_test": "PASS",
+  "native_parser_tests": "PASS",
+  "baseline": {
+    "pointer_regression": "REPRODUCED InvalidOperationException from Run in FindVisualAncestor / Window_PreviewMouseDown",
+    "version": "1.3.3",
+    "zip_sha256": "bdb35761f3d6244b04ea51347c6158830885ded039f2f113fa9c55e3ffd65d14"
+  },
+  "scope": "Local Codex validation, synthetic real-WPF pointer and screen tests; no live provider account or service-wide certification.",
+  "runtime_zip": "DLM-Desktop-v1.3.4-r215-win-x64.zip",
+  "runtime_zip_sha256": "172105ef553c2df17d3c8ca2deff6a79b21c198374cf3dde24c0d0cbfc98bd67",
+  "extracted_package": {
+    "root_items": [
+      "app",
+      "DoujinLibraryManagerDesktop.exe",
+      "README.txt"
+    ],
+    "dll_byte_matched": true,
+    "status": "PASS",
+    "self_test": "PASS",
+    "unicode_and_space_path": true,
+    "pointer_navigation": "PASS",
+    "file_version": "1.3.4.215",
+    "product_version": "1.3.4",
+    "smoke_window": "PASS"
+  },
+  "interactive_navigation": {
+    "status": "PASS",
+    "version": "1.3.4.215",
+    "method": "Computer Use coordinate clicks on navigation text",
+    "destinations": [
+      "Library",
+      "Settings",
+      "Viewer",
+      "Download",
+      "Library"
+    ],
+    "normalStartupWithExistingLibrary": true,
+    "processStillRunning": true,
+    "crashFilesForProcess": 0
+  },
+  "build_warnings": 0,
+  "build_errors": 0
+}

@@ -4,9 +4,9 @@
 
 DLM Desktop is a local Windows library by Ertelun for organizing, finding and viewing digital works you keep on your PC.
 
-**1.3.3（r214）正式リリース / Stable release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
+**1.3.4（r215）正式リリース / Stable release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
 
-[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.3/DLM-Desktop-v1.3.3-r214-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.3) · [更新内容 / Release notes](RELEASE_NOTES-r214-JA-EN.md)
+[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.4/DLM-Desktop-v1.3.4-r215-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.4) · [更新内容 / Release notes](RELEASE_NOTES-r215-JA-EN.md)
 
 ## 起動方法 / Getting started
 
@@ -58,33 +58,33 @@ These qualification screenshots use synthetic data and contain no real accounts,
 
 See [Provider Capabilities](PROVIDER_CAPABILITIES.md) and [Known Limitations](KNOWN_LIMITATIONS.md) for supported routes.
 
-## 1.3.3の修正 / Changes in 1.3.3
+## 1.3.4の修正 / Changes in 1.3.4
 
-日英表示を全体で再調査し、往復切り替え、後から開くメニュー、ツールチップ、確認ボタン、長い英語文言の配置を修正しました。公開中止した1.3.2の配布物を置き換えます。
+ライブラリから設定・続きから・ダウンロードなどへ移動するとクラッシュする不具合を修正しました。文字部分をクリックした際の共通マウス処理が WPF の Run を通常の画面要素として親探索し、例外を起こしていました。文字要素と画面要素の両方を安全にたどる処理へ変更しました。
 
-Japanese/English presentation has been audited across the application, including repeated language switches, late menus, tooltips, dialog buttons and longer English layouts. This replaces the withdrawn 1.3.2 assets.
+Fixes the crash when clicking text to navigate from Library to Settings, Continue reading and Download. The shared preview mouse handler now safely follows both WPF inline content and visual elements.
 
-DLsiteのpart1.exeと後続partの保存、Gumroad/GOGの作品情報・サムネイル、FANBOXの保存先、Patreon/Ci-enの複数画像保存、Fantiaの表示回復、Ci-enからDLsiteへのリンク引き継ぎも含みます。一時的なデバッグログボタンは削除済みです。
+公開 ZIP の DLL で同じクラッシュを再現し、修正版 ZIP の DLL で201項目の実 WPF クリック回帰テストが通ることを確認しました。通常起動でも、文字部分のクリックで全画面を往復できています。1.3.3と以前の配布は公開を取り下げて保存し、検証済みの1.3.4を最新の公開版にします。
 
-Includes fixes for DLsite part1.exe and multipart saves, Gumroad/GOG metadata and thumbnails, FANBOX save directories, multiple-image saves in Patreon/Ci-en, Fantia display recovery and Ci-en links to DLsite. The temporary debug-log button is removed.
+The exact public 1.3.3 DLL reproduces the exception. The DLL extracted from the repaired ZIP passes 201 real-WPF pointer/navigation checks, and normal startup passes coordinate clicks through all four destinations. Earlier releases are retained as withdrawn drafts; the verified 1.3.4 is the current public release.
 
-**GOGは必要なファイルをすべて保存してから「GOG受付を確定して登録」を押してください。** DLsite分割ファイルは原本のまま同じ作品にまとめ、結合・自動実行しません。
+以前の機能修正と日英表示対応を含みます。**GOGは必要なファイルをすべて保存してから「GOG受付を確定して登録」を押してください。** DLsite分割ファイルは原本のまま同じ作品にまとめます。
 
-**For GOG, save every required file, then click “Finalize GOG intake and register”.** DLsite multipart files retain their original names and are grouped without merging or automatic execution.
+Includes the previous feature fixes and Japanese/English presentation support. **For GOG, save every required file, then click “Finalize GOG intake and register”.** DLsite multipart files retain their original names.
 
 ## 配布物の確認 / Verify the download
 
-配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.3) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
+配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.4) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
 
-The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.3). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
+The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.4). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
 
 ```text
-bdb35761f3d6244b04ea51347c6158830885ded039f2f113fa9c55e3ffd65d14  DLM-Desktop-v1.3.3-r214-win-x64.zip
+172105ef553c2df17d3c8ca2deff6a79b21c198374cf3dde24c0d0cbfc98bd67  DLM-Desktop-v1.3.4-r215-win-x64.zip
 ```
 
-全18テスト、翻訳8,355項目、実画面15種類の161項目、セキュリティ境界150項目、配信元ポリシー172項目、実DLL39項目を検証しました。詳細はRelease添付の検証記録と [PROVENANCE.json](PROVENANCE.json) にあります。
+全19テスト、クリック・画面遷移201項目、翻訳8,355項目、実画面15種類の161項目、セキュリティ境界150項目、配信元ポリシー172項目、実DLL39項目を検証しました。詳細はRelease添付の検証記録と [PROVENANCE.json](PROVENANCE.json) にあります。
 
-Verification passed all 18 test projects, 8,355 localization assertions, 161 real-WPF checks across 15 screens, 150 security-boundary assertions, 172 provider-policy assertions and 39 native-parser probes. See the release verification asset and [PROVENANCE.json](PROVENANCE.json).
+Verification passed all 19 test projects, 201 pointer/navigation checks, 8,355 localization assertions, 161 real-WPF checks across 15 screens, 150 security-boundary assertions, 172 provider-policy assertions and 39 native-parser probes. See the release verification asset and [PROVENANCE.json](PROVENANCE.json).
 
 ## 利用と問い合わせ / Use and feedback
 

@@ -1,18 +1,18 @@
 {
-  "schema": "dlm-desktop-public-stable-v2",
+  "schema": "dlm-desktop-public-stable-v3",
   "product": "DLM Desktop",
   "publisher": "Ertelun",
-  "version": "1.3.3",
-  "revision": "r214",
+  "version": "1.3.4",
+  "revision": "r215",
   "stage": "Stable",
-  "releaseTag": "v1.3.3",
+  "releaseTag": "v1.3.4",
   "canonicalRepository": "Ertelun/dlm-desktop",
-  "releaseUrl": "https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.3",
+  "releaseUrl": "https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.4",
   "platform": "win-x64",
   "package": {
-    "file": "DLM-Desktop-v1.3.3-r214-win-x64.zip",
-    "sha256": "bdb35761f3d6244b04ea51347c6158830885ded039f2f113fa9c55e3ffd65d14",
-    "size": 136818500,
+    "file": "DLM-Desktop-v1.3.4-r215-win-x64.zip",
+    "sha256": "172105ef553c2df17d3c8ca2deff6a79b21c198374cf3dde24c0d0cbfc98bd67",
+    "size": 141320031,
     "sdk": "10.0.401",
     "signing": "unsigned",
     "layout": [
@@ -24,29 +24,32 @@
   "source": {
     "repository": "tree-1508/Doujin-Library-Manager",
     "visibility": "private",
-    "tag": "desktop-v1.3.3-r214",
-    "commit": "19b6528c2d539cd7513549257b679130387bb3cc",
-    "file": "DLM-Desktop-v1.3.3-r214-SOURCE.zip",
-    "sha256": "b1feb5ce2d05e75a7f9e3dd4a4775d1d32da1731b6883f558fd0974c0458d3f5",
-    "manifestFiles": 783,
-    "snapshotFiles": 2488
+    "commit": "edda311322cb51375b795c8cb54034f0fba7029e",
+    "localTag": "desktop-v1.3.4-r215",
+    "file": "DLM-Desktop-v1.3.4-r215-SOURCE.zip",
+    "sha256": "7af7caf8264d457e7539a911ddf92e6a673c2946219f1617099293bae86a5d1b",
+    "verifiedFiles": 233,
+    "publication": "Local committed source retained; origin publication awaits explicit permission"
   },
-  "localization": {
-    "source_occurrences": 2934,
-    "independent_fixtures": 2015,
-    "contract_assertions": 8355,
-    "real_wpf_checks": 161,
-    "actual_screens": 15,
-    "roundtrip": "Japanese / English / Japanese, repeated",
-    "missing_translations": 0,
-    "preserve_user_and_provider_data": true
+  "verificationFile": "DLM-Desktop-v1.3.4-r215-VERIFICATION.json",
+  "verification": {
+    "strictTestProjects": 19,
+    "pointerNavigationChecks": 201,
+    "localizationAssertions": 8355,
+    "realWpfChecks": 161,
+    "actualScreens": 15,
+    "securityBoundaryAssertions": 150,
+    "providerPolicyAssertions": 172,
+    "nativeParserProbes": 39,
+    "normalStartupCoordinateNavigation": "PASS",
+    "baselineCrashReproduced": true,
+    "finalZipDllByteMatched": true,
+    "warnings": 0,
+    "errors": 0
   },
-  "verificationFile": "DLM-Desktop-v1.3.3-r214-VERIFICATION.json",
-  "price": "free",
-  "monetizationActivation": false,
   "replaces": {
-    "withdrawnTag": "v1.3.2",
-    "reason": "Japanese/English presentation repair; withdrawn assets are not republished"
+    "withdrawnTag": "v1.3.3",
+    "reason": "Run-origin pointer navigation caused InvalidOperationException in the shared preview mouse handler; earlier public releases are retained as drafts"
   },
-  "scope": "Local automated qualification and internal release review; no service-wide live or external certification is claimed."
+  "scope": "Local Codex validation and real Windows pointer navigation; no service-wide live certification is claimed."
 }
