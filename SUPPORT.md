@@ -1,8 +1,8 @@
 # 月額支援の計画（保留中） / Monthly sponsorship plans (on hold)
 
-**GitHub Sponsorsによる月額支援の準備は保留中です。現在、申し込み・決済はできず、開始時期は未定です。**
+**GitHub Sponsorsによる月額支援の準備は保留中です。現在、申し込み・決済は未開始で、開始時期は未定です。**
 
-**Preparation for GitHub Sponsors monthly sponsorship is on hold. Signups and payments are unavailable, and the start date has not been set.**
+**Preparation for GitHub Sponsors monthly sponsorship is on hold. Signups and payments have not started, and the start date has not been set.**
 
 Ertelunの公開OSS開発・保守に対する、月額の任意支援を計画しています。受付開始後の支援は、公開OSSランタイムの保守、安全性の改善、依存関係の点検、テストとドキュメントの整備に活用する方針です。公開プロジェクトは [Ertelun/dlm-butler-runtime](https://github.com/Ertelun/dlm-butler-runtime) で確認できます。
 

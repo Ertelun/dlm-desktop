@@ -10,6 +10,8 @@ DLM Desktop is a local Windows library by Ertelun for organizing, finding and vi
 
 **[マニュアル / User manual](MANUAL.md)** · [日本語](manual/ja.md) · [English](manual/en.md)
 
+[開発支援のご案内 / Sponsorship information](SUPPORT.md) · **月額支援の申し込み・決済は未開始 / Monthly sponsorship signups and payments have not started**
+
 ## 起動方法 / Getting started
 
 1. 以前のDLM Desktopを終了します。 / Close any previously running DLM Desktop.
@@ -102,8 +104,8 @@ Report sensitive vulnerabilities through Security → Report a vulnerability ins
 
 ## 月額支援の計画（保留中） / Monthly sponsorship plans (on hold)
 
-GitHub Sponsorsによる月額支援の準備は保留中です。現在、申し込み・決済はできず、開始時期は未定です。DLM Desktopは無料で、利用機能や更新の提供条件は支援の有無によって変わりません。
+GitHub Sponsorsによる月額支援の準備は保留中です。現在、申し込み・決済は未開始で、開始時期は未定です。DLM Desktopは無料で、利用機能や更新の提供条件は支援の有無によって変わりません。
 
-Preparation for GitHub Sponsors monthly sponsorship is on hold. Signups and payments are unavailable, and the start date has not been set. DLM Desktop remains free, with the same access to features and updates.
+Preparation for GitHub Sponsors monthly sponsorship is on hold. Signups and payments have not started, and the start date has not been set. DLM Desktop remains free, with the same access to features and updates.
 
 [支援の方針とお問い合わせ / Sponsorship policy and questions](SUPPORT.md)
