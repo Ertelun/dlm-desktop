@@ -100,10 +100,10 @@ DLM Desktop is free; local use requires no DLM account or payment. Sign-in, purc
 
 Report sensitive vulnerabilities through Security → Report a vulnerability instead of public issues.
 
-## 月額で開発を支援 / Monthly development support
+## 月額支援の計画（保留中） / Monthly sponsorship plans (on hold)
 
-[GitHub Sponsors](https://github.com/sponsors/Ertelun) で、Ertelunの公開OSS開発・保守を月額 **US$3 / US$5 / US$10** から任意で支援できます。すべてのプランの特典は謝意のみです。DLM Desktopは無料で、利用機能や更新の提供条件は支援の有無によって変わりません。
+GitHub Sponsorsによる月額支援の準備は保留中です。現在、申し込み・決済はできず、開始時期は未定です。DLM Desktopは無料で、利用機能や更新の提供条件は支援の有無によって変わりません。
 
-Voluntarily support Ertelun's open-source development and maintenance through [GitHub Sponsors](https://github.com/sponsors/Ertelun) at **US$3 / US$5 / US$10 per month**. Every tier receives our thanks. DLM Desktop remains free, with the same access to features and updates.
+Preparation for GitHub Sponsors monthly sponsorship is on hold. Signups and payments are unavailable, and the start date has not been set. DLM Desktop remains free, with the same access to features and updates.
 
-[支援内容・変更と解約 / Support details, changes and cancellation](SUPPORT.md)
+[支援の方針とお問い合わせ / Sponsorship policy and questions](SUPPORT.md)
