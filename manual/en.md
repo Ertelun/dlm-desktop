@@ -1,8 +1,8 @@
-# DLM Desktop 1.3.4 (r215) user manual
+# DLM Desktop 1.3.5 (r216) user manual
 
 [Manual home](../MANUAL.md) · [日本語](ja.md) · [README](../README.md)
 
-This manual covers Windows x64 version 1.3.4 (r215). Checked on October 12, 2026 (JST). Screen labels come from the XAML, presentation properties and localization functions in the latest source matching the distribution record: `edda311322cb51375b795c8cb54034f0fba7029e`. Code-formatted labels match the English interface. For sign-in, purchases and download initiation on provider websites, follow the provider's own interface.
+This manual covers Windows x64 version 1.3.5 (r216). Checked on October 16, 2026 (JST). Screen labels come from the XAML, presentation properties and localization functions in the latest source matching the distribution record: `5160af7e90516018312fa4dbd022b044aba2e324`. Code-formatted labels match the English interface. For sign-in, purchases and download initiation on provider websites, follow the provider's own interface.
 
 <a id="contents"></a>
 ## Contents: choose your task
@@ -30,7 +30,7 @@ These four steps take you from choosing a storage folder to downloading a suppor
 <a id="start"></a>
 ### 1. Launch the application
 
-1. Get the Windows x64 ZIP from the [current release page](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.4).
+1. Get the Windows x64 ZIP from the [current release page](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.5).
 2. Close any previously running DLM Desktop and extract the entire ZIP into a new, empty folder.
 3. Run `DoujinLibraryManagerDesktop.exe`. The adjacent `app` folder is also required.
 
@@ -158,6 +158,8 @@ If embedded sign-in fails, use another official sign-in method or `External brow
 ### Check progress or cancel an operation
 
 `DL Center` shows downloading, extraction and registration progress. If a row offers an enabled `Cancel`, you can cancel that operation. The available cancellation stages depend on the operation.
+
+When the total size is unknown, progress shows received bytes, such as `Downloading (123.4 MiB received)`. Concurrent transfer displays update about every 150 ms. Provider preparation and post-transfer validation/extraction can take time; check both received bytes and the current processing stage.
 
 `Clear history` clears history when available. It does not delete work files. Validation and extraction can take time after transfer, so check registration separately from the transfer percentage.
 
@@ -431,6 +433,7 @@ Changing the interface language does not machine-translate work titles or creato
 | The embedded browser does not appear | Check WebView2 Runtime and confirm the full ZIP was extracted with `app` beside the EXE |
 | Sign-in is rejected | Use another official method or the [external browser](#browser). External sign-in need not apply inside DLM |
 | Transfer is at 100%, but no work appears | Check validation/extraction/registration in [DL Center](#progress). GOG needs [finalization](#gog) |
+| Japanese names extracted from a ZIP are garbled | Extract again from the original ZIP using 1.3.5 or later. If it is unavailable, use [Redownload](#redownload) from work details and the official provider. Starting the application alone does not repair existing names |
 | DLsite part1.exe remains waiting | Check [browser save confirmation](#multipart) and acquire every required later part |
 | A work is missing | Clear search/filters, check [hidden works](#bulk) and [connected storage](#roots), then reload |
 | You want to register an externally downloaded folder | No standalone arbitrary-folder registration is shipped. Folder selection in existing work details is a validation helper. [Watch Folder](#watch) intake of supported files is a separate feature |

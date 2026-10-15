@@ -1,4 +1,4 @@
-# Known Limitations — DLM Desktop 1.3.4
+# Known Limitations — DLM Desktop 1.3.5
 
 - Windows x64、ZIP、コード署名なし。ARM64はこの版の検証対象外です。 / Windows x64 ZIP, unsigned; ARM64 is outside this release's qualification.
 - appフォルダを本体EXEの隣に置いてください。.NET同梱、ブラウザにはWebView2 Runtimeが必要です。 / Keep app beside the EXE. .NET is bundled; the browser requires WebView2 Runtime.
@@ -9,4 +9,6 @@
 - DLsite分割ファイルの結合・インストーラー自動実行は行いません。 / Multipart merging and automatic installer execution are not provided.
 - 任意の手元フォルダを新規作品登録する独立した手動取り込みは提供していません。 / Standalone registration of arbitrary local folders is not provided.
 - 大きなアーカイブは整合性検証・展開・コピー・最終照合に時間がかかります。 / Large archives take time to validate, extract, copy and verify.
+- 既に文字化けした展開済みファイル名は元ZIPからの再展開または再ダウンロードが必要です。 / Previously garbled extracted names require extraction from the original ZIP or a fresh download.
+- 深い保存先ではWindowsのパス長制限により、一時ファイルの隔離・移動に失敗する場合があります。短い保存先を使用してください。 / Deep storage paths can hit Windows path-length limits during staging quarantine or moves; use a short storage path.
 - ユーザー設定バックアップは作品ファイルのバックアップを含みません。 / User-state backups do not include original work files.

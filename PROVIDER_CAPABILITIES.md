@@ -1,4 +1,4 @@
-# Provider Capabilities — DLM Desktop 1.3.4
+# Provider Capabilities — DLM Desktop 1.3.5
 
 ログイン、購入、ダウンロード開始は、ユーザー自身が各サービスの公式画面で操作します。取得できる配信形式を限定し、保存したファイルを検証してローカルライブラリへ登録します。
 

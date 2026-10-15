@@ -1,0 +1,225 @@
+{
+  "status": "PASS",
+  "stage": "final-runtime-zip-validation",
+  "product": "DLM Desktop",
+  "version": "1.3.5",
+  "revision": "r216",
+  "sdk": "10.0.402",
+  "bundled_runtime": "10.0.12",
+  "platform": "win-x64",
+  "signing": "unsigned",
+  "source_commit": "5160af7e90516018312fa4dbd022b044aba2e324",
+  "source_manifest_sha256": "da15116689f0581495ae06e59e5fd7e148a22b4f72d1e30f14b36e3a763f3f7d",
+  "strict_test_projects_passed": 21,
+  "test_results": [
+    {
+      "project": "DlmDesktop.AutomaticSafeSnapshotContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.BrowserDownloadContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.CompactListRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.DownloadProgressRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.ImportPromotionContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.LibraryRelocationContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.LocalizationContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.LocalizationRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.LocalProvenanceContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.ManualIntakeContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.MembershipPostWorkContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.NavigationRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.SecurityBoundaryContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.SmokeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.UserStateBackupContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.WatchFolderContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDesktop.ZipEncodingContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDownloader.HostContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDownloader.NetworkSafetyContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDownloader.ProviderCapabilityContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    },
+    {
+      "project": "DlmDownloader.StagingContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0
+    }
+  ],
+  "zip_encoding_checks": 18,
+  "download_progress_checks": 118,
+  "synthetic_transfers": 100,
+  "synthetic_progress_notifications": 100000,
+  "pointer_navigation_checks": 201,
+  "localization_contract_assertions": 8355,
+  "localization_runtime_checks": 161,
+  "localization_screens": 15,
+  "security_boundary_assertions": 150,
+  "provider_policy_assertions": 172,
+  "owner_test_build": {
+    "identity": "20261015-1",
+    "formal_release_changes": "Version/build identity and SDK selection; tested runtime and package dependency versions retained",
+    "confirmation": "PASS"
+  },
+  "restore": "Locked dependency restore from local cache; NuGet audit disabled for offline restore. No fresh vulnerability audit claimed.",
+  "test_environment": "Windows; short dedicated temporary path. A deep temporary path exceeded the existing Windows staging-rename path limit; product long-path behavior is not changed by this release.",
+  "scope": "Synthetic local Windows/WPF and archive tests; no service-wide live provider certification.",
+  "runtime_zip": "DLM-Desktop-v1.3.5-r216-win-x64.zip",
+  "runtime_zip_sha256": "eddaa76d689c4e8c452f53041e31147b10624a7077313286f47fa6b6542e7476",
+  "runtime_zip_bytes": 141323631,
+  "extracted_package": {
+    "unicode_and_space_path": true,
+    "root_items": [
+      "app",
+      "DoujinLibraryManagerDesktop.exe",
+      "README.txt"
+    ],
+    "host_self_test": "PASS",
+    "byte_matched_files": 577,
+    "smoke_window": "PASS",
+    "status": "PASS",
+    "file_version": "1.3.5.216",
+    "product_version": "1.3.5",
+    "self_test": "PASS"
+  },
+  "exact_zip_assembly_regressions": [
+    {
+      "project": "DlmDesktop.DownloadProgressRuntimeTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    },
+    {
+      "project": "DlmDesktop.ZipEncodingContractTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    },
+    {
+      "project": "DlmDesktop.NavigationRuntimeTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    },
+    {
+      "project": "DlmDesktop.LocalizationRuntimeTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    }
+  ],
+  "native_parser_probes": 39,
+  "native_parser_result": "PASS",
+  "build_warnings": 0,
+  "build_errors": 0
+}

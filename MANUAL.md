@@ -1,6 +1,6 @@
 # DLM Desktop マニュアル / User manual
 
-**DLM Desktop 1.3.4（r215） / Windows x64**
+**DLM Desktop 1.3.5（r216） / Windows x64**
 
 - [日本語マニュアル](manual/ja.md) — ライブラリの指定からダウンロード・閲覧までの基本操作と、目的別の詳しい操作。
 - [English manual](manual/en.md) — Essential steps from choosing a library through downloading and viewing, followed by detailed task-based instructions.
@@ -19,6 +19,6 @@
 
 Screen labels were checked against the matching XAML, presentation properties and Japanese/English localization functions. The application uses DLD, DLM and Library in different places. Code-formatted labels in each manual match that interface language. Provider web pages and standard Windows dialogs have their own labels and language settings.
 
-対象版 / Version: [1.3.4（r215）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.4). 確認日 / Checked: 2026-10-12 (JST). 対応ソース / Matching source commit: `edda311322cb51375b795c8cb54034f0fba7029e` ([配布記録 / Provenance](PROVENANCE.json)).
+対象版 / Version: [1.3.5（r216）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.5). 確認日 / Checked: 2026-10-16 (JST). 対応ソース / Matching source commit: `5160af7e90516018312fa4dbd022b044aba2e324` ([配布記録 / Provenance](PROVENANCE.json)).
 
 [READMEへ / Back to README](README.md)
