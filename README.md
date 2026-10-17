@@ -4,9 +4,9 @@
 
 DLM Desktop is a local Windows library by Ertelun for organizing, finding and viewing digital works you keep on your PC.
 
-**1.3.7（r218）正式リリース / Stable release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
+**1.3.8（r219）正式リリース / Stable release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
 
-[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.7/DLM-Desktop-v1.3.7-r218-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.7) · [更新内容 / Release notes](RELEASE_NOTES-r218-JA-EN.md)
+[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.8/DLM-Desktop-v1.3.8-r219-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.8) · [更新内容 / Release notes](RELEASE_NOTES-r219-JA-EN.md)
 
 **[マニュアル / User manual](MANUAL.md)** · [日本語](manual/ja.md) · [English](manual/en.md)
 
@@ -62,7 +62,17 @@ These qualification screenshots use synthetic data and contain no real accounts,
 
 See [Provider Capabilities](PROVIDER_CAPABILITIES.md) and [Known Limitations](KNOWN_LIMITATIONS.md) for supported routes.
 
-## 1.3.7のセキュリティ対策 / Security mitigation in 1.3.7
+## 1.3.8の全画面削除・連続閲覧 / Fullscreen deletion and continuous viewing in 1.3.8
+
+全画面の **Shift+Delete** で表示中の作品の完全削除を確認できます。初期選択はキャンセルです。削除後は同じ全画面で、現在の絞り込みと表示順・ランダム設定に従って次の作品へ進みます。削除の差分更新と古い閲覧処理・更新予約のキャンセルにより、画像が消えたまま次が出ない問題に対処しました。
+
+**Shift+Delete in fullscreen** confirms permanent deletion of the current work. Cancel is selected by default. After success, viewing continues in the same window using the current filter and ordered/random mode. Targeted updates and cancellation of obsolete viewing work and refreshes address the blank view after deletion.
+
+削除中は進捗・経過時間を表示します。Escでライブラリに戻れますが、確認済みの削除は続行します。作品フォルダーの完全削除は元に戻せません。物理削除にかかる時間はファイル数やストレージに依存します。詳細は [今回のリリースノート](RELEASE_NOTES-r219-JA-EN.md) を参照してください。
+
+During deletion, progress and elapsed time are shown. Esc returns to the library while confirmed deletion continues. Permanent folder deletion cannot be undone; its duration depends on file count and storage. See the [release notes](RELEASE_NOTES-r219-JA-EN.md).
+
+## 1.3.7から引き継ぐセキュリティ対策 / Security mitigation retained from 1.3.7
 
 埋込みブラウザには **Microsoft Edge WebView2 Runtime 155.0.4283.60 以降**が必要です。古い版・確認不能な版では外部ページを開かず、更新を案内します。[Microsoft公式ページ](https://developer.microsoft.com/en-us/microsoft-edge/webview2/)からEvergreen Runtimeを更新し、DLMを再起動してください。ライブラリの整理・ローカル閲覧・手動取り込みは利用できます。
 
@@ -87,17 +97,17 @@ Includes the 1.3.4 navigation crash fix, previous feature fixes and Japanese/Eng
 
 ## 配布物の確認 / Verify the download
 
-配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.7) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
+配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.8) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
 
-The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.7). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
+The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.8). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
 
 ```text
-866a7038b0c1b8b890384fcaffa93b0ca72c869b942abbed2e94f2288265948a  DLM-Desktop-v1.3.7-r218-win-x64.zip
+27bf59a560a790efd03f48bf9bb22eb6d14023842bdd1e911c622833e100e51e  DLM-Desktop-v1.3.8-r219-win-x64.zip
 ```
 
-全22テストとWebView2起動制限49項目に加え、ZIP文字コード・展開18項目、100件・10万回の通知による進捗表示118項目を検証しました。画面遷移・翻訳・保存・ダウンロード・セキュリティの既存試験も含みます。詳細はRelease添付の検証記録と [PROVENANCE.json](PROVENANCE.json) にあります。
+全23テストと削除・連続閲覧1,255項目、WebView2起動制限49項目に加え、ZIP文字コード・展開18項目、100件・10万回の通知による進捗表示118項目を検証しました。画面遷移・翻訳・保存・ダウンロード・セキュリティの既存試験も含みます。詳細はRelease添付の検証記録と [PROVENANCE.json](PROVENANCE.json) にあります。
 
-Verification passed all 22 test projects, including 18 ZIP encoding/extraction checks and 118 real-WPF progress checks with 100 transfers and 100,000 notifications, plus existing navigation, localization, storage, download and security regressions. See the release verification asset and [PROVENANCE.json](PROVENANCE.json).
+Verification passed all 23 test projects, including 1,255 deletion/continuous-viewing checks, 49 browser admission checks, 18 ZIP encoding/extraction checks and 118 real-WPF progress checks with 100 transfers and 100,000 notifications, plus existing navigation, localization, storage, download and security regressions. See the release verification asset and [PROVENANCE.json](PROVENANCE.json).
 
 ## 利用と問い合わせ / Use and feedback
 

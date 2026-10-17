@@ -1,8 +1,8 @@
-# DLM Desktop 1.3.5 (r216) user manual
+# DLM Desktop 1.3.8 (r219) user manual
 
 [Manual home](../MANUAL.md) · [日本語](ja.md) · [README](../README.md)
 
-This manual covers Windows x64 version 1.3.5 (r216). Checked on October 16, 2026 (JST). Screen labels come from the XAML, presentation properties and localization functions in the latest source matching the distribution record: `5160af7e90516018312fa4dbd022b044aba2e324`. Code-formatted labels match the English interface. For sign-in, purchases and download initiation on provider websites, follow the provider's own interface.
+This manual covers Windows x64 version 1.3.8 (r219). Checked on October 16, 2026 (JST). Screen labels come from the XAML, presentation properties and localization functions in the latest source matching the distribution record: `c17445c3b63f9bbbab2ab8843c8c0462eef35024`. Code-formatted labels match the English interface. For sign-in, purchases and download initiation on provider websites, follow the provider's own interface.
 
 <a id="contents"></a>
 ## Contents: choose your task
@@ -30,7 +30,7 @@ These four steps take you from choosing a storage folder to downloading a suppor
 <a id="start"></a>
 ### 1. Launch the application
 
-1. Get the Windows x64 ZIP from the [current release page](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.5).
+1. Get the Windows x64 ZIP from the [current release page](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.8).
 2. Close any previously running DLM Desktop and extract the entire ZIP into a new, empty folder.
 3. Run `DoujinLibraryManagerDesktop.exe`. The adjacent `app` folder is also required.
 
@@ -329,6 +329,14 @@ Use `Continuous viewing` and `Previous work` / `Next work` for navigation betwee
 
 Toggle `Shuffle OFF` to make next-work navigation choose a random viewable work, excluding the current work, from the current filtered library results. Previous-work navigation remains in the normal order.
 
+### Delete the current work and continue in fullscreen (1.3.8+)
+
+Press `Shift+Delete` while viewing in fullscreen to confirm permanent deletion of the folder of the work currently being viewed. Cancel is selected by default. **Work files are permanently deleted without using the Recycle Bin.** Check the target before confirming.
+
+After success, viewing continues in the same fullscreen window using the current filter and ordered/random mode. Ordered viewing returns to the library at the end; no remaining candidates also returns to the library. Cancellation or failure restores the current work.
+
+During deletion, the current phase, deleted file count and elapsed time are shown. Press `Esc` or select `Return to Library` to leave viewing. A confirmed deletion continues after returning, so this does not cancel deletion. Physical deletion can still take time depending on file count and storage.
+
 <a id="media"></a>
 ### Play video or audio
 
@@ -463,6 +471,8 @@ See [Known Limitations](../KNOWN_LIMITATIONS.md) for scope and [Feedback](../FEE
 | Bookmark | `B` for images |
 | Fit to screen / 1:1 | `F` / `O` |
 | Full screen | `F11` |
+| Permanently delete the current work in fullscreen (with confirmation) | `Shift+Delete` |
+| Return to the library during deletion (confirmed deletion continues) | `Esc` |
 | Next / previous work | `Shift+PageDown` or `Shift+Space` / `Shift+PageUp`, when a target is available |
 | Close help, contents and full screen in that order; close the viewer when none is open | `Esc` |
 
