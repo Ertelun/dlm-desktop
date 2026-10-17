@@ -1,3 +1,5 @@
+**撤回済み / Withdrawn:** 1.3.6（r217）の配布は撤回しました。[1.3.7（r218）](RELEASE_NOTES-r218-JA-EN.md)を利用してください。 / Use 1.3.7/r218; this distribution is withdrawn.
+
 # DLM Desktop 1.3.6（r217）— WebView2セキュリティ対策
 
 埋込みブラウザは Microsoft Edge WebView2 Runtime **155.0.4283.60 以降**を必要とします。古い版や確認できない版では外部ページを開かず、Runtime更新とDLM再起動の案内を表示します。ライブラリの整理・閲覧と手動取り込みは引き続き利用できます。

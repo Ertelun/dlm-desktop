@@ -4,9 +4,9 @@
 
 DLM Desktop is a local Windows library by Ertelun for organizing, finding and viewing digital works you keep on your PC.
 
-**1.3.6（r217）正式リリース / Stable release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
+**1.3.7（r218）正式リリース / Stable release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
 
-[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.6/DLM-Desktop-v1.3.6-r217-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.6) · [更新内容 / Release notes](RELEASE_NOTES-r217-JA-EN.md)
+[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.7/DLM-Desktop-v1.3.7-r218-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.7) · [更新内容 / Release notes](RELEASE_NOTES-r218-JA-EN.md)
 
 **[マニュアル / User manual](MANUAL.md)** · [日本語](manual/ja.md) · [English](manual/en.md)
 
@@ -62,15 +62,15 @@ These qualification screenshots use synthetic data and contain no real accounts,
 
 See [Provider Capabilities](PROVIDER_CAPABILITIES.md) and [Known Limitations](KNOWN_LIMITATIONS.md) for supported routes.
 
-## 1.3.6のセキュリティ対策 / Security mitigation in 1.3.6
+## 1.3.7のセキュリティ対策 / Security mitigation in 1.3.7
 
 埋込みブラウザには **Microsoft Edge WebView2 Runtime 155.0.4283.60 以降**が必要です。古い版・確認不能な版では外部ページを開かず、更新を案内します。[Microsoft公式ページ](https://developer.microsoft.com/en-us/microsoft-edge/webview2/)からEvergreen Runtimeを更新し、DLMを再起動してください。ライブラリの整理・ローカル閲覧・手動取り込みは利用できます。
 
 The embedded browser requires **Microsoft Edge WebView2 Runtime 155.0.4283.60 or later**. Older or unrecognized versions cannot open external content. Update the Evergreen Runtime from the [official Microsoft page](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) and restart DLM. Library organization, local viewing and Manual Intake remain available.
 
-この対策はMicrosoftがCriticalと公表したSVG・メディア処理の問題に対応します。WebView2自体の同梱・自動インストールや、無関係な依存関係の更新は含みません。詳しくは [リリースノート](RELEASE_NOTES-r217-JA-EN.md)をご覧ください。
+この対策はMicrosoftがCriticalと公表したSVG・メディア処理の問題に対応します。WebView2自体の同梱・自動インストールや、無関係な依存関係の更新は含みません。詳しくは [リリースノート](RELEASE_NOTES-r218-JA-EN.md)をご覧ください。
 
-This mitigates the SVG/media issues Microsoft rates Critical. WebView2 remains an external shared Runtime. See the [release notes](RELEASE_NOTES-r217-JA-EN.md) for scope and recovery steps.
+This mitigates the SVG/media issues Microsoft rates Critical. WebView2 remains an external shared Runtime. See the [release notes](RELEASE_NOTES-r218-JA-EN.md) for scope and recovery steps.
 ## 1.3.5から引き継ぐ修正 / Fixes retained from 1.3.5
 
 多数の同時ダウンロードで進捗通知をまとめて画面負荷を軽減し、総サイズが不明な転送でも受信済み容量を表示します。遅れて届いた通知が待機・検証・キャンセルの表示を上書きする問題も修正しました。
@@ -87,12 +87,12 @@ Includes the 1.3.4 navigation crash fix, previous feature fixes and Japanese/Eng
 
 ## 配布物の確認 / Verify the download
 
-配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.6) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
+配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.7) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
 
-The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.6). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
+The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.7). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
 
 ```text
-be8820a0a0c95528ebb82b540d11ce52bad640ac80a526b384a8c1047f939d72  DLM-Desktop-v1.3.6-r217-win-x64.zip
+866a7038b0c1b8b890384fcaffa93b0ca72c869b942abbed2e94f2288265948a  DLM-Desktop-v1.3.7-r218-win-x64.zip
 ```
 
 全22テストとWebView2起動制限49項目に加え、ZIP文字コード・展開18項目、100件・10万回の通知による進捗表示118項目を検証しました。画面遷移・翻訳・保存・ダウンロード・セキュリティの既存試験も含みます。詳細はRelease添付の検証記録と [PROVENANCE.json](PROVENANCE.json) にあります。
