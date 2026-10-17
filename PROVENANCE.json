@@ -2,17 +2,17 @@
   "schema": "dlm-desktop-public-stable-v3",
   "product": "DLM Desktop",
   "publisher": "Ertelun",
-  "version": "1.3.5",
-  "revision": "r216",
+  "version": "1.3.6",
+  "revision": "r217",
   "stage": "Stable",
-  "releaseTag": "v1.3.5",
+  "releaseTag": "v1.3.6",
   "canonicalRepository": "Ertelun/dlm-desktop",
-  "releaseUrl": "https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.5",
+  "releaseUrl": "https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.6",
   "platform": "win-x64",
   "package": {
-    "file": "DLM-Desktop-v1.3.5-r216-win-x64.zip",
-    "sha256": "eddaa76d689c4e8c452f53041e31147b10624a7077313286f47fa6b6542e7476",
-    "size": 141323631,
+    "file": "DLM-Desktop-v1.3.6-r217-win-x64.zip",
+    "sha256": "be8820a0a0c95528ebb82b540d11ce52bad640ac80a526b384a8c1047f939d72",
+    "size": 141240251,
     "sdk": "10.0.402",
     "signing": "unsigned",
     "layout": [
@@ -20,21 +20,22 @@
       "README.txt",
       "app/"
     ],
-    "bundledRuntime": "10.0.12"
+    "bundledRuntime": "10.0.12",
+    "minimumExternalWebView2Runtime": "155.0.4283.60"
   },
   "source": {
     "repository": "tree-1508/Doujin-Library-Manager",
     "visibility": "private",
-    "commit": "5160af7e90516018312fa4dbd022b044aba2e324",
-    "localTag": "desktop-v1.3.5-r216",
-    "file": "DLM-Desktop-v1.3.5-r216-SOURCE.zip",
-    "sha256": "a707fe73bfe459325f559a215d1f5d410ebbdb3ec50aa49dac522b2da93c80dc",
-    "verifiedFiles": 243,
+    "commit": "cef32b2ee2b825e893becd2ea9f3974b5c28847b",
+    "localTag": "desktop-v1.3.6-r217",
+    "file": "DLM-Desktop-v1.3.6-r217-SOURCE.zip",
+    "sha256": "463887386bf8f82980065194a7ddbd92de5c031dff77ecdb026d96ffdc991826",
+    "verifiedFiles": 248,
     "publication": "Local committed source and archive retained by owner instruction; source is not uploaded to GitHub"
   },
-  "verificationFile": "DLM-Desktop-v1.3.5-r216-VERIFICATION.json",
+  "verificationFile": "DLM-Desktop-v1.3.6-r217-VERIFICATION.json",
   "verification": {
-    "strictTestProjects": 21,
+    "strictTestProjects": 22,
     "zipEncodingChecks": 18,
     "downloadProgressChecks": 118,
     "syntheticTransfers": 100,
@@ -51,14 +52,14 @@
     "packagedSmokeWindow": "PASS",
     "hostSelfTest": "PASS",
     "finalZipFilesByteMatched": 577,
-    "ownerTestBuild": "20261015-1",
-    "ownerVerification": "PASS",
     "warnings": 0,
-    "errors": 0
+    "errors": 0,
+    "browserRuntimeSecurityChecks": 49,
+    "fixedWebView2Smoke": "PASS; Microsoft-signed155.0.4283.62, exact final ZIP assembly, synthetic local HTML/SVG/media/DOM; no user profiles/accounts"
   },
-  "scope": "Local Windows validation and synthetic real-WPF/archive tests, with owner PASS on test build 20261015-1; no service-wide live certification or fresh dependency vulnerability audit is claimed.",
+  "scope": "Fresh local Windows validation:22 projects,49 WebView2 admission checks, final ZIP startup and5 exact-assembly regression runners,39 native probes, signed fixed Runtime smoke. No provider-wide live certification or malicious browser exploit reproduction. Other component advisories remain separately monitored.",
   "previousRelease": {
     "status": "Retained as a public historical release",
-    "tag": "v1.3.4"
+    "tag": "v1.3.5"
   }
 }
