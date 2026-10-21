@@ -1,8 +1,13 @@
-# DLM Desktop 1.3.8（r219）日本語マニュアル
+# DLM Desktop 1.3.9（r220）日本語マニュアル
+
+**1.3.9/r220：埋込みブラウザーはセキュリティ対策として一時停止しています。ライブラリ・ローカル閲覧・手動取り込みは利用できます。再開には今後の検証済みDLM正式版が必要です。WebView2の更新だけでは解除されません。**
+
+**The embedded browser is temporarily disabled in1.3.9/r220. Library organization, local viewing and Manual Intake remain available. Recovery requires a future reviewed DLM release; updating WebView2 alone does not lift the hold.**
+
 
 [マニュアル入口](../MANUAL.md) · [English](en.md) · [README](../README.md)
 
-Windows x64版 1.3.8（r219）が対象です。確認日：2026年10月17日（日本時間）。画面ラベルは配布記録に対応する最新ソース `c17445c3b63f9bbbab2ab8843c8c0462eef35024` のXAML・表示用プロパティ・日英ローカライズ処理に基づきます。コード表記は日本語設定での実際のラベルです。公式サイト内のログイン・購入・ダウンロード操作は、各サイトの画面に従ってください。
+Windows x64版 1.3.9（r220）が対象です。確認日：2026年10月21日（日本時間）。画面ラベルは配布記録に対応する最新ソース `1ae2c22d3106b028df73a29baaf979fb8f87ae9d` のXAML・表示用プロパティ・日英ローカライズ処理に基づきます。コード表記は日本語設定での実際のラベルです。公式サイト内のログイン・購入・ダウンロード操作は、各サイトの画面に従ってください。
 
 <a id="contents"></a>
 ## 目次：やりたいことから選ぶ
@@ -30,7 +35,7 @@ Windows x64版 1.3.8（r219）が対象です。確認日：2026年10月17日（
 <a id="start"></a>
 ### 1. アプリを起動する
 
-1. [最新版の配布ページ](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.8)からWindows x64 ZIPを取得します。
+1. [最新版の配布ページ](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.9)からWindows x64 ZIPを取得します。
 2. 以前のDLM Desktopを終了し、ZIP全体を新しい空のフォルダへ展開します。
 3. `DoujinLibraryManagerDesktop.exe` を起動します。隣にある `app` フォルダも必要です。
 
@@ -438,7 +443,7 @@ DLM内の確認と、専門ソフトで行う編集は別です。すべての�
 | 症状 | 確認すること |
 |---|---|
 | 保存先を設定するよう求められる | [ライブラリを指定](#library)。★保存先が接続されているか[設定](#roots)で確認 |
-| ブラウザが表示されない | WebView2 Runtimeが利用できるか、ZIP全体を展開して `app` をEXEの隣に置いているか確認 |
+| ブラウザが表示されない | 1.3.9/r220では安全のため一時停止中です。再開には今後の検証済みDLM正式版が必要です。ZIP全体を展開して `app` をEXEの隣に置いているか確認 |
 | ログインが拒否される | 公式の別ログイン方式や[外部ブラウザ](#browser)を使用。外部ブラウザのログインがDLMにも反映されるとは限らない |
 | 転送100%なのに作品がない | [DLセンター](#progress)で検証・展開・登録を確認。GOGは[受付確定](#gog)が必要 |
 | ZIPから展開した日本語の名前が文字化けする | 1.3.5以降で元ZIPから再展開。元ZIPがなければ作品詳細の[再ダウンロード](#redownload)で公式サイトから取得し直す。起動だけで既存の名前は修復されない |

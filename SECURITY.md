@@ -1,20 +1,29 @@
 # Security Policy
 
-Current supported distribution: **DLM Desktop 1.3.8 (r219), Windows x64**.
+Current supported distribution: **DLM Desktop1.3.9 (r220), Windows x64**.
 
-Canonical download: [Ertelun GitHub Release v1.3.8](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.8).
+Canonical download: [Ertelun GitHub Release v1.3.9](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.9).
 
-Package SHA-256: `27bf59a560a790efd03f48bf9bb22eb6d14023842bdd1e911c622833e100e51e`.
+Package SHA-256: 58e0fe07dff8b2d8d3f08d1a1e71443e1bf0726324e680669f498ee77a0ab23e.
 
-The embedded browser requires **Microsoft Edge WebView2 Runtime 155.0.4283.60 or later**. DLM 1.3.8 retains the 1.3.7 mitigation: it refuses older or unrecognized Runtime versions before opening external content and checks the selected environment again. This mitigates the Chromium SVG/media issues Microsoft rates Critical, CVE-2026-110148 and CVE-2026-110151. WebView2 remains an external, automatically updated shared Runtime. Obtain updates from the [official Microsoft WebView2 page](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) and restart DLM. Library organization, local viewing and Manual Intake remain available while the browser is paused.
+## Temporary embedded-browser hold
 
-Meeting this minimum does not certify the absence of other vulnerabilities. Keep Evergreen security updates enabled. The .NET Runtime and other dependency versions are retained; the release verification asset describes the actual validation scope.
+Chromium rates CVE-2026-113072 Critical (CISA CVSS3.1:9.6). A benign isolated observation through the1.3.8/r219 packaged admission code confirmed an unfixed prerequisite in WebView2 155.0.4283.62. No arbitrary-code-execution test was attempted.
 
-The ZIP is unsigned. Verify the official source and SHA-256. A checksum verifies package identity and does not by itself guarantee safety. Historical releases are retained for traceability; older browser admission behavior is not the recommended rollback for this security mitigation.
+[Microsoft's security notes](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security) say a security fix is being prepared. **DLM1.3.9/r220 blocks the embedded browser before Runtime discovery, browser profile creation or controller creation.** This is a product mitigation, not a patch to the WebView2 engine. No Runtime version or environment setting lifts the hold. Recovery requires a future reviewed DLM release after vendor fixes and validation.
 
-Please report sensitive vulnerabilities privately through GitHub **Security → Report a vulnerability**. Do not post credentials, tokens, private account information, purchased files or sensitive local paths in public issues. Private vulnerability reporting is enabled for this repository.
+Library organization, local viewing and Manual Intake remain available. Workflows requiring the embedded browser and browser cache management are temporarily unavailable. Close the old DLM and extract the complete ZIP into a new empty folder, then start the new EXE with app/ beside it. Existing libraries and settings remain usable.
 
-現在のサポート対象はDLM Desktop 1.3.8（r219）、Windows x64です。埋込みブラウザはWebView2 Runtime 155.0.4283.60以降で利用できます。古い版や確認できない版では外部ページを開きません。Microsoft公式のEvergreen Runtimeを更新してDLMを再起動してください。ライブラリと手動取り込みは引き続き利用できます。配布物のSHA-256と正式な配布元を確認してください。
+The earlier minimum Runtime155.0.4283.60 addressed SVG/media issues; it is not sufficient assurance for this new issue. Keep Evergreen updates enabled. Bundled .NET10.0.12, other dependencies and the verified Downloader Host are unchanged. This does not certify that every other dependency vulnerability is resolved.
 
-機密性のある脆弱性はGitHubのSecurity → Report a vulnerabilityから非公開で報告してください。認証情報、トークン、購入ファイル、機密のローカルパスなどを公開Issueへ投稿しないでください。
-The 1.3.6/r217 distribution is withdrawn after packaging review. Product source archives and debug symbol files are retained locally, outside the public distribution.
+All23 test projects,70 browser hold checks,6 exact-package regression runners, final ZIP startup checks and39 native parser probes passed with isolated synthetic data. The verification asset states the scope. Product source, source archives and debug information remain local.
+
+The ZIP is unsigned. Verify the official source and SHA-256. A checksum confirms identity, not safety. Historical releases remain for traceability.1.3.8/r219 and earlier lack this hold and are not the recommended security rollback.1.3.6/r217 remains withdrawn.
+
+Report sensitive vulnerabilities privately through GitHub **Security → Report a vulnerability**. Do not publish credentials, tokens, purchased files or sensitive local paths in issues.
+
+## 日本語
+
+現在のサポート対象は **DLM Desktop1.3.9（r220）** です。CVE-2026-113072への暫定対策として、埋込みブラウザーを起動前に一時停止します。ライブラリ・ローカル閲覧・手動取り込みは利用できます。WebView2の更新だけでは解除されません。再開にはMicrosoftの修正を確認し検証した今後のDLM正式版が必要です。
+
+旧DLMを終了し、ZIP全体を新しい空フォルダーに展開して起動してください。ソースとデバッグ情報は公開配布しません。機密性のある問題はGitHubの非公開の脆弱性報告を使用してください。

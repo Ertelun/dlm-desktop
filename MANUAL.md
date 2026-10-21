@@ -1,6 +1,11 @@
 # DLM Desktop マニュアル / User manual
 
-**DLM Desktop 1.3.8（r219） / Windows x64**
+**1.3.9/r220：埋込みブラウザーはセキュリティ対策として一時停止しています。ライブラリ・ローカル閲覧・手動取り込みは利用できます。再開には今後の検証済みDLM正式版が必要です。WebView2の更新だけでは解除されません。**
+
+**The embedded browser is temporarily disabled in1.3.9/r220. Library organization, local viewing and Manual Intake remain available. Recovery requires a future reviewed DLM release; updating WebView2 alone does not lift the hold.**
+
+
+**DLM Desktop 1.3.9（r220） / Windows x64**
 
 - [日本語マニュアル](manual/ja.md) — ライブラリの指定からダウンロード・閲覧までの基本操作と、目的別の詳しい操作。
 - [English manual](manual/en.md) — Essential steps from choosing a library through downloading and viewing, followed by detailed task-based instructions.
@@ -19,6 +24,6 @@
 
 Screen labels were checked against the matching XAML, presentation properties and Japanese/English localization functions. The application uses DLD, DLM and Library in different places. Code-formatted labels in each manual match that interface language. Provider web pages and standard Windows dialogs have their own labels and language settings.
 
-対象版 / Version: [1.3.8（r219）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.8). 確認日 / Checked: 2026-10-17 (JST). 対応ソース / Matching source commit: `c17445c3b63f9bbbab2ab8843c8c0462eef35024` ([配布記録 / Provenance](PROVENANCE.json)).
+対象版 / Version: [1.3.9（r220）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.9). 確認日 / Checked: 2026-10-21 (JST). 対応ソース / Matching source commit: `1ae2c22d3106b028df73a29baaf979fb8f87ae9d` ([配布記録 / Provenance](PROVENANCE.json)).
 
 [READMEへ / Back to README](README.md)

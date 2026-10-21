@@ -1,0 +1,277 @@
+{
+  "status": "PASS",
+  "stage": "final-runtime-zip-validation",
+  "product": "DLM Desktop",
+  "version": "1.3.9",
+  "revision": "r220",
+  "sdk": "10.0.402",
+  "bundled_runtime": "10.0.12",
+  "platform": "win-x64",
+  "signing": "unsigned",
+  "source_commit": "1ae2c22d3106b028df73a29baaf979fb8f87ae9d",
+  "source_manifest_sha256": "eff1ac2ef5e97a4c749d930ea8ce9f8f8255bb24d75a4cc2f1088fa777f8b53e",
+  "strict_test_projects_passed": 23,
+  "test_results": [
+    {
+      "project": "DlmDesktop.AutomaticSafeSnapshotContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.BrowserDownloadContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.BrowserRuntimeSecurityTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.CompactListRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.DownloadProgressRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.ImportPromotionContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.LibraryRelocationContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.LocalizationContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.LocalizationRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.LocalProvenanceContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.ManualIntakeContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.MembershipPostWorkContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.NavigationRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.SecurityBoundaryContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.SmokeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.UserStateBackupContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.ViewerDeletionRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.WatchFolderContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.ZipEncodingContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDownloader.HostContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDownloader.NetworkSafetyContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDownloader.ProviderCapabilityContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDownloader.StagingContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    }
+  ],
+  "browser_security_hold_checks": 70,
+  "embedded_browser": "temporarily disabled before Runtime discovery/profile/controller creation",
+  "recovery": "Future reviewed DLM recovery release required; WebView2 updates alone cannot lift this hold",
+  "host": {
+    "retained_from": "1.3.7/r218",
+    "file_version": "1.3.7.218",
+    "byte_identical": true
+  },
+  "isolated_user_data": true,
+  "real_user_libraries_used": false,
+  "restore": "Locked restore from local cache; no dependency upgrades. Daily online official vulnerability review retained separately.",
+  "scope": "Fresh synthetic Windows/WPF/security boundary tests. No live provider/account or arbitrary-code-execution test.",
+  "product_debug_symbols_published": false,
+  "handwritten_product_source_published": false,
+  "runtime_zip": "DLM-Desktop-v1.3.9-r220-win-x64.zip",
+  "runtime_zip_sha256": "58e0fe07dff8b2d8d3f08d1a1e71443e1bf0726324e680669f498ee77a0ab23e",
+  "runtime_zip_bytes": 140608914,
+  "final_zip_files_byte_matched": 575,
+  "packaged_self_test": "PASS",
+  "packaged_smoke_window": "PASS",
+  "host_self_test": "PASS",
+  "zip_self_test": "PASS",
+  "zip_smoke_window": "PASS",
+  "unicode_and_space_extraction_path": true,
+  "file_version": "1.3.9.220",
+  "product_version": "1.3.9",
+  "exact_zip_assembly_regressions": [
+    {
+      "project": "DlmDesktop.ViewerDeletionRuntimeTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    },
+    {
+      "project": "DlmDesktop.BrowserRuntimeSecurityTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    },
+    {
+      "project": "DlmDesktop.NavigationRuntimeTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    },
+    {
+      "project": "DlmDesktop.DownloadProgressRuntimeTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    },
+    {
+      "project": "DlmDesktop.ZipEncodingContractTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    },
+    {
+      "project": "DlmDesktop.LocalizationRuntimeTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    }
+  ],
+  "native_parser_probes": 39,
+  "native_parser_result": "PASS",
+  "browser_security_hold": {
+    "status": "PASS",
+    "exactPackageGate": true,
+    "checks": 70,
+    "profileCreated": false,
+    "controllerCreated": false,
+    "runtimeVersionBypass": false,
+    "recoveryRequiresFutureReviewedDlmRelease": true
+  },
+  "no_source_shipping": {
+    "status": "PASS",
+    "source_debug_files_in_zip": 0,
+    "embedded_product_source_records": 0,
+    "host_symbols_bundled": false,
+    "host_unchanged_from_r218": true
+  },
+  "test_environment": "Isolated synthetic data and bounded short temporary alias. Earlier failed preparation attempts retained locally; all final checks use corrected final source and final ZIP."
+}
