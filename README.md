@@ -4,13 +4,17 @@
 
 DLM Desktop is a local Windows library by Ertelun for organizing, finding and viewing digital works you keep on your PC.
 
-**1.3.8（r219）正式リリース / Stable release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
+**1.3.9（r220）セキュリティ正式版 / Stable security release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
 
-[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.8/DLM-Desktop-v1.3.8-r219-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.8) · [更新内容 / Release notes](RELEASE_NOTES-r219-JA-EN.md)
+[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.9/DLM-Desktop-v1.3.9-r220-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.9) · [更新内容 / Release notes](RELEASE_NOTES-r220-JA-EN.md)
 
 **[マニュアル / User manual](MANUAL.md)** · [日本語](manual/ja.md) · [English](manual/en.md)
 
 [開発支援のご案内 / Sponsorship information](SUPPORT.md) · **月額支援の申し込み・決済は未開始 / Monthly sponsorship signups and payments have not started**
+
+**1.3.9/r220：埋込みブラウザーはセキュリティ対策として一時停止しています。ライブラリ・ローカル閲覧・手動取り込みは利用できます。再開には今後の検証済みDLM正式版が必要です。WebView2の更新だけでは解除されません。**
+
+**The embedded browser is temporarily disabled in1.3.9/r220. Library organization, local viewing and Manual Intake remain available. Recovery requires a future reviewed DLM release; updating WebView2 alone does not lift the hold.**
 
 ## 起動方法 / Getting started
 
@@ -28,9 +32,9 @@ README.txt
 app/
 ```
 
-.NETランタイムを同梱しています。埋め込みブラウザにはMicrosoft Edge WebView2 Runtimeが必要です。詳細資料とライセンスはapp/docsにあります。既存のライブラリとユーザー設定を利用できます。
+.NETランタイムを同梱しています。埋込みブラウザーは今回のセキュリティ対策で一時停止しています。詳細資料とライセンスはapp/docsにあります。既存のライブラリとユーザー設定を利用できます。
 
-.NET is bundled. The embedded browser requires Microsoft Edge WebView2 Runtime. Documentation and licenses are in app/docs. Existing libraries and user settings remain usable.
+.NET is bundled. The embedded browser is temporarily disabled by this security mitigation. Documentation and licenses are in app/docs. Existing libraries and user settings remain usable.
 
 ## 言語 / Language
 
@@ -72,15 +76,14 @@ See [Provider Capabilities](PROVIDER_CAPABILITIES.md) and [Known Limitations](KN
 
 During deletion, progress and elapsed time are shown. Esc returns to the library while confirmed deletion continues. Permanent folder deletion cannot be undone; its duration depends on file count and storage. See the [release notes](RELEASE_NOTES-r219-JA-EN.md).
 
-## 1.3.7から引き継ぐセキュリティ対策 / Security mitigation retained from 1.3.7
+## 1.3.9のブラウザー一時停止 / Browser security hold in1.3.9
 
-埋込みブラウザには **Microsoft Edge WebView2 Runtime 155.0.4283.60 以降**が必要です。古い版・確認不能な版では外部ページを開かず、更新を案内します。[Microsoft公式ページ](https://developer.microsoft.com/en-us/microsoft-edge/webview2/)からEvergreen Runtimeを更新し、DLMを再起動してください。ライブラリの整理・ローカル閲覧・手動取り込みは利用できます。
+ChromiumのCritical CSS問題（CVE-2026-113072）に対応する暫定対策です。Microsoftの修正と復旧版DLMを検証するまで、版番号にかかわらず埋込みブラウザーを起動前に停止します。旧DLMを終了し、新しい空フォルダーにZIP全体を展開して起動してください。既存のライブラリと設定を利用できます。
 
-The embedded browser requires **Microsoft Edge WebView2 Runtime 155.0.4283.60 or later**. Older or unrecognized versions cannot open external content. Update the Evergreen Runtime from the [official Microsoft page](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) and restart DLM. Library organization, local viewing and Manual Intake remain available.
+This temporarily blocks the embedded browser for Critical Chromium CSS issue CVE-2026-113072. No Runtime version bypasses the hold. A future DLM recovery release must be reviewed after Microsoft's fix. Close the old DLM and extract the whole ZIP into a new empty folder. Existing libraries and settings remain usable.
 
-この対策はMicrosoftがCriticalと公表したSVG・メディア処理の問題に対応します。WebView2自体の同梱・自動インストールや、無関係な依存関係の更新は含みません。詳しくは [リリースノート](RELEASE_NOTES-r218-JA-EN.md)をご覧ください。
+[リリースノート / Release notes](RELEASE_NOTES-r220-JA-EN.md) · [Security Policy](SECURITY.md)
 
-This mitigates the SVG/media issues Microsoft rates Critical. WebView2 remains an external shared Runtime. See the [release notes](RELEASE_NOTES-r218-JA-EN.md) for scope and recovery steps.
 ## 1.3.5から引き継ぐ修正 / Fixes retained from 1.3.5
 
 多数の同時ダウンロードで進捗通知をまとめて画面負荷を軽減し、総サイズが不明な転送でも受信済み容量を表示します。遅れて届いた通知が待機・検証・キャンセルの表示を上書きする問題も修正しました。
@@ -97,12 +100,12 @@ Includes the 1.3.4 navigation crash fix, previous feature fixes and Japanese/Eng
 
 ## 配布物の確認 / Verify the download
 
-配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.8) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
+配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.9) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
 
-The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.8). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
+The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.9). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
 
 ```text
-27bf59a560a790efd03f48bf9bb22eb6d14023842bdd1e911c622833e100e51e  DLM-Desktop-v1.3.8-r219-win-x64.zip
+58e0fe07dff8b2d8d3f08d1a1e71443e1bf0726324e680669f498ee77a0ab23e  DLM-Desktop-v1.3.9-r220-win-x64.zip
 ```
 
 全23テストと削除・連続閲覧1,255項目、WebView2起動制限49項目に加え、ZIP文字コード・展開18項目、100件・10万回の通知による進捗表示118項目を検証しました。画面遷移・翻訳・保存・ダウンロード・セキュリティの既存試験も含みます。詳細はRelease添付の検証記録と [PROVENANCE.json](PROVENANCE.json) にあります。
