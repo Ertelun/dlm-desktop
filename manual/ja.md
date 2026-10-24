@@ -1,13 +1,13 @@
-# DLM Desktop 1.3.9（r220）日本語マニュアル
+# DLM Desktop 1.3.10（r221）日本語マニュアル
 
-**1.3.9/r220：埋込みブラウザーはセキュリティ対策として一時停止しています。ライブラリ・ローカル閲覧・手動取り込みは利用できます。再開には今後の検証済みDLM正式版が必要です。WebView2の更新だけでは解除されません。**
+**1.3.10/r221：埋込みブラウザーを再開しました。安定版のMicrosoft Edge WebView2 Runtime 156.0.4314.42以降が必要です。旧版・不明な版・プレビュー版は拒否します。作品の「アップデート確認」の失敗も修正しました。**
 
-**The embedded browser is temporarily disabled in1.3.9/r220. Library organization, local viewing and Manual Intake remain available. Recovery requires a future reviewed DLM release; updating WebView2 alone does not lift the hold.**
+**1.3.10/r221 restores embedded browsing with stable Microsoft Edge WebView2 Runtime156.0.4314.42 or later. Old, unknown and preview Runtimes are rejected. This release also fixes work update checks failing before the official page request.**
 
 
 [マニュアル入口](../MANUAL.md) · [English](en.md) · [README](../README.md)
 
-Windows x64版 1.3.9（r220）が対象です。確認日：2026年10月21日（日本時間）。画面ラベルは配布記録に対応する最新ソース `1ae2c22d3106b028df73a29baaf979fb8f87ae9d` のXAML・表示用プロパティ・日英ローカライズ処理に基づきます。コード表記は日本語設定での実際のラベルです。公式サイト内のログイン・購入・ダウンロード操作は、各サイトの画面に従ってください。
+Windows x64版 1.3.10（r221）が対象です。確認日：2026年10月24日（日本時間）。画面ラベルは配布記録に対応する最新ソース `f7e56c6c21a3465ecdcd07a44e2f559b2bc1e30f` のXAML・表示用プロパティ・日英ローカライズ処理に基づきます。コード表記は日本語設定での実際のラベルです。公式サイト内のログイン・購入・ダウンロード操作は、各サイトの画面に従ってください。
 
 <a id="contents"></a>
 ## 目次：やりたいことから選ぶ
@@ -35,11 +35,11 @@ Windows x64版 1.3.9（r220）が対象です。確認日：2026年10月21日（
 <a id="start"></a>
 ### 1. アプリを起動する
 
-1. [最新版の配布ページ](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.9)からWindows x64 ZIPを取得します。
+1. [最新版の配布ページ](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.10)からWindows x64 ZIPを取得します。
 2. 以前のDLM Desktopを終了し、ZIP全体を新しい空のフォルダへ展開します。
 3. `DoujinLibraryManagerDesktop.exe` を起動します。隣にある `app` フォルダも必要です。
 
-.NETは同梱されています。埋め込みブラウザの利用にはMicrosoft Edge WebView2 Runtimeが必要です。日本語以外で起動した場合は、[表示と言語](#language)で変更できます。
+.NETは同梱されています。埋め込みブラウザの利用には安定版Microsoft Edge WebView2 Runtime156.0.4314.42以降が必要です。日本語以外で起動した場合は、[表示と言語](#language)で変更できます。
 
 左側の移動先は次の4つです。先頭の○は未選択、●は現在の画面を示します。
 
@@ -443,7 +443,7 @@ DLM内の確認と、専門ソフトで行う編集は別です。すべての�
 | 症状 | 確認すること |
 |---|---|
 | 保存先を設定するよう求められる | [ライブラリを指定](#library)。★保存先が接続されているか[設定](#roots)で確認 |
-| ブラウザが表示されない | 1.3.9/r220では安全のため一時停止中です。再開には今後の検証済みDLM正式版が必要です。ZIP全体を展開して `app` をEXEの隣に置いているか確認 |
+| ブラウザが表示されない | 安定版WebView2 Runtime156.0.4314.42以降へ更新し、DLMを再起動してください。ZIP全体を展開して `app` をEXEの隣に置いているか確認 |
 | ログインが拒否される | 公式の別ログイン方式や[外部ブラウザ](#browser)を使用。外部ブラウザのログインがDLMにも反映されるとは限らない |
 | 転送100%なのに作品がない | [DLセンター](#progress)で検証・展開・登録を確認。GOGは[受付確定](#gog)が必要 |
 | ZIPから展開した日本語の名前が文字化けする | 1.3.5以降で元ZIPから再展開。元ZIPがなければ作品詳細の[再ダウンロード](#redownload)で公式サイトから取得し直す。起動だけで既存の名前は修復されない |
