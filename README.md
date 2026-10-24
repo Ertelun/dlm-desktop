@@ -4,17 +4,17 @@
 
 DLM Desktop is a local Windows library by Ertelun for organizing, finding and viewing digital works you keep on your PC.
 
-**1.3.9（r220）セキュリティ正式版 / Stable security release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
+**1.3.10（r221）正式版 / Stable release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
 
-[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.9/DLM-Desktop-v1.3.9-r220-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.9) · [更新内容 / Release notes](RELEASE_NOTES-r220-JA-EN.md)
+[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.10/DLM-Desktop-v1.3.10-r221-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.10) · [更新内容 / Release notes](RELEASE_NOTES-r221-JA-EN.md)
 
 **[マニュアル / User manual](MANUAL.md)** · [日本語](manual/ja.md) · [English](manual/en.md)
 
 [開発支援のご案内 / Sponsorship information](SUPPORT.md) · **月額支援の申し込み・決済は未開始 / Monthly sponsorship signups and payments have not started**
 
-**1.3.9/r220：埋込みブラウザーはセキュリティ対策として一時停止しています。ライブラリ・ローカル閲覧・手動取り込みは利用できます。再開には今後の検証済みDLM正式版が必要です。WebView2の更新だけでは解除されません。**
+**1.3.10/r221：埋込みブラウザーを再開しました。安定版のMicrosoft Edge WebView2 Runtime 156.0.4314.42以降が必要です。旧版・不明な版・プレビュー版は拒否します。作品の「アップデート確認」の失敗も修正しました。**
 
-**The embedded browser is temporarily disabled in1.3.9/r220. Library organization, local viewing and Manual Intake remain available. Recovery requires a future reviewed DLM release; updating WebView2 alone does not lift the hold.**
+**1.3.10/r221 restores embedded browsing with stable Microsoft Edge WebView2 Runtime156.0.4314.42 or later. Old, unknown and preview Runtimes are rejected. This release also fixes work update checks failing before the official page request.**
 
 ## 起動方法 / Getting started
 
@@ -32,9 +32,9 @@ README.txt
 app/
 ```
 
-.NETランタイムを同梱しています。埋込みブラウザーは今回のセキュリティ対策で一時停止しています。詳細資料とライセンスはapp/docsにあります。既存のライブラリとユーザー設定を利用できます。
+.NETランタイムを同梱しています。埋込みブラウザーには安定版WebView2 Runtime156.0.4314.42以降が必要です。詳細資料とライセンスはapp/docsにあります。既存のライブラリとユーザー設定を利用できます。
 
-.NET is bundled. The embedded browser is temporarily disabled by this security mitigation. Documentation and licenses are in app/docs. Existing libraries and user settings remain usable.
+.NET is bundled. The embedded browser requires stable WebView2 Runtime156.0.4314.42 or later. Documentation and licenses are in app/docs. Existing libraries and user settings remain usable.
 
 ## 言語 / Language
 
@@ -76,13 +76,17 @@ See [Provider Capabilities](PROVIDER_CAPABILITIES.md) and [Known Limitations](KN
 
 During deletion, progress and elapsed time are shown. Esc returns to the library while confirmed deletion continues. Permanent folder deletion cannot be undone; its duration depends on file count and storage. See the [release notes](RELEASE_NOTES-r219-JA-EN.md).
 
-## 1.3.9のブラウザー一時停止 / Browser security hold in1.3.9
+## 1.3.10のブラウザー再開と更新確認修正 / Browser recovery and update-check fix
 
-ChromiumのCritical CSS問題（CVE-2026-113072）に対応する暫定対策です。Microsoftの修正と復旧版DLMを検証するまで、版番号にかかわらず埋込みブラウザーを起動前に停止します。旧DLMを終了し、新しい空フォルダーにZIP全体を展開して起動してください。既存のライブラリと設定を利用できます。
+Microsoftの修正情報と隔離した実Runtimeでの検証に基づき、安定版WebView2 Runtime 156.0.4314.42以降で埋込みブラウザーを再開します。検出時と実Environment生成後に版を再確認し、旧版・不明な版・プレビュー版は拒否します。必要に応じて公式Runtimeを更新し、DLMを再起動してください。
 
-This temporarily blocks the embedded browser for Critical Chromium CSS issue CVE-2026-113072. No Runtime version bypasses the hold. A future DLM recovery release must be reviewed after Microsoft's fix. Close the old DLM and extract the whole ZIP into a new empty folder. Existing libraries and settings remain usable.
+Embedded browsing is restored with stable WebView2 Runtime 156.0.4314.42 or later after vendor review and isolated actual-Runtime validation. DLM checks the discovered and actual environment versions, rejecting old, unknown and preview Runtimes. Update the official Runtime if needed, then restart DLM.
 
-[リリースノート / Release notes](RELEASE_NOTES-r220-JA-EN.md) · [Security Policy](SECURITY.md)
+作品の「アップデート確認」が公式商品ページへの通信前に拒否される問題も修正しました。明示的な更新確認中だけ、選択した同一作品の公開ページを読み取ります。終了・失敗・キャンセル後は許可を残しません。
+
+The work update-check action now receives a temporary read-only scope for that selected product, fixing rejection before its official page request. The scope ends on completion, failure or cancellation.
+
+[リリースノート / Release notes](RELEASE_NOTES-r221-JA-EN.md) · [Security Policy](SECURITY.md)
 
 ## 1.3.5から引き継ぐ修正 / Fixes retained from 1.3.5
 
@@ -100,17 +104,17 @@ Includes the 1.3.4 navigation crash fix, previous feature fixes and Japanese/Eng
 
 ## 配布物の確認 / Verify the download
 
-配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.9) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
+配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.10) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
 
-The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.9). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
+The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.10). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
 
 ```text
-58e0fe07dff8b2d8d3f08d1a1e71443e1bf0726324e680669f498ee77a0ab23e  DLM-Desktop-v1.3.9-r220-win-x64.zip
+055435fe8348fa448ba368491186a8a658a41eb0a0dcc6e3f993bc75efc01ee9  DLM-Desktop-v1.3.10-r221-win-x64.zip
 ```
 
-全23テストと削除・連続閲覧1,255項目、WebView2起動制限49項目に加え、ZIP文字コード・展開18項目、100件・10万回の通知による進捗表示118項目を検証しました。画面遷移・翻訳・保存・ダウンロード・セキュリティの既存試験も含みます。詳細はRelease添付の検証記録と [PROVENANCE.json](PROVENANCE.json) にあります。
+全23テストと削除・連続閲覧1,255項目、WebView2起動制限53項目・作品の更新確認36項目に加え、ZIP文字コード・展開18項目、100件・10万回の通知による進捗表示118項目を検証しました。画面遷移・翻訳・保存・ダウンロード・セキュリティの既存試験も含みます。詳細はRelease添付の検証記録と [PROVENANCE.json](PROVENANCE.json) にあります。
 
-Verification passed all 23 test projects, including 1,255 deletion/continuous-viewing checks, 49 browser admission checks, 18 ZIP encoding/extraction checks and 118 real-WPF progress checks with 100 transfers and 100,000 notifications, plus existing navigation, localization, storage, download and security regressions. See the release verification asset and [PROVENANCE.json](PROVENANCE.json).
+Verification passed all 23 test projects, including 1,255 deletion/continuous-viewing checks, 53 browser admission checks, 36 work update-check assertions, 18 ZIP encoding/extraction checks and 118 real-WPF progress checks with 100 transfers and 100,000 notifications, plus existing navigation, localization, storage, download and security regressions. See the release verification asset and [PROVENANCE.json](PROVENANCE.json).
 
 ## 利用と問い合わせ / Use and feedback
 

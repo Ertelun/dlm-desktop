@@ -1,11 +1,11 @@
 # DLM Desktop マニュアル / User manual
 
-**1.3.9/r220：埋込みブラウザーはセキュリティ対策として一時停止しています。ライブラリ・ローカル閲覧・手動取り込みは利用できます。再開には今後の検証済みDLM正式版が必要です。WebView2の更新だけでは解除されません。**
+**1.3.10/r221：埋込みブラウザーを再開しました。安定版のMicrosoft Edge WebView2 Runtime 156.0.4314.42以降が必要です。旧版・不明な版・プレビュー版は拒否します。作品の「アップデート確認」の失敗も修正しました。**
 
-**The embedded browser is temporarily disabled in1.3.9/r220. Library organization, local viewing and Manual Intake remain available. Recovery requires a future reviewed DLM release; updating WebView2 alone does not lift the hold.**
+**1.3.10/r221 restores embedded browsing with stable Microsoft Edge WebView2 Runtime156.0.4314.42 or later. Old, unknown and preview Runtimes are rejected. This release also fixes work update checks failing before the official page request.**
 
 
-**DLM Desktop 1.3.9（r220） / Windows x64**
+**DLM Desktop 1.3.10（r221） / Windows x64**
 
 - [日本語マニュアル](manual/ja.md) — ライブラリの指定からダウンロード・閲覧までの基本操作と、目的別の詳しい操作。
 - [English manual](manual/en.md) — Essential steps from choosing a library through downloading and viewing, followed by detailed task-based instructions.
@@ -24,6 +24,6 @@
 
 Screen labels were checked against the matching XAML, presentation properties and Japanese/English localization functions. The application uses DLD, DLM and Library in different places. Code-formatted labels in each manual match that interface language. Provider web pages and standard Windows dialogs have their own labels and language settings.
 
-対象版 / Version: [1.3.9（r220）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.9). 確認日 / Checked: 2026-10-21 (JST). 対応ソース / Matching source commit: `1ae2c22d3106b028df73a29baaf979fb8f87ae9d` ([配布記録 / Provenance](PROVENANCE.json)).
+対象版 / Version: [1.3.10（r221）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.10). 確認日 / Checked: 2026-10-24 (JST). 対応ソース / Matching source commit: `f7e56c6c21a3465ecdcd07a44e2f559b2bc1e30f` ([配布記録 / Provenance](PROVENANCE.json)).
 
 [READMEへ / Back to README](README.md)

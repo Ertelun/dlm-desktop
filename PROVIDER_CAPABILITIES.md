@@ -1,8 +1,8 @@
 # Provider Capabilities — DLM Desktop 1.3.5
 
-**1.3.9/r220：埋込みブラウザーはセキュリティ対策として一時停止しています。ライブラリ・ローカル閲覧・手動取り込みは利用できます。再開には今後の検証済みDLM正式版が必要です。WebView2の更新だけでは解除されません。**
+**1.3.10/r221：埋込みブラウザーを再開しました。安定版のMicrosoft Edge WebView2 Runtime 156.0.4314.42以降が必要です。旧版・不明な版・プレビュー版は拒否します。作品の「アップデート確認」の失敗も修正しました。**
 
-**The embedded browser is temporarily disabled in1.3.9/r220. Library organization, local viewing and Manual Intake remain available. Recovery requires a future reviewed DLM release; updating WebView2 alone does not lift the hold.**
+**1.3.10/r221 restores embedded browsing with stable Microsoft Edge WebView2 Runtime156.0.4314.42 or later. Old, unknown and preview Runtimes are rejected. This release also fixes work update checks failing before the official page request.**
 
 
 ログイン、購入、ダウンロード開始は、ユーザー自身が各サービスの公式画面で操作します。取得できる配信形式を限定し、保存したファイルを検証してローカルライブラリへ登録します。
@@ -29,3 +29,9 @@ Protected, official-player-only, DRM-controlled and unsupported delivery modes r
 DLMは各サービスの公式アプリ・提携製品ではありません。全作品・全配信形式への対応やアカウント自動操作を保証するものではありません。
 
 DLM is not an official or affiliated provider application. Support is not universal across works or delivery modes and does not include provider-account automation.
+
+## Explicit work update checks / 作品のアップデート確認
+
+DMM/FANZA、DLsite、BOOTH、Gumroad、GOGでは、選択した登録済み1作品の公開商品ページに対する明示的な更新確認を許可します。更新日やローカルの比較日時が不明な場合、自動で再ダウンロードを決めません。これはバックグラウンド同期や作品一覧の自動取得を許可するものではありません。
+
+DMM/FANZA, DLsite, BOOTH, Gumroad and GOG permit an explicit public-page update check for one selected registered work. Missing official or local dates do not trigger an automatic redownload decision. This does not enable background synchronization or catalog enumeration.
