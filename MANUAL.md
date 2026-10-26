@@ -1,11 +1,11 @@
 # DLM Desktop マニュアル / User manual
 
-**1.3.10/r221：埋込みブラウザーを再開しました。安定版のMicrosoft Edge WebView2 Runtime 156.0.4314.42以降が必要です。旧版・不明な版・プレビュー版は拒否します。作品の「アップデート確認」の失敗も修正しました。**
+**1.3.11/r222：HTTP応答のBrotli自動展開を停止し、CVE-2026-111497への緩和策を適用しました。gzip・deflateの処理と既存機能を保持します。古いDLMを終了し、正式ZIP全体を新しい空フォルダーへ展開して起動してください。埋込みブラウザーには安定版WebView2 Runtime156.0.4314.42以降が必要です。**
 
-**1.3.10/r221 restores embedded browsing with stable Microsoft Edge WebView2 Runtime156.0.4314.42 or later. Old, unknown and preview Runtimes are rejected. This release also fixes work update checks failing before the official page request.**
+**1.3.11/r222 mitigates CVE-2026-111497 by disabling automatic HTTP Brotli decoding while retaining gzip, deflate and existing features. Close the old DLM and extract the full official ZIP into a new empty folder. Embedded browsing still requires stable WebView2 Runtime156.0.4314.42 or later.**
 
 
-**DLM Desktop 1.3.10（r221） / Windows x64**
+**DLM Desktop 1.3.11（r222） / Windows x64**
 
 - [日本語マニュアル](manual/ja.md) — ライブラリの指定からダウンロード・閲覧までの基本操作と、目的別の詳しい操作。
 - [English manual](manual/en.md) — Essential steps from choosing a library through downloading and viewing, followed by detailed task-based instructions.
@@ -24,6 +24,6 @@
 
 Screen labels were checked against the matching XAML, presentation properties and Japanese/English localization functions. The application uses DLD, DLM and Library in different places. Code-formatted labels in each manual match that interface language. Provider web pages and standard Windows dialogs have their own labels and language settings.
 
-対象版 / Version: [1.3.10（r221）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.10). 確認日 / Checked: 2026-10-24 (JST). 対応ソース / Matching source commit: `f7e56c6c21a3465ecdcd07a44e2f559b2bc1e30f` ([配布記録 / Provenance](PROVENANCE.json)).
+対象版 / Version: [1.3.11（r222）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.11). 確認日 / Checked: 2026-10-26 (JST). 対応ソース / Matching source commit: `537f6f52f513eb3a2d329bcf829aaedddf4e2335` ([配布記録 / Provenance](PROVENANCE.json)).
 
 [READMEへ / Back to README](README.md)
