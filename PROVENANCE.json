@@ -36,7 +36,7 @@
     "verifiedFiles": 258,
     "publication": "Local committed source and archive retained; never uploaded to GitHub"
   },
-  "verificationFile": "DLM-Desktop-v1.3.11-r222-VERIFICATION.json",
+  "verificationFile": "DLM-Desktop-v1.3.11-r222-VERIFICATION-v2.json",
   "verification": {
     "strictTestProjects": 23,
     "viewerDeletionChecks": 1255,
@@ -95,5 +95,9 @@
     "tag": "v1.3.6",
     "revision": "r217",
     "status": "Withdrawn; excluded from supported target"
+  },
+  "metadataCorrection": {
+    "supersedes": "DLM-Desktop-v1.3.11-r222-PUBLIC-PROVENANCE.json",
+    "reason": "References corrected verification-v2 metadata; runtime ZIP and source commit unchanged."
   }
 }

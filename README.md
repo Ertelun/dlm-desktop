@@ -76,7 +76,7 @@ See [Provider Capabilities](PROVIDER_CAPABILITIES.md) and [Known Limitations](KN
 
 During deletion, progress and elapsed time are shown. Esc returns to the library while confirmed deletion continues. Permanent folder deletion cannot be undone; its duration depends on file count and storage. See the [release notes](RELEASE_NOTES-r219-JA-EN.md).
 
-## 1.3.11のブラウザー再開と更新確認修正 / Browser recovery and update-check fix
+## 1.3.10から引き継ぐブラウザー再開と更新確認修正 / Browser recovery and update-check fix
 
 Microsoftの修正情報と隔離した実Runtimeでの検証に基づき、安定版WebView2 Runtime 156.0.4314.42以降で埋込みブラウザーを再開します。検出時と実Environment生成後に版を再確認し、旧版・不明な版・プレビュー版は拒否します。必要に応じて公式Runtimeを更新し、DLMを再起動してください。
 
@@ -109,7 +109,7 @@ Includes the 1.3.4 navigation crash fix, previous feature fixes and Japanese/Eng
 The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.11). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
 
 ```text
-055435fe8348fa448ba368491186a8a658a41eb0a0dcc6e3f993bc75efc01ee9  DLM-Desktop-v1.3.11-r222-win-x64.zip
+a785a47553ce4a09a17d4a920c0ed67e1267e3418a727fb1880ecbbf9bb08e0d  DLM-Desktop-v1.3.11-r222-win-x64.zip
 ```
 
 全23テストと削除・連続閲覧1,255項目、WebView2起動制限53項目・作品の更新確認36項目に加え、ZIP文字コード・展開18項目、100件・10万回の通知による進捗表示118項目を検証しました。画面遷移・翻訳・保存・ダウンロード・セキュリティの既存試験も含みます。詳細はRelease添付の検証記録と [PROVENANCE.json](PROVENANCE.json) にあります。
