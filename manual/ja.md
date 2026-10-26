@@ -1,13 +1,13 @@
-# DLM Desktop 1.3.10（r221）日本語マニュアル
+# DLM Desktop 1.3.11（r222）日本語マニュアル
 
-**1.3.10/r221：埋込みブラウザーを再開しました。安定版のMicrosoft Edge WebView2 Runtime 156.0.4314.42以降が必要です。旧版・不明な版・プレビュー版は拒否します。作品の「アップデート確認」の失敗も修正しました。**
+**1.3.11/r222：HTTP応答のBrotli自動展開を停止し、CVE-2026-111497への緩和策を適用しました。gzip・deflateの処理と既存機能を保持します。古いDLMを終了し、正式ZIP全体を新しい空フォルダーへ展開して起動してください。埋込みブラウザーには安定版WebView2 Runtime156.0.4314.42以降が必要です。**
 
-**1.3.10/r221 restores embedded browsing with stable Microsoft Edge WebView2 Runtime156.0.4314.42 or later. Old, unknown and preview Runtimes are rejected. This release also fixes work update checks failing before the official page request.**
+**1.3.11/r222 mitigates CVE-2026-111497 by disabling automatic HTTP Brotli decoding while retaining gzip, deflate and existing features. Close the old DLM and extract the full official ZIP into a new empty folder. Embedded browsing still requires stable WebView2 Runtime156.0.4314.42 or later.**
 
 
 [マニュアル入口](../MANUAL.md) · [English](en.md) · [README](../README.md)
 
-Windows x64版 1.3.10（r221）が対象です。確認日：2026年10月24日（日本時間）。画面ラベルは配布記録に対応する最新ソース `f7e56c6c21a3465ecdcd07a44e2f559b2bc1e30f` のXAML・表示用プロパティ・日英ローカライズ処理に基づきます。コード表記は日本語設定での実際のラベルです。公式サイト内のログイン・購入・ダウンロード操作は、各サイトの画面に従ってください。
+Windows x64版 1.3.11（r222）が対象です。確認日：2026年10月26日（日本時間）。画面ラベルは配布記録に対応する最新ソース `537f6f52f513eb3a2d329bcf829aaedddf4e2335` のXAML・表示用プロパティ・日英ローカライズ処理に基づきます。コード表記は日本語設定での実際のラベルです。公式サイト内のログイン・購入・ダウンロード操作は、各サイトの画面に従ってください。
 
 <a id="contents"></a>
 ## 目次：やりたいことから選ぶ
@@ -35,7 +35,7 @@ Windows x64版 1.3.10（r221）が対象です。確認日：2026年10月24日�
 <a id="start"></a>
 ### 1. アプリを起動する
 
-1. [最新版の配布ページ](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.10)からWindows x64 ZIPを取得します。
+1. [最新版の配布ページ](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.11)からWindows x64 ZIPを取得します。
 2. 以前のDLM Desktopを終了し、ZIP全体を新しい空のフォルダへ展開します。
 3. `DoujinLibraryManagerDesktop.exe` を起動します。隣にある `app` フォルダも必要です。
 
