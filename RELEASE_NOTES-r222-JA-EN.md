@@ -35,3 +35,7 @@ Formal publication requires fresh23-project validation, exact-final-package regr
 - https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/2026-Oct
 
 Release: https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.11
+
+
+2026-10-26 metadata correction: the runtime ZIP is unchanged. The original verification asset mistyped FileVersion as 1.3.11.221; the actual validated EXE is 1.3.11.222. Use VERIFICATION-v2, PUBLIC-PROVENANCE-v2 and SHA256SUMS-v2 below. The original metadata assets are retained as historical records and are superseded. The README ZIP hash has also been corrected to the published SHA256SUMS value.
+資料訂正：配布ZIPは変更していません。検証資料のFileVersion転記ミスとREADMEのハッシュ表記を訂正しました。最新版の資料は末尾v2の3ファイルです。旧資料は履歴として保持しています。
