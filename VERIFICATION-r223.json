@@ -1,0 +1,278 @@
+{
+  "status": "PASS",
+  "stage": "final-runtime-zip-validation",
+  "version": "1.3.12",
+  "revision": "r223",
+  "sdk": "10.0.402",
+  "bundled_runtime": "10.0.12",
+  "platform": "win-x64",
+  "signing": "unsigned",
+  "source_commit": "f591dc6ca15e0de03544d6c418573252ce7e2a2f",
+  "strict_test_projects_passed": 23,
+  "test_results": [
+    {
+      "project": "DlmDesktop.AutomaticSafeSnapshotContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.BrowserDownloadContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.BrowserRuntimeSecurityTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.CompactListRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.DownloadProgressRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.ImportPromotionContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.LibraryRelocationContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.LocalizationContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.LocalizationRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.LocalProvenanceContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.ManualIntakeContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.MembershipPostWorkContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.NavigationRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.SecurityBoundaryContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.SmokeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.UserStateBackupContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.ViewerDeletionRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.WatchFolderContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.ZipEncodingContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDownloader.HostContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDownloader.NetworkSafetyContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDownloader.ProviderCapabilityContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDownloader.StagingContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolationVerified": true
+    }
+  ],
+  "http_decompression_checks": 85,
+  "http_brotli_mitigation": "CVE-2026-111497; gzip/deflate retained, br not negotiated or decoded",
+  "browser_admission_checks": 79,
+  "work_update_check_assertions": 36,
+  "minimum_stable_webview2_runtime": null,
+  "retained_future_runtime_floor": "156.0.4314.42",
+  "embedded_browser": "temporary-security-hold-before-environment-creation",
+  "downloader_host": {
+    "retained_from": "1.3.7/r218",
+    "byte_identical": true
+  },
+  "real_user_libraries_used": false,
+  "real_accounts_used": false,
+  "product_source_or_debug_published": false,
+  "runtime_zip": "DLM-Desktop-v1.3.12-r223-win-x64.zip",
+  "runtime_zip_sha256": "50e1b231c6dd86047f0e3090bf79a8b32e1705be5e3353d7811301148ec31c4e",
+  "runtime_zip_bytes": 140649926,
+  "final_zip_files_byte_matched": 581,
+  "file_version": "1.3.12.223",
+  "product_version": "1.3.12",
+  "packaged_self_test": "PASS",
+  "packaged_smoke_window": "PASS",
+  "host_self_test": "PASS",
+  "zip_self_test": "PASS",
+  "zip_smoke_window": "PASS",
+  "unicode_and_space_extraction_path": true,
+  "exact_zip_assembly_regressions": [
+    {
+      "project": "DlmDesktop.ViewerDeletionRuntimeTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    },
+    {
+      "project": "DlmDesktop.BrowserRuntimeSecurityTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    },
+    {
+      "project": "DlmDesktop.NavigationRuntimeTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    },
+    {
+      "project": "DlmDesktop.DownloadProgressRuntimeTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    },
+    {
+      "project": "DlmDesktop.ZipEncodingContractTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    },
+    {
+      "project": "DlmDesktop.LocalizationRuntimeTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    }
+  ],
+  "native_parser_probes": 39,
+  "native_parser_result": "PASS",
+  "browser_security_hold_checks": 79,
+  "browser_security_hold": "PASS; actual exact-package gate blocks all versions before discovery/profile/environment/controller",
+  "no_source_shipping": {
+    "status": "PASS",
+    "source_debug_files_in_zip": 0,
+    "embedded_product_source_records": 0,
+    "checked_PE_files": 4,
+    "host_symbols_bundled": false,
+    "host_unchanged_from_r218": true
+  },
+  "baseline_browser_witness": {
+    "version": "1.3.11/r222",
+    "actualRuntime": "156.0.4314.50",
+    "exactPackagedGate": true,
+    "syntheticHtmlLayoutCanvasFileApi": true,
+    "networkRequestsBlocked": true,
+    "exploitAttempted": false,
+    "scope": "Vendor Critical classification and shared-engine reachability inference; individual FileSystem conditions not reproduced."
+  },
+  "limitations": "Application browser-path hold, not external-engine patch or blanket dependency safety. No real user libraries/accounts/purchases/downloads; no exploit/RCE tests. SDK10.0.402 restored in isolated workspace because system SDK changed; productSDK/runtime/dependencies unchanged."
+}

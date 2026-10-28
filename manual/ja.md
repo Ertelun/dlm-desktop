@@ -1,13 +1,13 @@
-# DLM Desktop 1.3.11（r222）日本語マニュアル
+# DLM Desktop 1.3.12（r223）日本語マニュアル
 
-**1.3.11/r222：HTTP応答のBrotli自動展開を停止し、CVE-2026-111497への緩和策を適用しました。gzip・deflateの処理と既存機能を保持します。古いDLMを終了し、正式ZIP全体を新しい空フォルダーへ展開して起動してください。埋込みブラウザーには安定版WebView2 Runtime156.0.4314.42以降が必要です。**
+**1.3.12/r223：Chromiumの新しいCritical問題への緩和策として、埋込みブラウザーを一時停止しています。ライブラリ整理・検索・ローカル閲覧・手動取り込みは利用できます。ブラウザーを必要とする操作とブラウザーキャッシュ管理は停止中です。DLMを終了し、正式ZIP全体を新しい空フォルダーへ展開して起動してください。再開には検証済みの修正版DLMが必要で、WebView2の更新だけでは解除されません。前版のHTTP Brotli対策は維持しています。**
 
-**1.3.11/r222 mitigates CVE-2026-111497 by disabling automatic HTTP Brotli decoding while retaining gzip, deflate and existing features. Close the old DLM and extract the full official ZIP into a new empty folder. Embedded browsing still requires stable WebView2 Runtime156.0.4314.42 or later.**
+**1.3.12/r223 temporarily disables the embedded browser to mitigate new Critical Chromium issues. Library organization, search, local viewing and Manual Intake remain available. Browser-dependent provider workflows and browser cache management are paused. Close DLM and extract the full official ZIP into a new empty folder. Recovery requires a reviewed DLM release; updating WebView2 alone does not lift the hold. The previous HTTP Brotli mitigation is retained.**
 
 
 [マニュアル入口](../MANUAL.md) · [English](en.md) · [README](../README.md)
 
-Windows x64版 1.3.11（r222）が対象です。確認日：2026年10月26日（日本時間）。画面ラベルは配布記録に対応する最新ソース `537f6f52f513eb3a2d329bcf829aaedddf4e2335` のXAML・表示用プロパティ・日英ローカライズ処理に基づきます。コード表記は日本語設定での実際のラベルです。公式サイト内のログイン・購入・ダウンロード操作は、各サイトの画面に従ってください。
+Windows x64版 1.3.12（r223）が対象です。確認日：2026年10月26日（日本時間）。画面ラベルは配布記録に対応する最新ソース `f591dc6ca15e0de03544d6c418573252ce7e2a2f` のXAML・表示用プロパティ・日英ローカライズ処理に基づきます。コード表記は日本語設定での実際のラベルです。公式サイト内のログイン・購入・ダウンロード操作は、各サイトの画面に従ってください。
 
 <a id="contents"></a>
 ## 目次：やりたいことから選ぶ
@@ -35,7 +35,7 @@ Windows x64版 1.3.11（r222）が対象です。確認日：2026年10月26日�
 <a id="start"></a>
 ### 1. アプリを起動する
 
-1. [最新版の配布ページ](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.11)からWindows x64 ZIPを取得します。
+1. [最新版の配布ページ](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.12)からWindows x64 ZIPを取得します。
 2. 以前のDLM Desktopを終了し、ZIP全体を新しい空のフォルダへ展開します。
 3. `DoujinLibraryManagerDesktop.exe` を起動します。隣にある `app` フォルダも必要です。
 
