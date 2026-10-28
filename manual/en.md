@@ -1,13 +1,13 @@
-# DLM Desktop 1.3.11 (r222) user manual
+# DLM Desktop 1.3.12 (r223) user manual
 
-**1.3.11/r222：HTTP応答のBrotli自動展開を停止し、CVE-2026-111497への緩和策を適用しました。gzip・deflateの処理と既存機能を保持します。古いDLMを終了し、正式ZIP全体を新しい空フォルダーへ展開して起動してください。埋込みブラウザーには安定版WebView2 Runtime156.0.4314.42以降が必要です。**
+**1.3.12/r223：Chromiumの新しいCritical問題への緩和策として、埋込みブラウザーを一時停止しています。ライブラリ整理・検索・ローカル閲覧・手動取り込みは利用できます。ブラウザーを必要とする操作とブラウザーキャッシュ管理は停止中です。DLMを終了し、正式ZIP全体を新しい空フォルダーへ展開して起動してください。再開には検証済みの修正版DLMが必要で、WebView2の更新だけでは解除されません。前版のHTTP Brotli対策は維持しています。**
 
-**1.3.11/r222 mitigates CVE-2026-111497 by disabling automatic HTTP Brotli decoding while retaining gzip, deflate and existing features. Close the old DLM and extract the full official ZIP into a new empty folder. Embedded browsing still requires stable WebView2 Runtime156.0.4314.42 or later.**
+**1.3.12/r223 temporarily disables the embedded browser to mitigate new Critical Chromium issues. Library organization, search, local viewing and Manual Intake remain available. Browser-dependent provider workflows and browser cache management are paused. Close DLM and extract the full official ZIP into a new empty folder. Recovery requires a reviewed DLM release; updating WebView2 alone does not lift the hold. The previous HTTP Brotli mitigation is retained.**
 
 
 [Manual home](../MANUAL.md) · [日本語](ja.md) · [README](../README.md)
 
-This manual covers Windows x64 version 1.3.11 (r222). Checked on October 26, 2026 (JST). Screen labels come from the XAML, presentation properties and localization functions in the latest source matching the distribution record: `537f6f52f513eb3a2d329bcf829aaedddf4e2335`. Code-formatted labels match the English interface. For sign-in, purchases and download initiation on provider websites, follow the provider's own interface.
+This manual covers Windows x64 version 1.3.12 (r223). Checked on October 26, 2026 (JST). Screen labels come from the XAML, presentation properties and localization functions in the latest source matching the distribution record: `f591dc6ca15e0de03544d6c418573252ce7e2a2f`. Code-formatted labels match the English interface. For sign-in, purchases and download initiation on provider websites, follow the provider's own interface.
 
 <a id="contents"></a>
 ## Contents: choose your task
@@ -35,7 +35,7 @@ These four steps take you from choosing a storage folder to downloading a suppor
 <a id="start"></a>
 ### 1. Launch the application
 
-1. Get the Windows x64 ZIP from the [current release page](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.11).
+1. Get the Windows x64 ZIP from the [current release page](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.12).
 2. Close any previously running DLM Desktop and extract the entire ZIP into a new, empty folder.
 3. Run `DoujinLibraryManagerDesktop.exe`. The adjacent `app` folder is also required.
 
