@@ -1,0 +1,444 @@
+{
+  "status": "PASS",
+  "stage": "final-runtime-zip-validation",
+  "version": "1.3.14",
+  "revision": "r225",
+  "source_commit": "644e9139e08cb33592f35c518d683cfef8728763",
+  "sdk": "10.0.402",
+  "main_runtime": "10.0.14",
+  "bundled_runtime": "main10.0.14; retained r218 Downloader Host10.0.12",
+  "strict_test_projects_passed": 23,
+  "test_results": [
+    {
+      "project": "DlmDesktop.AutomaticSafeSnapshotContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-00",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.BrowserDownloadContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-01",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.BrowserRuntimeSecurityTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-02",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.CompactListRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-03",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.DownloadProgressRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-04",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.ImportPromotionContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-05",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.LibraryRelocationContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-06",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.LocalizationContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-07",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.LocalizationRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-08",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.LocalProvenanceContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-09",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.ManualIntakeContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-10",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.MembershipPostWorkContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-11",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.NavigationRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-12",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.SecurityBoundaryContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-13",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.SmokeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-14",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.UserStateBackupContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-15",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.ViewerDeletionRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-16",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.WatchFolderContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-17",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDesktop.ZipEncodingContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-18",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDownloader.HostContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-19",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDownloader.NetworkSafetyContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-20",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDownloader.ProviderCapabilityContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-21",
+      "isolationVerified": true
+    },
+    {
+      "project": "DlmDownloader.StagingContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "exitCode": 0,
+      "isolatedDataRoot": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\u\\test-22",
+      "isolationVerified": true
+    }
+  ],
+  "http_decompression_checks": 93,
+  "browser_admission_checks": 59,
+  "browser_live_checks": 10,
+  "work_update_check_assertions": 36,
+  "minimum_stable_webview2_runtime": "156.0.4314.58",
+  "embedded_browser": "restored_with_reviewed_stable_minimum_and_actual_environment_recheck",
+  "officialWebView2Evidence": {
+    "checkedJst": "2026-10-31T11:00:37.715049+09:00",
+    "minimumStable": "156.0.4314.58",
+    "fixedCves": [
+      "CVE-2026-118306",
+      "CVE-2026-118331",
+      "CVE-2026-118348",
+      "CVE-2026-118344",
+      "CVE-2026-76024"
+    ],
+    "vendorReleaseMappings": [
+      {
+        "ReleaseId": 133795,
+        "Platform": "Windows",
+        "Architecture": "x64",
+        "CVEs": [
+          "CVE-2026-119260",
+          "CVE-2026-119261",
+          "CVE-2026-119262",
+          "CVE-2026-119263",
+          "CVE-2026-119264",
+          "CVE-2026-119265",
+          "CVE-2026-119266",
+          "CVE-2026-119267",
+          "CVE-2026-119268",
+          "CVE-2026-119269",
+          "CVE-2026-119270",
+          "CVE-2026-119271",
+          "CVE-2026-119272",
+          "CVE-2026-76024",
+          "CVE-2026-76026",
+          "CVE-2026-76027",
+          "CVE-2026-76028",
+          "CVE-2026-76029",
+          "CVE-2026-76030",
+          "CVE-2026-76031"
+        ],
+        "SeverityLevel": "Critical",
+        "ProductVersion": "156.0.4314.58",
+        "Artifacts": [
+          {
+            "ArtifactName": "msi",
+            "Location": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/d0a4e3fc-604a-4d46-8fd6-e90de2df72f6/MicrosoftEdgeEnterpriseX64.msi",
+            "Hash": "784051EBFCC8B28569127F381D515766866C4925312D35C52293382B97EEF2FB",
+            "HashAlgorithm": "SHA256",
+            "SizeInBytes": 215449600
+          }
+        ],
+        "PublishedTime": "2026-10-30T20:25:00",
+        "ExpectedExpiryDate": "2027-10-30T19:56:00"
+      },
+      {
+        "ReleaseId": 133693,
+        "Platform": "Windows",
+        "Architecture": "x64",
+        "CVEs": [
+          "CVE-2026-118304",
+          "CVE-2026-118305",
+          "CVE-2026-118306",
+          "CVE-2026-118307",
+          "CVE-2026-118308",
+          "CVE-2026-118310",
+          "CVE-2026-118311",
+          "CVE-2026-118312",
+          "CVE-2026-118313",
+          "CVE-2026-118315",
+          "CVE-2026-118316",
+          "CVE-2026-118317",
+          "CVE-2026-118318",
+          "CVE-2026-118319",
+          "CVE-2026-118320",
+          "CVE-2026-118327",
+          "CVE-2026-118328",
+          "CVE-2026-118330",
+          "CVE-2026-118331",
+          "CVE-2026-118332",
+          "CVE-2026-118333",
+          "CVE-2026-118334",
+          "CVE-2026-118337",
+          "CVE-2026-118338",
+          "CVE-2026-118339",
+          "CVE-2026-118340",
+          "CVE-2026-118341",
+          "CVE-2026-118342",
+          "CVE-2026-118343",
+          "CVE-2026-118344",
+          "CVE-2026-118345",
+          "CVE-2026-118346",
+          "CVE-2026-118347",
+          "CVE-2026-118348",
+          "CVE-2026-118349",
+          "CVE-2026-118350",
+          "CVE-2026-118351",
+          "CVE-2026-118352",
+          "CVE-2026-118353",
+          "CVE-2026-118355",
+          "CVE-2026-118356",
+          "CVE-2026-118357",
+          "CVE-2026-118358",
+          "CVE-2026-118359"
+        ],
+        "SeverityLevel": "Critical",
+        "ProductVersion": "156.0.4314.56",
+        "Artifacts": [
+          {
+            "ArtifactName": "msi",
+            "Location": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/584a7fa5-95e4-442e-ae43-13c995ebcb49/MicrosoftEdgeEnterpriseX64.msi",
+            "Hash": "B6C7186C05BC8531CD9CD2D012A597EF17FDD3E2515DE7EBB223AB79E9014C8E",
+            "HashAlgorithm": "SHA256",
+            "SizeInBytes": 215433216
+          }
+        ],
+        "PublishedTime": "2026-10-29T23:33:00",
+        "ExpectedExpiryDate": "2027-10-29T23:03:00"
+      }
+    ],
+    "actualFixedRuntimeFolder": "H:\\chatgpt\\security-monitor\\dlm-desktop\\r225\\webview2-fixed\\Microsoft.WebView2.FixedVersionRuntime.156.0.4314.58.x64",
+    "cabSha256": "857dcfd6f7035508a29645fa2978c3a6a841f220df77cc366d318894e19f4792",
+    "cabBytes": 310195262,
+    "signedFiles": [
+      {
+        "status": "Valid",
+        "signer": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+        "version": "156.0.4314.58",
+        "file": "msedgewebview2.exe",
+        "sha256": "8b6fabdf9f4ebb331cb7325bb9947e4e3f9a2b5345602feeacf277b1f9f355be"
+      },
+      {
+        "status": "Valid",
+        "signer": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+        "version": "156.0.4314.58",
+        "file": "msedge.dll",
+        "sha256": "033d957e39d32aeca0f4b457b325ea8829306c3d9324da05c7cf5378acff51ae"
+      }
+    ],
+    "officialDownloadSource": {
+      "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/b7919cc9-680d-4253-bf32-732988e68aa6/Microsoft.WebView2.FixedVersionRuntime.156.0.4314.58.x64.cab",
+      "officialPage": "https://developer.microsoft.com/en-us/microsoft-edge/webview2/",
+      "version": "156.0.4314.58"
+    },
+    "distributionRule": "Official WebView2 distribution docs: receives same EdgeStable security updates; official same-version fixedRuntime verified",
+    "systemRuntimeInstalled": false,
+    "sourceUrl": "https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/distribution"
+  },
+  "changedRuntimeFiles": [],
+  "runtimeAndUnrelatedDependencies": "Byte-identical to r224 official-runtime/signed-pack verified files; no framework/package/SDK update",
+  "changedProductFiles": [
+    "DlmDesktop.Core.dll",
+    "DoujinLibraryManagerDesktop.deps.json",
+    "DoujinLibraryManagerDesktop.dll"
+  ],
+  "downloader_host": {
+    "retained_from": "1.3.7/r218",
+    "byte_identical": true,
+    "runtime": "10.0.12"
+  },
+  "real_user_libraries_used": false,
+  "real_accounts_used": false,
+  "product_source_or_debug_published": false,
+  "runtime_zip": "DLM-Desktop-v1.3.14-r225-win-x64.zip",
+  "runtime_zip_sha256": "043f923d6c29ead468736d32c29f4eacee575e5dbfe2c7b17570f6068af35bbb",
+  "runtime_zip_bytes": 141309151,
+  "final_zip_files_byte_matched": 585,
+  "file_version": "1.3.14.225",
+  "product_version": "1.3.14",
+  "packaged_self_test": "PASS",
+  "packaged_smoke_window": "PASS",
+  "host_self_test": "PASS",
+  "zip_self_test": "PASS",
+  "zip_smoke_window": "PASS",
+  "unicode_and_space_extraction_path": true,
+  "exact_zip_assembly_regressions": [
+    {
+      "project": "DlmDesktop.ViewerDeletionRuntimeTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    },
+    {
+      "project": "DlmDesktop.BrowserRuntimeSecurityTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    },
+    {
+      "project": "DlmDesktop.NavigationRuntimeTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    },
+    {
+      "project": "DlmDesktop.DownloadProgressRuntimeTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    },
+    {
+      "project": "DlmDesktop.ZipEncodingContractTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    },
+    {
+      "project": "DlmDesktop.LocalizationRuntimeTests",
+      "runtime": "PASS",
+      "exact_zip_assemblies": true
+    }
+  ],
+  "native_parser_probes": 39,
+  "live_browser_checks": {
+    "source": 10,
+    "exact_package": 10,
+    "final_zip": 10
+  },
+  "live_browser_details": "Actual Microsoft-signed FixedVersionRuntime156.0.4314.58 process, localHTML/DOM operation, cache clear and syntheticCookie retention; installed156.0.4314.50 denied before profile creation. No real accounts/provider transactions.",
+  "no_source_shipping": {
+    "status": "PASS",
+    "source_debug_files_in_zip": 0,
+    "embedded_product_source_records": 0,
+    "checked_PE_files": 4
+  },
+  "framework_native_host_bytes_unchanged_from_r224": true,
+  "limitations": "External stable WebView2 required; not bundled/installed. No exploit or real accounts/libraries tested. No blanket dependency safety claim. Retained Host1.3.7/r218 Runtime10.0.12 unchanged."
+}

@@ -1,13 +1,13 @@
-# DLM Desktop 1.3.13 (r224) user manual
+# DLM Desktop 1.3.14 (r225) user manual
 
-**1.3.13/r224：Chromiumの新しいCritical問題への緩和策として、埋込みブラウザーを一時停止しています。ライブラリ整理・検索・ローカル閲覧・手動取り込みは利用できます。ブラウザーを必要とする操作とブラウザーキャッシュ管理は停止中です。DLMを終了し、正式ZIP全体を新しい空フォルダーへ展開して起動してください。再開には検証済みの修正版DLMが必要で、WebView2の更新だけでは解除されません。メインアプリの同梱.NET 10.0.14と実Runtimeガードにより、公開メタデータ・サムネイル通信のBrotli対応を安全に復旧しました。ブラウザー停止は継続します。**
+**1.3.14/r225：修正収録を確認した安定版Microsoft Edge WebView2 Runtime 156.0.4314.58以降で、埋込みブラウザーとブラウザーキャッシュ管理を復旧しました。古い版・不明な版・プレビュー版は引き続き拒否します。DLMを終了し、正式ZIP全体を新しい空フォルダーへ展開してください。ブラウザー利用時は公式WebView2 Runtimeも更新してDLMを再起動してください。.NET 10.0.14によるHTTP Brotli対応と認証情報・Cookie・リダイレクトの境界は維持しています。**
 
-**1.3.13/r224 temporarily disables the embedded browser to mitigate new Critical Chromium issues. Library organization, search, local viewing and Manual Intake remain available. Browser-dependent provider workflows and browser cache management are paused. Close DLM and extract the full official ZIP into a new empty folder. Recovery requires a reviewed DLM release; updating WebView2 alone does not lift the hold. HTTP Brotli support for public metadata/thumbnails is restored with patched .NET10.0.14 bundled with the main application and an actual-runtime guard; the browser hold remains.**
+**1.3.14/r225 restores the embedded browser and browser cache management with reviewed stable Microsoft Edge WebView2 Runtime 156.0.4314.58 or later. Older, unknown and preview versions remain denied. Close DLM and extract the complete official ZIP into a new empty folder. For browser workflows, also update the official WebView2 Runtime and restart DLM. Patched .NET10.0.14 HTTP Brotli support and credential, cookie and redirect boundaries are retained.**
 
 
 [Manual home](../MANUAL.md) · [日本語](ja.md) · [README](../README.md)
 
-This manual covers Windows x64 version 1.3.13 (r224). Checked on October 29, 2026 (JST). Screen labels come from the XAML, presentation properties and localization functions in the latest source matching the distribution record: `56303f71a98552fdbcce485020dfb132edb62dff`. Code-formatted labels match the English interface. For sign-in, purchases and download initiation on provider websites, follow the provider's own interface.
+This manual covers Windows x64 version 1.3.14 (r225). Checked on October 31, 2026 (JST). Screen labels come from the XAML, presentation properties and localization functions in the latest source matching the distribution record: `644e9139e08cb33592f35c518d683cfef8728763`. Code-formatted labels match the English interface. For sign-in, purchases and download initiation on provider websites, follow the provider's own interface.
 
 <a id="contents"></a>
 ## Contents: choose your task
@@ -35,11 +35,11 @@ These four steps take you from choosing a storage folder to downloading a suppor
 <a id="start"></a>
 ### 1. Launch the application
 
-1. Get the Windows x64 ZIP from the [current release page](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.13).
+1. Get the Windows x64 ZIP from the [current release page](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.14).
 2. Close any previously running DLM Desktop and extract the entire ZIP into a new, empty folder.
 3. Run `DoujinLibraryManagerDesktop.exe`. The adjacent `app` folder is also required.
 
-.NET is bundled. The embedded browser requires stable Microsoft Edge WebView2 Runtime156.0.4314.42 or later. If the application starts in Japanese, change it under [Appearance and language](#language).
+.NET is bundled. The embedded browser requires stable Microsoft Edge WebView2 Runtime156.0.4314.58 or later. If the application starts in Japanese, change it under [Appearance and language](#language).
 
 The sidebar has four destinations. A leading ○ means the destination is inactive; ● marks the current screen.
 
@@ -443,7 +443,7 @@ Changing the interface language does not machine-translate work titles or creato
 | Symptom | What to check |
 |---|---|
 | DLM asks for a destination | [Choose a library](#library), then check that the ★ folder is connected in [Settings](#roots) |
-| The embedded browser does not appear | Update stable WebView2 Runtime to156.0.4314.42 or later and restart DLM. Confirm the full ZIP was extracted with `app` beside the EXE |
+| The embedded browser does not appear | Update stable WebView2 Runtime to156.0.4314.58 or later and restart DLM. Confirm the full ZIP was extracted with `app` beside the EXE |
 | Sign-in is rejected | Use another official method or the [external browser](#browser). External sign-in need not apply inside DLM |
 | Transfer is at 100%, but no work appears | Check validation/extraction/registration in [DL Center](#progress). GOG needs [finalization](#gog) |
 | Japanese names extracted from a ZIP are garbled | Extract again from the original ZIP using 1.3.5 or later. If it is unavailable, use [Redownload](#redownload) from work details and the official provider. Starting the application alone does not repair existing names |
