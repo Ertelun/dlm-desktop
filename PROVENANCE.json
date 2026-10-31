@@ -1,47 +1,50 @@
 {
-  "schema": "dlm-desktop-public-stable-v8",
+  "schema": "dlm-desktop-public-stable-v9",
   "product": "DLM Desktop",
   "publisher": "Ertelun",
-  "version": "1.3.13",
-  "revision": "r224",
+  "version": "1.3.14",
+  "revision": "r225",
   "stage": "Stable",
-  "releaseTag": "v1.3.13",
+  "releaseTag": "v1.3.14",
   "canonicalRepository": "Ertelun/dlm-desktop",
-  "releaseUrl": "https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.13",
+  "releaseUrl": "https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.14",
   "platform": "win-x64",
   "package": {
-    "file": "DLM-Desktop-v1.3.13-r224-win-x64.zip",
-    "sha256": "709493d54de4bef18a9de804c3b24d66df434b3c49b1cd1876244fc771fd77ce",
-    "size": 141330511,
+    "file": "DLM-Desktop-v1.3.14-r225-win-x64.zip",
+    "sha256": "043f923d6c29ead468736d32c29f4eacee575e5dbfe2c7b17570f6068af35bbb",
+    "size": 141309151,
     "sdk": "10.0.402",
     "mainBundledRuntime": "10.0.14",
     "bundledRuntime": "Main application10.0.14; retained r218 Downloader Host10.0.12",
-    "ILLink": "10.0.12 retained build tool",
+    "ILLink": "10.0.12 retained",
     "signing": "unsigned",
     "layout": [
       "DoujinLibraryManagerDesktop.exe",
       "README.txt",
       "app/"
     ],
-    "embeddedBrowser": "temporarily-disabled-security-hold",
-    "minimumExternalWebView2Runtime": null,
-    "browserRecovery": "Future reviewed fixed stable WebView2 mapping and validated DLM recovery release required; Runtime-only update does not lift hold",
-    "downloaderHost": "Byte-identical r218 1.3.7.218; Runtime10.0.12; no Brotli route newly enabled"
+    "embeddedBrowser": "restored_with_reviewed_stable_runtime_floor",
+    "minimumExternalWebView2Runtime": "156.0.4314.58",
+    "browserRecovery": "Stable-only discovery; available-version and actual-environment recheck; reject older/unknown/preview before controller. ExternalRuntime not bundled or installed.",
+    "downloaderHost": "Byte-identical r2181.3.7.218; Runtime10.0.12"
   },
   "source": {
     "storage": "Owner-maintained local committed source/archive; not uploaded",
-    "commit": "56303f71a98552fdbcce485020dfb132edb62dff",
-    "localTag": "desktop-v1.3.13-r224",
-    "file": "DLM-Desktop-v1.3.13-r224-SOURCE.zip",
-    "sha256": "99b4b0bb5a17267c893579348e075ad90e3da7e7104d99339f1e43d0f1fdd3bc",
-    "verifiedFiles": 260,
+    "commit": "644e9139e08cb33592f35c518d683cfef8728763",
+    "localTag": "desktop-v1.3.14-r225",
+    "file": "DLM-Desktop-v1.3.14-r225-SOURCE.zip",
+    "sha256": "9ab17158c0f615a24a43cf3f60dc56aed0ea2cdff3aef53618f296c1688a47ec",
+    "verifiedFiles": 256,
     "publication": "LOCAL ONLY; do not upload source or source ZIP"
   },
-  "verificationFile": "DLM-Desktop-v1.3.13-r224-VERIFICATION.json",
+  "verificationFile": "DLM-Desktop-v1.3.14-r225-VERIFICATION.json",
   "verification": {
     "strictTestProjects": 23,
     "httpDecompressionSecurityChecks": 93,
-    "browserSecurityHoldChecks": 79,
+    "browserSecurityRecoveryChecks": 59,
+    "liveBrowserSourceChecks": 10,
+    "liveBrowserExactPackageChecks": 10,
+    "liveBrowserFinalZipChecks": 10,
     "workUpdateCheckAssertions": 36,
     "nativeParserProbes": 39,
     "exactZipRegressionRunners": 6,
@@ -53,47 +56,39 @@
     "sourceAndDebugExcluded": true,
     "embeddedProductSourceRecords": 0,
     "checkedPEFiles": 4,
-    "officialRuntimeZIPsSHA512Matched": true,
-    "runtimePackAuthorAndRepositorySignatures": "verified",
-    "runtime14RelativeFileAndCultureHashesMatched": true
+    "frameworkNativeHostBytesUnchangedFromR224": true
   },
   "security": {
-    "restored": {
-      "cve": "CVE-2026-111497",
-      "scope": [
-        "Gumroad public metadata HTTP",
-        "GOG public catalog HTTP",
-        "Official thumbnail HTTP"
-      ],
-      "fix": "Patched main application .NET10.0.14; actual Runtime guard admits Brotli only on reviewed .NET10 line>=10.0.14",
-      "olderOrUnreviewedRuntimeBehavior": "gzip/deflate/identity only; Brotli denied",
-      "authorizationCredentialCookieRedirectBoundaries": "unchanged",
-      "sources": [
-        "https://github.com/dotnet/runtime/security/advisories/GHSA-p3jp-9v83-76w9",
-        "https://builds.dotnet.microsoft.com/dotnet/release-metadata/10.0/releases.json"
-      ]
-    },
-    "remainingBrowserHold": {
-      "cves": [
+    "browserRecovery": {
+      "fixedCves": [
         "CVE-2026-118306",
         "CVE-2026-118331",
         "CVE-2026-118348",
-        "CVE-2026-118344"
+        "CVE-2026-118344",
+        "CVE-2026-76024"
       ],
-      "reason": "No reviewed fixed stable WebView2 mapping retrieved; existing gate remains active before discovery/profile/environment/controller",
+      "minimumStable": "156.0.4314.58",
+      "scope": [
+        "provider browser workflows",
+        "browser disk-cache management"
+      ],
       "sources": [
+        "https://edgeupdates.microsoft.com/api/products?view=enterprise",
         "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
-        "https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/runtime/"
+        "https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/distribution",
+        "https://developer.microsoft.com/en-us/microsoft-edge/webview2/"
       ]
     },
-    "claimLimit": "Partial application HTTP recovery; no claim that all dependencies are vulnerability-free"
+    "httpBrotliRecovery": "r224 fixed main .NET10.0.14 and actualRuntime guard retained unchanged",
+    "remainingTemporaryCveRestrictions": [],
+    "claimLimit": "Reviewed fixes and bounded product-route validation; not a guarantee that all dependencies are vulnerability-free"
   },
-  "scope": "Main Runtime and3existingHTTPpaths only; browser hold retained; other packages/SDK/Host unchanged. Updated14license notices and retained historical Host notices.",
+  "scope": "Minimal browser admission recovery; SDK/frameworks/Host/unrelated packages unchanged; credentials/cookies/redirect/path boundaries retained.",
   "previousRelease": {
-    "tag": "v1.3.12",
-    "revision": "r223",
+    "tag": "v1.3.13",
+    "revision": "r224",
     "retained": true,
-    "rollbackLimit": "Brotli disabled but older runtime retained; prefer current formal version"
+    "rollbackLimit": "Browser remains held in r224; HTTP recovery retained."
   },
   "withdrawnRelease": {
     "tag": "v1.3.6",

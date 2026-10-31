@@ -1,13 +1,13 @@
-# DLM Desktop 1.3.13（r224）日本語マニュアル
+# DLM Desktop 1.3.14（r225）日本語マニュアル
 
-**1.3.13/r224：Chromiumの新しいCritical問題への緩和策として、埋込みブラウザーを一時停止しています。ライブラリ整理・検索・ローカル閲覧・手動取り込みは利用できます。ブラウザーを必要とする操作とブラウザーキャッシュ管理は停止中です。DLMを終了し、正式ZIP全体を新しい空フォルダーへ展開して起動してください。再開には検証済みの修正版DLMが必要で、WebView2の更新だけでは解除されません。メインアプリの同梱.NET 10.0.14と実Runtimeガードにより、公開メタデータ・サムネイル通信のBrotli対応を安全に復旧しました。ブラウザー停止は継続します。**
+**1.3.14/r225：修正収録を確認した安定版Microsoft Edge WebView2 Runtime 156.0.4314.58以降で、埋込みブラウザーとブラウザーキャッシュ管理を復旧しました。古い版・不明な版・プレビュー版は引き続き拒否します。DLMを終了し、正式ZIP全体を新しい空フォルダーへ展開してください。ブラウザー利用時は公式WebView2 Runtimeも更新してDLMを再起動してください。.NET 10.0.14によるHTTP Brotli対応と認証情報・Cookie・リダイレクトの境界は維持しています。**
 
-**1.3.13/r224 temporarily disables the embedded browser to mitigate new Critical Chromium issues. Library organization, search, local viewing and Manual Intake remain available. Browser-dependent provider workflows and browser cache management are paused. Close DLM and extract the full official ZIP into a new empty folder. Recovery requires a reviewed DLM release; updating WebView2 alone does not lift the hold. HTTP Brotli support for public metadata/thumbnails is restored with patched .NET10.0.14 bundled with the main application and an actual-runtime guard; the browser hold remains.**
+**1.3.14/r225 restores the embedded browser and browser cache management with reviewed stable Microsoft Edge WebView2 Runtime 156.0.4314.58 or later. Older, unknown and preview versions remain denied. Close DLM and extract the complete official ZIP into a new empty folder. For browser workflows, also update the official WebView2 Runtime and restart DLM. Patched .NET10.0.14 HTTP Brotli support and credential, cookie and redirect boundaries are retained.**
 
 
 [マニュアル入口](../MANUAL.md) · [English](en.md) · [README](../README.md)
 
-Windows x64版 1.3.13（r224）が対象です。確認日：2026年10月29日（日本時間）。画面ラベルは配布記録に対応する最新ソース `56303f71a98552fdbcce485020dfb132edb62dff` のXAML・表示用プロパティ・日英ローカライズ処理に基づきます。コード表記は日本語設定での実際のラベルです。公式サイト内のログイン・購入・ダウンロード操作は、各サイトの画面に従ってください。
+Windows x64版 1.3.14（r225）が対象です。確認日：2026年10月31日（日本時間）。画面ラベルは配布記録に対応する最新ソース `644e9139e08cb33592f35c518d683cfef8728763` のXAML・表示用プロパティ・日英ローカライズ処理に基づきます。コード表記は日本語設定での実際のラベルです。公式サイト内のログイン・購入・ダウンロード操作は、各サイトの画面に従ってください。
 
 <a id="contents"></a>
 ## 目次：やりたいことから選ぶ
@@ -35,11 +35,11 @@ Windows x64版 1.3.13（r224）が対象です。確認日：2026年10月29日�
 <a id="start"></a>
 ### 1. アプリを起動する
 
-1. [最新版の配布ページ](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.13)からWindows x64 ZIPを取得します。
+1. [最新版の配布ページ](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.14)からWindows x64 ZIPを取得します。
 2. 以前のDLM Desktopを終了し、ZIP全体を新しい空のフォルダへ展開します。
 3. `DoujinLibraryManagerDesktop.exe` を起動します。隣にある `app` フォルダも必要です。
 
-.NETは同梱されています。埋め込みブラウザの利用には安定版Microsoft Edge WebView2 Runtime156.0.4314.42以降が必要です。日本語以外で起動した場合は、[表示と言語](#language)で変更できます。
+.NETは同梱されています。埋め込みブラウザの利用には安定版Microsoft Edge WebView2 Runtime156.0.4314.58以降が必要です。日本語以外で起動した場合は、[表示と言語](#language)で変更できます。
 
 左側の移動先は次の4つです。先頭の○は未選択、●は現在の画面を示します。
 
@@ -443,7 +443,7 @@ DLM内の確認と、専門ソフトで行う編集は別です。すべての�
 | 症状 | 確認すること |
 |---|---|
 | 保存先を設定するよう求められる | [ライブラリを指定](#library)。★保存先が接続されているか[設定](#roots)で確認 |
-| ブラウザが表示されない | 安定版WebView2 Runtime156.0.4314.42以降へ更新し、DLMを再起動してください。ZIP全体を展開して `app` をEXEの隣に置いているか確認 |
+| ブラウザが表示されない | 安定版WebView2 Runtime156.0.4314.58以降へ更新し、DLMを再起動してください。ZIP全体を展開して `app` をEXEの隣に置いているか確認 |
 | ログインが拒否される | 公式の別ログイン方式や[外部ブラウザ](#browser)を使用。外部ブラウザのログインがDLMにも反映されるとは限らない |
 | 転送100%なのに作品がない | [DLセンター](#progress)で検証・展開・登録を確認。GOGは[受付確定](#gog)が必要 |
 | ZIPから展開した日本語の名前が文字化けする | 1.3.5以降で元ZIPから再展開。元ZIPがなければ作品詳細の[再ダウンロード](#redownload)で公式サイトから取得し直す。起動だけで既存の名前は修復されない |
