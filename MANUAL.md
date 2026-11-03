@@ -1,11 +1,11 @@
 # DLM Desktop マニュアル / User manual
 
-**1.3.16/r227：DMM/FANZA・DLsite・BOOTHで登録済み作品をダウンロード開始時に確認し、同じ配信元・作品IDがライブラリにあればスキップします。照合中は転送を一時停止。更新や取り直しには作品詳細の「再ダウンロード」を使用してください。作品IDが不明な場合や内容ハッシュで識別するサービスは、完了後の検証を継続します。**
+**1.3.17/r228：ダウンロード開始時の重複確認による一時停止を失敗と誤認し、転送の監視が終了する不具合を修正しました。登録済み作品のスキップと、作品詳細からの明示的な再ダウンロードは継続します。**
 
-**1.3.16/r227 checks supported DMM/FANZA, DLsite and BOOTH product IDs when a download starts and skips works already registered in any configured library. Transfers pause during the local check. Use Redownload in the work details for intentional updates or replacements. Unknown and content-hash identities retain completed-file verification.**
+**1.3.17/r228 fixes a download-start failure caused by treating the temporary duplicate-check pause as a terminal interruption. Duplicate skips and explicit Redownload remain available.**
 
 
-**DLM Desktop 1.3.16（r227） / Windows x64**
+**DLM Desktop 1.3.17（r228） / Windows x64**
 
 - [日本語マニュアル](manual/ja.md) — ライブラリの指定からダウンロード・閲覧までの基本操作と、目的別の詳しい操作。
 - [English manual](manual/en.md) — Essential steps from choosing a library through downloading and viewing, followed by detailed task-based instructions.
@@ -24,7 +24,7 @@
 
 Screen labels were checked against the matching XAML, presentation properties and Japanese/English localization functions. The application uses DLD, DLM and Library in different places. Code-formatted labels in each manual match that interface language. Provider web pages and standard Windows dialogs have their own labels and language settings.
 
-対象版 / Version: [1.3.16（r227）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.16). 確認日 / Checked: 2026-11-03 (JST). 対応ソース / Matching source commit: `644e9139e08cb33592f35c518d683cfef8728763` ([配布記録 / Provenance](PROVENANCE.json)).
+対象版 / Version: [1.3.17（r228）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.17). 確認日 / Checked: 2026-11-03 (JST). 対応ソース / Matching source commit: `ff3233174218332608f19cb7df66a239fe71916d` ([配布記録 / Provenance](PROVENANCE.json)).
 
 [READMEへ / Back to README](README.md)
 

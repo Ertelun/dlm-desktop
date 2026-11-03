@@ -2,17 +2,17 @@
   "schema": "dlm-desktop-public-stable-v9",
   "product": "DLM Desktop",
   "publisher": "Ertelun",
-  "version": "1.3.16",
-  "revision": "r227",
+  "version": "1.3.17",
+  "revision": "r228",
   "stage": "Stable",
-  "releaseTag": "v1.3.16",
+  "releaseTag": "v1.3.17",
   "canonicalRepository": "Ertelun/dlm-desktop",
-  "releaseUrl": "https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.16",
+  "releaseUrl": "https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.17",
   "platform": "win-x64",
   "package": {
-    "file": "DLM-Desktop-v1.3.16-r227-win-x64.zip",
-    "sha256": "1b56c93b533c519bbae1478ba88be87f95859e3a3960106a40198f990b4d7651",
-    "size": 141336657,
+    "file": "DLM-Desktop-v1.3.17-r228-win-x64.zip",
+    "sha256": "a146d3e7b13d6cc8c919d1edda56e7e2609b2d751a2241f8edd3815bea2a91e4",
+    "size": 136909044,
     "sdk": "10.0.402",
     "mainBundledRuntime": "10.0.14",
     "bundledRuntime": "Main application10.0.14; retained r218 Downloader Host10.0.12",
@@ -30,14 +30,14 @@
   },
   "source": {
     "storage": "Owner-maintained local committed source/archive; not uploaded",
-    "commit": "03b9956fbff2804392c69d097c71f8b69402bc3b",
-    "localTag": "desktop-v1.3.16-r227",
-    "file": "DLM-Desktop-v1.3.16-r227-SOURCE.zip",
-    "sha256": "994eccf6fa5d24eccad14380d0ca6e1ebf3d778f8360c4d0330f622051f8e0a3",
-    "verifiedFiles": 4389,
+    "commit": "ff3233174218332608f19cb7df66a239fe71916d",
+    "localTag": "desktop-v1.3.17-r228",
+    "file": "DLM-Desktop-v1.3.17-r228-SOURCE.zip",
+    "sha256": "036b50da7b043f4463251a7ab6961ff4436622008763ac2e2cbd8058b0e05ab7",
+    "verifiedFiles": 4391,
     "publication": "LOCAL ONLY; do not upload source or source ZIP"
   },
-  "verificationFile": "DLM-Desktop-v1.3.16-r227-VERIFICATION.json",
+  "verificationFile": "DLM-Desktop-v1.3.17-r228-VERIFICATION.json",
   "verification": {
     "strictTestProjects": 23,
     "downloadCacheCleanupChecks": 13,
@@ -60,7 +60,8 @@
     "storageMaintenanceChecks": 18,
     "realWpfScreens": 16,
     "downloadPreflightContractChecks": 32,
-    "downloadPreflightRealWpfChecks": 28
+    "downloadPreflightRealWpfChecks": 28,
+    "downloadStartLiveCases": 18
   },
   "security": {
     "browserRecovery": {
@@ -87,12 +88,12 @@
     "remainingTemporaryCveRestrictions": [],
     "claimLimit": "Reviewed fixes and bounded product-route validation; not a guarantee that all dependencies are vulnerability-free"
   },
-  "scope": "Exact provider/product duplicate checks at browser download start for DMM/FANZA, DLsite and BOOTH; pause during local scan; explicit redownload destination validation, one-shot authority, multipart continuity and bilingual skip guidance. No SDK/runtime/dependency update.",
+  "scope": "Fix premature terminal interruption during the host-owned duplicate-preflight pause. Resume ownership persists until byte progress; genuine cancellation stays terminal, wait is bounded. Duplicate checks, explicit redownload and completed-file validation retained. No SDK/runtime/dependency update.",
   "previousRelease": {
-    "tag": "v1.3.15",
-    "revision": "r226",
+    "tag": "v1.3.16",
+    "revision": "r227",
     "retained": true,
-    "rollbackLimit": "Previous version detects registered-work collisions after download; use the new release to avoid full duplicate transfers."
+    "rollbackLimit": "Previous version can detach tracking during the duplicate-check pause; use this release for the corrected shared browser-download admission path."
   },
   "withdrawnRelease": {
     "tag": "v1.3.6",

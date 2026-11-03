@@ -1,15 +1,15 @@
-# DLM Desktop 1.3.16 (r227) user manual
+# DLM Desktop 1.3.17 (r228) user manual
 
 [Duplicate checks at download start](../DOWNLOAD-PREFLIGHT.md)
 
-**1.3.16/r227：DMM/FANZA・DLsite・BOOTHで登録済み作品をダウンロード開始時に確認し、同じ配信元・作品IDがライブラリにあればスキップします。照合中は転送を一時停止。更新や取り直しには作品詳細の「再ダウンロード」を使用してください。作品IDが不明な場合や内容ハッシュで識別するサービスは、完了後の検証を継続します。**
+**1.3.17/r228：ダウンロード開始時の重複確認による一時停止を失敗と誤認し、転送の監視が終了する不具合を修正しました。登録済み作品のスキップと、作品詳細からの明示的な再ダウンロードは継続します。**
 
-**1.3.16/r227 checks supported DMM/FANZA, DLsite and BOOTH product IDs when a download starts and skips works already registered in any configured library. Transfers pause during the local check. Use Redownload in the work details for intentional updates or replacements. Unknown and content-hash identities retain completed-file verification.**
+**1.3.17/r228 fixes a download-start failure caused by treating the temporary duplicate-check pause as a terminal interruption. Duplicate skips and explicit Redownload remain available.**
 
 
 [Manual home](../MANUAL.md) · [日本語](ja.md) · [README](../README.md)
 
-This manual covers Windows x64 version 1.3.16 (r227). Checked on November 3, 2026 (JST). Screen labels come from the XAML, presentation properties and localization functions in the latest source matching the distribution record: `03b9956fbff2804392c69d097c71f8b69402bc3b`. Code-formatted labels match the English interface. For sign-in, purchases and download initiation on provider websites, follow the provider's own interface.
+This manual covers Windows x64 version 1.3.17 (r228). Checked on November 3, 2026 (JST). Screen labels come from the XAML, presentation properties and localization functions in the latest source matching the distribution record: `ff3233174218332608f19cb7df66a239fe71916d`. Code-formatted labels match the English interface. For sign-in, purchases and download initiation on provider websites, follow the provider's own interface.
 
 <a id="contents"></a>
 ## Contents: choose your task
@@ -37,7 +37,7 @@ These four steps take you from choosing a storage folder to downloading a suppor
 <a id="start"></a>
 ### 1. Launch the application
 
-1. Get the Windows x64 ZIP from the [current release page](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.16).
+1. Get the Windows x64 ZIP from the [current release page](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.17).
 2. Close any previously running DLM Desktop and extract the entire ZIP into a new, empty folder.
 3. Run `DoujinLibraryManagerDesktop.exe`. The adjacent `app` folder is also required.
 
