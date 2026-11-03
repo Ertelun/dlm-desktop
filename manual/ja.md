@@ -1,13 +1,13 @@
-# DLM Desktop 1.3.14（r225）日本語マニュアル
+# DLM Desktop 1.3.15（r226）日本語マニュアル
 
-**1.3.14/r225：修正収録を確認した安定版Microsoft Edge WebView2 Runtime 156.0.4314.58以降で、埋込みブラウザーとブラウザーキャッシュ管理を復旧しました。古い版・不明な版・プレビュー版は引き続き拒否します。DLMを終了し、正式ZIP全体を新しい空フォルダーへ展開してください。ブラウザー利用時は公式WebView2 Runtimeも更新してDLMを再起動してください。.NET 10.0.14によるHTTP Brotli対応と認証情報・Cookie・リダイレクトの境界は維持しています。**
+**1.3.15/r226：「ダウンロードキャッシュを削除」で、通常キャッシュに加えて管理領域に残ったダウンロードファイルも削除できるよう修正しました。失敗・再試行用ファイルを含む件数と容量を確認してから削除します。転送・取り込み中は削除せず、使用中・変更済み・削除失敗も結果に表示します。作品本体、保存サムネイル、Cookie・ログイン状態は保持します。**
 
-**1.3.14/r225 restores the embedded browser and browser cache management with reviewed stable Microsoft Edge WebView2 Runtime 156.0.4314.58 or later. Older, unknown and preview versions remain denied. Close DLM and extract the complete official ZIP into a new empty folder. For browser workflows, also update the official WebView2 Runtime and restart DLM. Patched .NET10.0.14 HTTP Brotli support and credential, cookie and redirect boundaries are retained.**
+**1.3.15/r226 fixes download-cache cleanup so it can also discard retained files in the managed download landing area after confirmation. The prompt includes the file count and byte total and warns about failed imports and retry files. Active transfers/imports block cleanup; locked, changed and failed files are reported. Library works, stored thumbnails, cookies and login state are preserved.**
 
 
 [マニュアル入口](../MANUAL.md) · [English](en.md) · [README](../README.md)
 
-Windows x64版 1.3.14（r225）が対象です。確認日：2026年10月31日（日本時間）。画面ラベルは配布記録に対応する最新ソース `644e9139e08cb33592f35c518d683cfef8728763` のXAML・表示用プロパティ・日英ローカライズ処理に基づきます。コード表記は日本語設定での実際のラベルです。公式サイト内のログイン・購入・ダウンロード操作は、各サイトの画面に従ってください。
+Windows x64版 1.3.15（r226）が対象です。確認日：2026年10月31日（日本時間）。画面ラベルは配布記録に対応する最新ソース `644e9139e08cb33592f35c518d683cfef8728763` のXAML・表示用プロパティ・日英ローカライズ処理に基づきます。コード表記は日本語設定での実際のラベルです。公式サイト内のログイン・購入・ダウンロード操作は、各サイトの画面に従ってください。
 
 <a id="contents"></a>
 ## 目次：やりたいことから選ぶ
@@ -35,7 +35,7 @@ Windows x64版 1.3.14（r225）が対象です。確認日：2026年10月31日�
 <a id="start"></a>
 ### 1. アプリを起動する
 
-1. [最新版の配布ページ](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.14)からWindows x64 ZIPを取得します。
+1. [最新版の配布ページ](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.15)からWindows x64 ZIPを取得します。
 2. 以前のDLM Desktopを終了し、ZIP全体を新しい空のフォルダへ展開します。
 3. `DoujinLibraryManagerDesktop.exe` を起動します。隣にある `app` フォルダも必要です。
 
@@ -415,7 +415,7 @@ DLM内の確認と、専門ソフトで行う編集は別です。すべての�
 | 操作 | 対象 |
 |---|---|
 | `ブラウザキャッシュを削除` | ブラウザキャッシュ。Cookie・ログイン状態・LocalStorage・IndexedDBは保持 |
-| `ダウンロードキャッシュを削除` | アプリが管理するダウンロードキャッシュ |
+| `ダウンロードキャッシュを削除` | 通常キャッシュと、管理領域に残ったダウンロードファイル。失敗・再試行用ファイルも含むため件数・容量を確認して削除。転送・取り込み中は実行不可。作品本体・保存サムネイル・ログイン状態は保持。使用中や変更済みのファイルは削除せず結果に表示 |
 | `保存サムネイル削除` | 保存サムネイル。必要な場合は再生成・再取得する |
 
 公式画像を補完したいときは `管理` → `公式サムネイルを確認・補完` を使います。保存済みの公式サムネイルを再取得せず、未取得作品の取得可能なものを確認します。

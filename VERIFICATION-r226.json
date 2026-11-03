@@ -1,0 +1,215 @@
+{
+  "status": "PASS",
+  "version": "1.3.15",
+  "revision": "r226",
+  "sourceCommit": "b740fe7033beedd7951620c9010b58990cdcb110",
+  "runtimeZip": "DLM-Desktop-v1.3.15-r226-win-x64.zip",
+  "runtimeZipSha256": "905e296059cc80b97572bae7300b97043f2c5fb5e225b7f9f33f87376932c477",
+  "runtimeZipBytes": 141310953,
+  "finalZipFilesByteMatched": 585,
+  "strictTestProjects": [
+    {
+      "project": "DlmDesktop.AutomaticSafeSnapshotContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.BrowserDownloadContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.BrowserRuntimeSecurityTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.CompactListRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.DownloadProgressRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.ImportPromotionContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.LibraryRelocationContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.LocalizationContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.LocalizationRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.LocalProvenanceContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.ManualIntakeContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.MembershipPostWorkContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.NavigationRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.SecurityBoundaryContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.UserStateBackupContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.ViewerDeletionRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.WatchFolderContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.ZipEncodingContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDownloader.HostContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDownloader.NetworkSafetyContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDownloader.ProviderCapabilityContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDownloader.StagingContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.SmokeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    }
+  ],
+  "downloadCacheCleanupChecks": 13,
+  "cacheCoverage": [
+    "retained failed imports and abandoned partial downloads",
+    "preview has no deletion",
+    "exact deleted-file and logical-byte totals",
+    "new files after preview preserved",
+    "changed/locked/disappeared files not counted as deleted",
+    "profiles/staging/thumbnails/library preserved",
+    "unexpected nested directories never traversed or deleted",
+    "managed default folders preserved"
+  ],
+  "exactPackageRegressionRunners": [
+    "DlmDesktop.ViewerDeletionRuntimeTests",
+    "DlmDesktop.BrowserRuntimeSecurityTests",
+    "DlmDesktop.NavigationRuntimeTests",
+    "DlmDesktop.DownloadProgressRuntimeTests",
+    "DlmDesktop.ZipEncodingContractTests",
+    "DlmDesktop.LocalizationRuntimeTests"
+  ],
+  "packagedSelfTest": "PASS",
+  "packagedSmokeWindow": "PASS",
+  "hostSelfTest": "PASS",
+  "zipSelfTest": "PASS",
+  "zipSmokeWindow": "PASS",
+  "unicodeSpaceExtractionPath": true,
+  "nativeParserProbes": 39,
+  "liveBrowserChecks": {
+    "source-live-browser": 9,
+    "package-live-browser": 9,
+    "zip-live-browser": 9
+  },
+  "liveBrowserScope": "Microsoft-signed fixed WebView2 156.0.4314.58, isolated local HTML/DOM, disk-cache clear and synthetic Cookie retention; no real provider account or library",
+  "sourceAndDebugFilesInZip": 0,
+  "embeddedProductSourceRecords": 0,
+  "checkedPEFiles": 4,
+  "changedProductFiles": [
+    "DlmDesktop.Core.dll",
+    "DoujinLibraryManagerDesktop.deps.json",
+    "DoujinLibraryManagerDesktop.dll"
+  ],
+  "frameworkNativeHostDependenciesByteIdenticalTo": "v1.3.14/r225",
+  "limitations": "Removed bytes are logical file sizes; actual free-space changes depend on the filesystem and concurrent activity. Windows x64. Unsigned. External WebView2 required. No blanket dependency-safety claim."
+}

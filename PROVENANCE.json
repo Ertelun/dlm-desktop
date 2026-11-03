@@ -2,17 +2,17 @@
   "schema": "dlm-desktop-public-stable-v9",
   "product": "DLM Desktop",
   "publisher": "Ertelun",
-  "version": "1.3.14",
-  "revision": "r225",
+  "version": "1.3.15",
+  "revision": "r226",
   "stage": "Stable",
-  "releaseTag": "v1.3.14",
+  "releaseTag": "v1.3.15",
   "canonicalRepository": "Ertelun/dlm-desktop",
-  "releaseUrl": "https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.14",
+  "releaseUrl": "https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.15",
   "platform": "win-x64",
   "package": {
-    "file": "DLM-Desktop-v1.3.14-r225-win-x64.zip",
-    "sha256": "043f923d6c29ead468736d32c29f4eacee575e5dbfe2c7b17570f6068af35bbb",
-    "size": 141309151,
+    "file": "DLM-Desktop-v1.3.15-r226-win-x64.zip",
+    "sha256": "905e296059cc80b97572bae7300b97043f2c5fb5e225b7f9f33f87376932c477",
+    "size": 141310953,
     "sdk": "10.0.402",
     "mainBundledRuntime": "10.0.14",
     "bundledRuntime": "Main application10.0.14; retained r218 Downloader Host10.0.12",
@@ -30,22 +30,17 @@
   },
   "source": {
     "storage": "Owner-maintained local committed source/archive; not uploaded",
-    "commit": "644e9139e08cb33592f35c518d683cfef8728763",
-    "localTag": "desktop-v1.3.14-r225",
-    "file": "DLM-Desktop-v1.3.14-r225-SOURCE.zip",
-    "sha256": "9ab17158c0f615a24a43cf3f60dc56aed0ea2cdff3aef53618f296c1688a47ec",
-    "verifiedFiles": 256,
+    "commit": "b740fe7033beedd7951620c9010b58990cdcb110",
+    "localTag": "desktop-v1.3.15-r226",
+    "file": "DLM-Desktop-v1.3.15-r226-SOURCE.zip",
+    "sha256": "46d52ba9207801bf2cbf2d073fe551455bfe5d932be3738174ead8bd5f674fd4",
+    "verifiedFiles": 4385,
     "publication": "LOCAL ONLY; do not upload source or source ZIP"
   },
-  "verificationFile": "DLM-Desktop-v1.3.14-r225-VERIFICATION.json",
+  "verificationFile": "DLM-Desktop-v1.3.15-r226-VERIFICATION.json",
   "verification": {
     "strictTestProjects": 23,
-    "httpDecompressionSecurityChecks": 93,
-    "browserSecurityRecoveryChecks": 59,
-    "liveBrowserSourceChecks": 10,
-    "liveBrowserExactPackageChecks": 10,
-    "liveBrowserFinalZipChecks": 10,
-    "workUpdateCheckAssertions": 36,
+    "downloadCacheCleanupChecks": 13,
     "nativeParserProbes": 39,
     "exactZipRegressionRunners": 6,
     "finalZipFilesByteMatched": 585,
@@ -56,7 +51,12 @@
     "sourceAndDebugExcluded": true,
     "embeddedProductSourceRecords": 0,
     "checkedPEFiles": 4,
-    "frameworkNativeHostBytesUnchangedFromR224": true
+    "liveBrowserChecks": {
+      "source-live-browser": 9,
+      "package-live-browser": 9,
+      "zip-live-browser": 9
+    },
+    "frameworkNativeHostBytesUnchangedFromR225": true
   },
   "security": {
     "browserRecovery": {
@@ -83,12 +83,12 @@
     "remainingTemporaryCveRestrictions": [],
     "claimLimit": "Reviewed fixes and bounded product-route validation; not a guarantee that all dependencies are vulnerability-free"
   },
-  "scope": "Minimal browser admission recovery; SDK/frameworks/Host/unrelated packages unchanged; credentials/cookies/redirect/path boundaries retained.",
+  "scope": "Confirmed explicit discard of retained managed browser downloads; active-download/import guards, no-follow leaf deletion, accurate results and bilingual UI. No SDK/framework/dependency update.",
   "previousRelease": {
-    "tag": "v1.3.13",
-    "revision": "r224",
+    "tag": "v1.3.14",
+    "revision": "r225",
     "retained": true,
-    "rollbackLimit": "Browser remains held in r224; HTTP recovery retained."
+    "rollbackLimit": "Previous version does not discard retained managed downloads through the download-cache action."
   },
   "withdrawnRelease": {
     "tag": "v1.3.6",
