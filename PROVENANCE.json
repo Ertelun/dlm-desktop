@@ -11,8 +11,8 @@
   "platform": "win-x64",
   "package": {
     "file": "DLM-Desktop-v1.3.17-r228-win-x64.zip",
-    "sha256": "96b5afb72b9bfc79818a4cef6d2bb8744ecd6929a49837a32397e2412486e562",
-    "size": 141335921,
+    "sha256": "a146d3e7b13d6cc8c919d1edda56e7e2609b2d751a2241f8edd3815bea2a91e4",
+    "size": 136909044,
     "sdk": "10.0.402",
     "mainBundledRuntime": "10.0.14",
     "bundledRuntime": "Main application10.0.14; retained r218 Downloader Host10.0.12",

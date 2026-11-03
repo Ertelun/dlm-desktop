@@ -4,8 +4,8 @@
   "revision": "r228",
   "sourceCommit": "ff3233174218332608f19cb7df66a239fe71916d",
   "runtimeZip": "DLM-Desktop-v1.3.17-r228-win-x64.zip",
-  "runtimeZipSha256": "96b5afb72b9bfc79818a4cef6d2bb8744ecd6929a49837a32397e2412486e562",
-  "runtimeZipBytes": 141335921,
+  "runtimeZipSha256": "a146d3e7b13d6cc8c919d1edda56e7e2609b2d751a2241f8edd3815bea2a91e4",
+  "runtimeZipBytes": 136909044,
   "finalZipFilesByteMatched": 587,
   "strictTestProjects": [
     {

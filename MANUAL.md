@@ -24,7 +24,7 @@
 
 Screen labels were checked against the matching XAML, presentation properties and Japanese/English localization functions. The application uses DLD, DLM and Library in different places. Code-formatted labels in each manual match that interface language. Provider web pages and standard Windows dialogs have their own labels and language settings.
 
-対象版 / Version: [1.3.17（r228）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.17). 確認日 / Checked: 2026-11-03 (JST). 対応ソース / Matching source commit: `644e9139e08cb33592f35c518d683cfef8728763` ([配布記録 / Provenance](PROVENANCE.json)).
+対象版 / Version: [1.3.17（r228）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.17). 確認日 / Checked: 2026-11-03 (JST). 対応ソース / Matching source commit: `ff3233174218332608f19cb7df66a239fe71916d` ([配布記録 / Provenance](PROVENANCE.json)).
 
 [READMEへ / Back to README](README.md)
 

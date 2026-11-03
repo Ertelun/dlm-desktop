@@ -105,7 +105,7 @@ Includes the 1.3.4 navigation crash fix, previous feature fixes and Japanese/Eng
 The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.17). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
 
 ```text
-96b5afb72b9bfc79818a4cef6d2bb8744ecd6929a49837a32397e2412486e562  DLM-Desktop-v1.3.17-r228-win-x64.zip
+a146d3e7b13d6cc8c919d1edda56e7e2609b2d751a2241f8edd3815bea2a91e4  DLM-Desktop-v1.3.17-r228-win-x64.zip
 ```
 
 検証の結果と配布物の識別情報は、Release添付の検証記録と [PROVENANCE.json](PROVENANCE.json) にあります。
