@@ -2,17 +2,17 @@
   "schema": "dlm-desktop-public-stable-v9",
   "product": "DLM Desktop",
   "publisher": "Ertelun",
-  "version": "1.3.15",
-  "revision": "r226",
+  "version": "1.3.16",
+  "revision": "r227",
   "stage": "Stable",
-  "releaseTag": "v1.3.15",
+  "releaseTag": "v1.3.16",
   "canonicalRepository": "Ertelun/dlm-desktop",
-  "releaseUrl": "https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.15",
+  "releaseUrl": "https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.16",
   "platform": "win-x64",
   "package": {
-    "file": "DLM-Desktop-v1.3.15-r226-win-x64.zip",
-    "sha256": "bdb241e88bc8f4a1b9c1d140499eb7b3cca2cebf77b7fed6cfc9d6feab396a9d",
-    "size": 141332937,
+    "file": "DLM-Desktop-v1.3.16-r227-win-x64.zip",
+    "sha256": "1b56c93b533c519bbae1478ba88be87f95859e3a3960106a40198f990b4d7651",
+    "size": 141336657,
     "sdk": "10.0.402",
     "mainBundledRuntime": "10.0.14",
     "bundledRuntime": "Main application10.0.14; retained r218 Downloader Host10.0.12",
@@ -30,20 +30,20 @@
   },
   "source": {
     "storage": "Owner-maintained local committed source/archive; not uploaded",
-    "commit": "0834c22baffa42dfc18c3ef3d74805649c343d7e",
-    "localTag": "desktop-v1.3.15-r226-final",
-    "file": "DLM-Desktop-v1.3.15-r226-SOURCE.zip",
-    "sha256": "65b42f8882235f2e1e9fb3250db06e772843311147850cc14e0eac55fb1dd108",
-    "verifiedFiles": 4387,
+    "commit": "03b9956fbff2804392c69d097c71f8b69402bc3b",
+    "localTag": "desktop-v1.3.16-r227",
+    "file": "DLM-Desktop-v1.3.16-r227-SOURCE.zip",
+    "sha256": "994eccf6fa5d24eccad14380d0ca6e1ebf3d778f8360c4d0330f622051f8e0a3",
+    "verifiedFiles": 4389,
     "publication": "LOCAL ONLY; do not upload source or source ZIP"
   },
-  "verificationFile": "DLM-Desktop-v1.3.15-r226-VERIFICATION.json",
+  "verificationFile": "DLM-Desktop-v1.3.16-r227-VERIFICATION.json",
   "verification": {
     "strictTestProjects": 23,
     "downloadCacheCleanupChecks": 13,
     "nativeParserProbes": 39,
     "exactZipRegressionRunners": 7,
-    "finalZipFilesByteMatched": 586,
+    "finalZipFilesByteMatched": 587,
     "packagedSelfTest": "PASS",
     "packagedSmokeWindow": "PASS",
     "zipSelfTest": "PASS",
@@ -58,7 +58,9 @@
     },
     "frameworkNativeHostBytesUnchangedFromR225": true,
     "storageMaintenanceChecks": 18,
-    "realWpfScreens": 16
+    "realWpfScreens": 16,
+    "downloadPreflightContractChecks": 32,
+    "downloadPreflightRealWpfChecks": 28
   },
   "security": {
     "browserRecovery": {
@@ -85,12 +87,12 @@
     "remainingTemporaryCveRestrictions": [],
     "claimLimit": "Reviewed fixes and bounded product-route validation; not a guarantee that all dependencies are vulnerability-free"
   },
-  "scope": "Program-wide owned-cache inventory and selective next-startup cleanup, retained-download discard, no-follow deletion, active-process/environment guards, exact results and bilingual UI. No shipped SDK/framework/dependency update.",
+  "scope": "Exact provider/product duplicate checks at browser download start for DMM/FANZA, DLsite and BOOTH; pause during local scan; explicit redownload destination validation, one-shot authority, multipart continuity and bilingual skip guidance. No SDK/runtime/dependency update.",
   "previousRelease": {
-    "tag": "v1.3.14",
-    "revision": "r225",
+    "tag": "v1.3.15",
+    "revision": "r226",
     "retained": true,
-    "rollbackLimit": "Previous version does not discard retained managed downloads through the download-cache action."
+    "rollbackLimit": "Previous version detects registered-work collisions after download; use the new release to avoid full duplicate transfers."
   },
   "withdrawnRelease": {
     "tag": "v1.3.6",
