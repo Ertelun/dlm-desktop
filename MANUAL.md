@@ -27,3 +27,15 @@ Screen labels were checked against the matching XAML, presentation properties an
 対象版 / Version: [1.3.15（r226）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.15). 確認日 / Checked: 2026-10-31 (JST). 対応ソース / Matching source commit: `644e9139e08cb33592f35c518d683cfef8728763` ([配布記録 / Provenance](PROVENANCE.json)).
 
 [READMEへ / Back to README](README.md)
+
+## Program-wide cache audit / キャッシュ保存先の精査
+
+設定 → ストレージ保守 →「キャッシュの保存状況と整理…」で、通常キャッシュ、ブラウザーキャッシュ、旧版の開発用.NET SDK、24時間以上前の処理用一時ファイル、30日以上前のクラッシュ診断の件数と容量を確認し、選択した項目を次回の通常起動時に削除できます。取り込み一時ファイルと古い診断は初期状態では選択されません。予約の取消と前回結果の確認もできます。
+
+Settings → Storage maintenance → Cache storage and cleanup shows file/byte totals for ordinary caches (including search indexes and converted video), browser caches (HTTP/code/shaders/offline CacheStorage/component download archives, including known legacy profiles), the obsolete development SDK, processing/3D temporary files older than 24 hours, and crash diagnostics older than 30 days. Choose categories for cleanup at the next normal startup; old processing and diagnostic data are not selected by default. Requests can be cancelled, and the durable result reports deleted files/bytes, failures and changes.
+
+Deletion runs before viewers and browser profiles open, is deferred while another DLM or Downloader Host is running, uses no-follow pinned Windows handles, preserves files written after the request, and never follows reparse points. Only exact app-owned cache roots are permitted; the saved request cannot supply arbitrary paths. Unexpected or locked files are reported and preserved.
+
+Library works, retained download originals, cookies/sign-ins, LocalStorage, IndexedDB, installed browser components (including Widevine), stored official thumbnails, organization/reading state, import receipts and user backups are excluded. Retained downloads and stored thumbnails have separate explicit-confirmation actions. Browser disk-cache clearing remains available immediately as a separate action; the new startup cleanup also handles code/shader/offline caches and obsolete SDK files without resetting sign-ins. Deleted caches can be downloaded or rebuilt again when needed.
+
+作品・ログイン状態・ブラウザー実行部品・整理情報・閲覧位置・バックアップ・取り込み記録は対象外です。残存ダウンロードと保存サムネイルは個別操作で確認して削除します。削除したキャッシュは次回利用時に再生成・再取得される場合があります。

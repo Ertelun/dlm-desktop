@@ -11,8 +11,8 @@
   "platform": "win-x64",
   "package": {
     "file": "DLM-Desktop-v1.3.15-r226-win-x64.zip",
-    "sha256": "905e296059cc80b97572bae7300b97043f2c5fb5e225b7f9f33f87376932c477",
-    "size": 141310953,
+    "sha256": "bdb241e88bc8f4a1b9c1d140499eb7b3cca2cebf77b7fed6cfc9d6feab396a9d",
+    "size": 141332937,
     "sdk": "10.0.402",
     "mainBundledRuntime": "10.0.14",
     "bundledRuntime": "Main application10.0.14; retained r218 Downloader Host10.0.12",
@@ -30,11 +30,11 @@
   },
   "source": {
     "storage": "Owner-maintained local committed source/archive; not uploaded",
-    "commit": "b740fe7033beedd7951620c9010b58990cdcb110",
-    "localTag": "desktop-v1.3.15-r226",
+    "commit": "0834c22baffa42dfc18c3ef3d74805649c343d7e",
+    "localTag": "desktop-v1.3.15-r226-final",
     "file": "DLM-Desktop-v1.3.15-r226-SOURCE.zip",
-    "sha256": "46d52ba9207801bf2cbf2d073fe551455bfe5d932be3738174ead8bd5f674fd4",
-    "verifiedFiles": 4385,
+    "sha256": "65b42f8882235f2e1e9fb3250db06e772843311147850cc14e0eac55fb1dd108",
+    "verifiedFiles": 4387,
     "publication": "LOCAL ONLY; do not upload source or source ZIP"
   },
   "verificationFile": "DLM-Desktop-v1.3.15-r226-VERIFICATION.json",
@@ -42,8 +42,8 @@
     "strictTestProjects": 23,
     "downloadCacheCleanupChecks": 13,
     "nativeParserProbes": 39,
-    "exactZipRegressionRunners": 6,
-    "finalZipFilesByteMatched": 585,
+    "exactZipRegressionRunners": 7,
+    "finalZipFilesByteMatched": 586,
     "packagedSelfTest": "PASS",
     "packagedSmokeWindow": "PASS",
     "zipSelfTest": "PASS",
@@ -56,7 +56,9 @@
       "package-live-browser": 9,
       "zip-live-browser": 9
     },
-    "frameworkNativeHostBytesUnchangedFromR225": true
+    "frameworkNativeHostBytesUnchangedFromR225": true,
+    "storageMaintenanceChecks": 18,
+    "realWpfScreens": 16
   },
   "security": {
     "browserRecovery": {
@@ -83,7 +85,7 @@
     "remainingTemporaryCveRestrictions": [],
     "claimLimit": "Reviewed fixes and bounded product-route validation; not a guarantee that all dependencies are vulnerability-free"
   },
-  "scope": "Confirmed explicit discard of retained managed browser downloads; active-download/import guards, no-follow leaf deletion, accurate results and bilingual UI. No SDK/framework/dependency update.",
+  "scope": "Program-wide owned-cache inventory and selective next-startup cleanup, retained-download discard, no-follow deletion, active-process/environment guards, exact results and bilingual UI. No shipped SDK/framework/dependency update.",
   "previousRelease": {
     "tag": "v1.3.14",
     "revision": "r225",
