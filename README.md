@@ -4,17 +4,17 @@
 
 DLM Desktop is a local Windows library by Ertelun for organizing, finding and viewing digital works you keep on your PC.
 
-**1.3.14（r225）正式版 / Stable release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
+**1.3.15（r226）正式版 / Stable release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
 
-[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.14/DLM-Desktop-v1.3.14-r225-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.14) · [更新内容 / Release notes](RELEASE_NOTES-r225-JA-EN.md)
+[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.15/DLM-Desktop-v1.3.15-r226-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.15) · [更新内容 / Release notes](RELEASE_NOTES-r226-JA-EN.md)
 
 **[マニュアル / User manual](MANUAL.md)** · [日本語](manual/ja.md) · [English](manual/en.md)
 
 [開発支援のご案内 / Sponsorship information](SUPPORT.md) · **月額支援の申し込み・決済は未開始 / Monthly sponsorship signups and payments have not started**
 
-**1.3.14/r225：修正収録を確認した安定版Microsoft Edge WebView2 Runtime 156.0.4314.58以降で、埋込みブラウザーとブラウザーキャッシュ管理を復旧しました。古い版・不明な版・プレビュー版は引き続き拒否します。DLMを終了し、正式ZIP全体を新しい空フォルダーへ展開してください。ブラウザー利用時は公式WebView2 Runtimeも更新してDLMを再起動してください。.NET 10.0.14によるHTTP Brotli対応と認証情報・Cookie・リダイレクトの境界は維持しています。**
+**1.3.15/r226：「ダウンロードキャッシュを削除」で、通常キャッシュに加えて管理領域に残ったダウンロードファイルも削除できるよう修正しました。失敗・再試行用ファイルを含む件数と容量を確認してから削除します。転送・取り込み中は削除せず、使用中・変更済み・削除失敗も結果に表示します。作品本体、保存サムネイル、Cookie・ログイン状態は保持します。**
 
-**1.3.14/r225 restores the embedded browser and browser cache management with reviewed stable Microsoft Edge WebView2 Runtime 156.0.4314.58 or later. Older, unknown and preview versions remain denied. Close DLM and extract the complete official ZIP into a new empty folder. For browser workflows, also update the official WebView2 Runtime and restart DLM. Patched .NET10.0.14 HTTP Brotli support and credential, cookie and redirect boundaries are retained.**
+**1.3.15/r226 fixes download-cache cleanup so it can also discard retained files in the managed download landing area after confirmation. The prompt includes the file count and byte total and warns about failed imports and retry files. Active transfers/imports block cleanup; locked, changed and failed files are reported. Library works, stored thumbnails, cookies and login state are preserved.**
 
 ## 起動方法 / Getting started
 
@@ -82,7 +82,7 @@ Microsoftの修正一覧と正式WebView2配布を照合し、CVE-2026-118306/11
 
 The reviewed stable floor156.0.4314.58 includes Microsoft's fixes for the four earlier Critical Chromium issues and CVE-2026-76024. Browser workflows and disk-cache management are restored. Stable-only discovery and the actual-environment version recheck remain; older/unknown/preview Runtime selections are rejected before controller admission. Update both DLM and the official external WebView2 Runtime, then restart DLM. The external engine is not bundled or installed by this ZIP.
 
-[今回のリリースノート / Release notes](RELEASE_NOTES-r225-JA-EN.md) · [Security Policy](SECURITY.md)
+[今回のリリースノート / Release notes](RELEASE_NOTES-r226-JA-EN.md) · [Security Policy](SECURITY.md)
 
 ## 1.3.5から引き継ぐ修正 / Fixes retained from 1.3.5
 
@@ -100,17 +100,17 @@ Includes the 1.3.4 navigation crash fix, previous feature fixes and Japanese/Eng
 
 ## 配布物の確認 / Verify the download
 
-配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.14) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
+配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.15) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
 
-The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.14). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
+The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.15). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
 
 ```text
-043f923d6c29ead468736d32c29f4eacee575e5dbfe2c7b17570f6068af35bbb  DLM-Desktop-v1.3.14-r225-win-x64.zip
+905e296059cc80b97572bae7300b97043f2c5fb5e225b7f9f33f87376932c477  DLM-Desktop-v1.3.15-r226-win-x64.zip
 ```
 
-全23テストと削除・連続閲覧1,255項目、WebView2起動制限53項目・作品の更新確認36項目に加え、ZIP文字コード・展開18項目、100件・10万回の通知による進捗表示118項目を検証しました。画面遷移・翻訳・保存・ダウンロード・セキュリティの既存試験も含みます。詳細はRelease添付の検証記録と [PROVENANCE.json](PROVENANCE.json) にあります。
+検証の結果と配布物の識別情報は、Release添付の検証記録と [PROVENANCE.json](PROVENANCE.json) にあります。
 
-Verification passed all 23 test projects, including 1,255 deletion/continuous-viewing checks, 53 browser admission checks, 36 work update-check assertions, 18 ZIP encoding/extraction checks and 118 real-WPF progress checks with 100 transfers and 100,000 notifications, plus existing navigation, localization, storage, download and security regressions. See the release verification asset and [PROVENANCE.json](PROVENANCE.json).
+See the release verification asset and [PROVENANCE.json](PROVENANCE.json) for fresh regression results and package identity.
 
 ## 利用と問い合わせ / Use and feedback
 
