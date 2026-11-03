@@ -4,17 +4,17 @@
 
 DLM Desktop is a local Windows library by Ertelun for organizing, finding and viewing digital works you keep on your PC.
 
-**1.3.16（r227）正式版 / Stable release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
+**1.3.17（r228）正式版 / Stable release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
 
-[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.16/DLM-Desktop-v1.3.16-r227-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.16) · [更新内容 / Release notes](RELEASE_NOTES-r227-JA-EN.md)
+[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.17/DLM-Desktop-v1.3.17-r228-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.17) · [更新内容 / Release notes](RELEASE_NOTES-r228-JA-EN.md)
 
 **[マニュアル / User manual](MANUAL.md)** · [日本語](manual/ja.md) · [English](manual/en.md)
 
 [開発支援のご案内 / Sponsorship information](SUPPORT.md) · **月額支援の申し込み・決済は未開始 / Monthly sponsorship signups and payments have not started**
 
-**1.3.16/r227：DMM/FANZA・DLsite・BOOTHで登録済み作品をダウンロード開始時に確認し、同じ配信元・作品IDがライブラリにあればスキップします。照合中は転送を一時停止。更新や取り直しには作品詳細の「再ダウンロード」を使用してください。作品IDが不明な場合や内容ハッシュで識別するサービスは、完了後の検証を継続します。**
+**1.3.17/r228：ダウンロード開始時の重複確認による一時停止を失敗と誤認し、転送の監視が終了する不具合を修正しました。登録済み作品のスキップと、作品詳細からの明示的な再ダウンロードは継続します。**
 
-**1.3.16/r227 checks supported DMM/FANZA, DLsite and BOOTH product IDs when a download starts and skips works already registered in any configured library. Transfers pause during the local check. Use Redownload in the work details for intentional updates or replacements. Unknown and content-hash identities retain completed-file verification.**
+**1.3.17/r228 fixes a download-start failure caused by treating the temporary duplicate-check pause as a terminal interruption. Duplicate skips and explicit Redownload remain available.**
 
 ## 起動方法 / Getting started
 
@@ -82,7 +82,7 @@ Microsoftの修正一覧と正式WebView2配布を照合し、CVE-2026-118306/11
 
 The reviewed stable floor156.0.4314.58 includes Microsoft's fixes for the four earlier Critical Chromium issues and CVE-2026-76024. Browser workflows and disk-cache management are restored. Stable-only discovery and the actual-environment version recheck remain; older/unknown/preview Runtime selections are rejected before controller admission. Update both DLM and the official external WebView2 Runtime, then restart DLM. The external engine is not bundled or installed by this ZIP.
 
-[今回のリリースノート / Release notes](RELEASE_NOTES-r227-JA-EN.md) · [Security Policy](SECURITY.md)
+[今回のリリースノート / Release notes](RELEASE_NOTES-r228-JA-EN.md) · [Security Policy](SECURITY.md)
 
 ## 1.3.5から引き継ぐ修正 / Fixes retained from 1.3.5
 
@@ -100,12 +100,12 @@ Includes the 1.3.4 navigation crash fix, previous feature fixes and Japanese/Eng
 
 ## 配布物の確認 / Verify the download
 
-配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.16) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
+配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.17) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
 
-The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.16). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
+The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.17). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
 
 ```text
-1b56c93b533c519bbae1478ba88be87f95859e3a3960106a40198f990b4d7651  DLM-Desktop-v1.3.16-r227-win-x64.zip
+96b5afb72b9bfc79818a4cef6d2bb8744ecd6929a49837a32397e2412486e562  DLM-Desktop-v1.3.17-r228-win-x64.zip
 ```
 
 検証の結果と配布物の識別情報は、Release添付の検証記録と [PROVENANCE.json](PROVENANCE.json) にあります。

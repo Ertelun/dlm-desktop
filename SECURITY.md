@@ -1,11 +1,11 @@
 # Security Policy
 
-Current supported distribution: **DLM Desktop 1.3.16/r227, Windows x64**.
-Canonical Release: https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.16
+Current supported distribution: **DLM Desktop 1.3.17/r228, Windows x64**.
+Canonical Release: https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.17
 
-**1.3.16/r227：DMM/FANZA・DLsite・BOOTHで登録済み作品をダウンロード開始時に確認し、同じ配信元・作品IDがライブラリにあればスキップします。照合中は転送を一時停止。更新や取り直しには作品詳細の「再ダウンロード」を使用してください。作品IDが不明な場合や内容ハッシュで識別するサービスは、完了後の検証を継続します。**
+**1.3.17/r228：ダウンロード開始時の重複確認による一時停止を失敗と誤認し、転送の監視が終了する不具合を修正しました。登録済み作品のスキップと、作品詳細からの明示的な再ダウンロードは継続します。**
 
-**1.3.16/r227 checks supported DMM/FANZA, DLsite and BOOTH product IDs when a download starts and skips works already registered in any configured library. Transfers pause during the local check. Use Redownload in the work details for intentional updates or replacements. Unknown and content-hash identities retain completed-file verification.**
+**1.3.17/r228 fixes a download-start failure caused by treating the temporary duplicate-check pause as a terminal interruption. Duplicate skips and explicit Redownload remain available.**
 
 The reviewed stable WebView2 floor156.0.4314.58 restores the embedded browser and disk-cache management after official Microsoft fixed-version mapping and actual-runtime validation. Stable-only selection, strict version parsing, pre-profile available-version admission and post-environment recheck remain. This release does not bundle/install WebView2 or claim every dependency is vulnerability-free.
 

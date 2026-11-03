@@ -1,0 +1,415 @@
+{
+  "status": "PASS",
+  "version": "1.3.17",
+  "revision": "r228",
+  "sourceCommit": "ff3233174218332608f19cb7df66a239fe71916d",
+  "runtimeZip": "DLM-Desktop-v1.3.17-r228-win-x64.zip",
+  "runtimeZipSha256": "96b5afb72b9bfc79818a4cef6d2bb8744ecd6929a49837a32397e2412486e562",
+  "runtimeZipBytes": 141335921,
+  "finalZipFilesByteMatched": 587,
+  "strictTestProjects": [
+    {
+      "project": "DlmDesktop.AutomaticSafeSnapshotContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.BrowserDownloadContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.BrowserRuntimeSecurityTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.CompactListRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.DownloadProgressRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.ImportPromotionContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.LibraryRelocationContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.LocalizationContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.LocalizationRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.LocalProvenanceContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.ManualIntakeContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.MembershipPostWorkContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.NavigationRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.SecurityBoundaryContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.SmokeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.UserStateBackupContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.ViewerDeletionRuntimeTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.WatchFolderContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDesktop.ZipEncodingContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDownloader.HostContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDownloader.NetworkSafetyContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDownloader.ProviderCapabilityContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    },
+    {
+      "project": "DlmDownloader.StagingContractTests",
+      "lockedRestore": "PASS",
+      "releaseBuild": "PASS",
+      "runtime": "PASS",
+      "isolatedUserData": true
+    }
+  ],
+  "downloadCacheCleanupChecks": 13,
+  "cacheCoverage": [
+    "retained failed imports and abandoned partial downloads",
+    "preview has no deletion",
+    "exact deleted-file and logical-byte totals",
+    "new files after preview preserved",
+    "changed/locked/disappeared files not counted as deleted",
+    "profiles/staging/thumbnails/library preserved",
+    "unexpected nested directories never traversed or deleted",
+    "managed default folders preserved"
+  ],
+  "exactPackageRegressionRunners": [
+    "DlmDesktop.ViewerDeletionRuntimeTests",
+    "DlmDesktop.BrowserRuntimeSecurityTests",
+    "DlmDesktop.NavigationRuntimeTests",
+    "DlmDesktop.DownloadProgressRuntimeTests",
+    "DlmDesktop.ZipEncodingContractTests",
+    "DlmDesktop.LocalizationRuntimeTests",
+    "DlmDesktop.BrowserDownloadContractTests"
+  ],
+  "packagedSelfTest": "PASS",
+  "packagedSmokeWindow": "PASS",
+  "hostSelfTest": "PASS",
+  "zipSelfTest": "PASS",
+  "zipSmokeWindow": "PASS",
+  "unicodeSpaceExtractionPath": true,
+  "nativeParserProbes": 39,
+  "liveBrowserChecks": {
+    "source-live-browser": 9,
+    "package-live-browser": 9,
+    "zip-live-browser": 9
+  },
+  "liveBrowserScope": "Microsoft-signed fixed WebView2 156.0.4314.58, isolated local HTML/DOM, disk-cache clear and synthetic Cookie retention; no real provider account or library",
+  "sourceAndDebugFilesInZip": 0,
+  "embeddedProductSourceRecords": 0,
+  "checkedPEFiles": 4,
+  "changedProductFiles": [
+    "DlmDesktop.Core.dll",
+    "DoujinLibraryManagerDesktop.deps.json",
+    "DoujinLibraryManagerDesktop.dll"
+  ],
+  "frameworkNativeHostDependenciesByteIdenticalTo": "v1.3.16/r227",
+  "limitations": "Removed bytes are logical file sizes; actual free-space changes depend on the filesystem and concurrent activity. Windows x64. Unsigned. External WebView2 required. No blanket dependency-safety claim.",
+  "storageMaintenanceChecks": 18,
+  "storageMaintenanceCoverage": [
+    "allowlisted categories and exact totals",
+    "cancel and one-shot requests",
+    "environment-referenced legacy SDK preserved",
+    "new/busy files preserved",
+    "real junction target preserved",
+    "cookies, LocalStorage, IndexedDB, installed components, library works, thumbnails, receipts and backups preserved",
+    "modified enum request rejected"
+  ],
+  "downloadPreflightContractChecks": 32,
+  "downloadPreflightRealWpfChecks": 28,
+  "downloadPreflightCoverage": [
+    "cross-library exact identities",
+    "conflicting/unknown hints defer",
+    "fresh registration/deletion",
+    "expired and single-use permissions",
+    "concurrent transfer authority isolation",
+    "multipart continuity",
+    "missing/moved/duplicate destination refusal",
+    "admission failure releases authority"
+  ],
+  "limits": "Initial request and buffering may consume bytes. Runtime Pause failure falls back to early duplicate cancellation. Unknown/content-hash identities keep completed-file checks. Live transfer control was measured with synthetic loopback data, not provider/account downloads.",
+  "syntheticTransferControl": {
+    "source-host-preflight": {
+      "status": "PASS",
+      "runtime": "156.0.4314.58",
+      "hostAssembly": "H:\\chatgpt\\dlm-download-start-fix-20261103\\source\\apps\\desktop\\tests\\DlmDesktop.DownloadProgressRuntimeTests\\bin\\Release\\net10.0-windows10.0.19041.0\\win-x64\\DoujinLibraryManagerDesktop.dll",
+      "localSyntheticResponsesOnly": true,
+      "results": [
+        {
+          "scenario": "async-start",
+          "startedCount": 1,
+          "completedCount": 1,
+          "rejectedCount": 0,
+          "pausedReason": "UserPaused",
+          "finalState": "Completed"
+        },
+        {
+          "scenario": "sync-start",
+          "startedCount": 1,
+          "completedCount": 1,
+          "rejectedCount": 0,
+          "pausedReason": "UserPaused",
+          "finalState": "Completed"
+        },
+        {
+          "scenario": "async-preflight",
+          "startedCount": 1,
+          "completedCount": 1,
+          "rejectedCount": 0,
+          "pausedReason": "UserPaused",
+          "finalState": "Completed"
+        },
+        {
+          "scenario": "skip-duplicate",
+          "startedCount": 0,
+          "completedCount": 0,
+          "rejectedCount": 0,
+          "pausedReason": "UserPaused",
+          "finalState": "Interrupted"
+        },
+        {
+          "scenario": "user-cancel",
+          "startedCount": 1,
+          "completedCount": 0,
+          "rejectedCount": 1,
+          "pausedReason": "UserPaused",
+          "finalState": "Interrupted"
+        },
+        {
+          "scenario": "started-callback-failure",
+          "startedCount": 1,
+          "completedCount": 1,
+          "rejectedCount": 0,
+          "pausedReason": "UserPaused",
+          "finalState": "Completed"
+        }
+      ]
+    },
+    "package-host-preflight": {
+      "status": "PASS",
+      "runtime": "156.0.4314.58",
+      "hostAssembly": "H:\\chatgpt\\dlm-download-start-fix-20261103\\package-runtime-tests\\DoujinLibraryManagerDesktop.dll",
+      "localSyntheticResponsesOnly": true,
+      "results": [
+        {
+          "scenario": "async-start",
+          "startedCount": 1,
+          "completedCount": 1,
+          "rejectedCount": 0,
+          "pausedReason": "UserPaused",
+          "finalState": "Completed"
+        },
+        {
+          "scenario": "sync-start",
+          "startedCount": 1,
+          "completedCount": 1,
+          "rejectedCount": 0,
+          "pausedReason": "UserPaused",
+          "finalState": "Completed"
+        },
+        {
+          "scenario": "async-preflight",
+          "startedCount": 1,
+          "completedCount": 1,
+          "rejectedCount": 0,
+          "pausedReason": "UserPaused",
+          "finalState": "Completed"
+        },
+        {
+          "scenario": "skip-duplicate",
+          "startedCount": 0,
+          "completedCount": 0,
+          "rejectedCount": 0,
+          "pausedReason": "UserPaused",
+          "finalState": "Interrupted"
+        },
+        {
+          "scenario": "user-cancel",
+          "startedCount": 1,
+          "completedCount": 0,
+          "rejectedCount": 1,
+          "pausedReason": "UserPaused",
+          "finalState": "Interrupted"
+        },
+        {
+          "scenario": "started-callback-failure",
+          "startedCount": 1,
+          "completedCount": 1,
+          "rejectedCount": 0,
+          "pausedReason": "UserPaused",
+          "finalState": "Completed"
+        }
+      ]
+    },
+    "zip-host-preflight": {
+      "status": "PASS",
+      "runtime": "156.0.4314.58",
+      "hostAssembly": "H:\\chatgpt\\dlm-download-start-fix-20261103\\zip-runtime-tests\\DoujinLibraryManagerDesktop.dll",
+      "localSyntheticResponsesOnly": true,
+      "results": [
+        {
+          "scenario": "async-start",
+          "startedCount": 1,
+          "completedCount": 1,
+          "rejectedCount": 0,
+          "pausedReason": "UserPaused",
+          "finalState": "Completed"
+        },
+        {
+          "scenario": "sync-start",
+          "startedCount": 1,
+          "completedCount": 1,
+          "rejectedCount": 0,
+          "pausedReason": "UserPaused",
+          "finalState": "Completed"
+        },
+        {
+          "scenario": "async-preflight",
+          "startedCount": 1,
+          "completedCount": 1,
+          "rejectedCount": 0,
+          "pausedReason": "UserPaused",
+          "finalState": "Completed"
+        },
+        {
+          "scenario": "skip-duplicate",
+          "startedCount": 0,
+          "completedCount": 0,
+          "rejectedCount": 0,
+          "pausedReason": "UserPaused",
+          "finalState": "Interrupted"
+        },
+        {
+          "scenario": "user-cancel",
+          "startedCount": 1,
+          "completedCount": 0,
+          "rejectedCount": 1,
+          "pausedReason": "UserPaused",
+          "finalState": "Interrupted"
+        },
+        {
+          "scenario": "started-callback-failure",
+          "startedCount": 1,
+          "completedCount": 1,
+          "rejectedCount": 0,
+          "pausedReason": "UserPaused",
+          "finalState": "Completed"
+        }
+      ]
+    }
+  },
+  "downloadStartRegression": {
+    "baseline": "unmodified r227 host reproduced download-interrupted-or-canceled with synchronous preflight and asynchronous started callback",
+    "actualBrowserReason": "UserPaused; CanResume=true",
+    "sourcePackageZipCases": 18,
+    "scope": "Synthetic local responses/loopback only, no real provider account"
+  }
+}
