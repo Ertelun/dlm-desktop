@@ -1,6 +1,10 @@
+> **1.3.18/r229：埋込みブラウザーとWebView2を起動するキャッシュ操作を安全のため一時停止しています。ライブラリ・ローカル閲覧・手動取り込みは利用できます。WebView2の更新だけでは解除されません。**
+>
+> **Embedded browser and WebView2-backed cache operations are temporarily paused. Library, local viewing and Manual Intake remain available. A reviewed DLM recovery release is required; updating WebView2 alone does not lift this hold.**
+
 # Download duplicate preflight / ダウンロード開始時の重複確認
 
-DLM Desktop 1.3.17 / r228
+DLM Desktop 1.3.18 / r229
 
 ## 登録済み作品の不要な再転送を避ける
 
@@ -18,8 +22,8 @@ For updates or intentional replacements, select Redownload in the work details, 
 
 Unknown/conflicting IDs and content-hash providers retain completed-file validation. Unavailable libraries are not reported as verified clean. The local check pauses the transfer; initial requests, browser/TCP buffering and runtime Pause failures prevent any zero-bandwidth guarantee. Existing completed-file validation and collision checks remain in place.
 
-## 1.3.17 correction / 修正
+## 1.3.18 correction / 修正
 
-**1.3.17/r228：ダウンロード開始時の重複確認による一時停止を失敗と誤認し、転送の監視が終了する不具合を修正しました。登録済み作品のスキップと、作品詳細からの明示的な再ダウンロードは継続します。**
+**1.3.18/r229：新規Chromium Criticalへの緩和として埋込みブラウザーを一時停止しました。r228までの修正と既存のHTTP安全策は保持します。**
 
-**1.3.17/r228 fixes a download-start failure caused by treating the temporary duplicate-check pause as a terminal interruption. Duplicate skips and explicit Redownload remain available.**
+**1.3.18/r229 temporarily pauses the embedded browser for new Chromium Critical advisories. Earlier r228 corrections and existing HTTP safeguards are retained.**

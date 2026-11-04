@@ -1,20 +1,24 @@
+> **1.3.18/r229：埋込みブラウザーとWebView2を起動するキャッシュ操作を安全のため一時停止しています。ライブラリ・ローカル閲覧・手動取り込みは利用できます。WebView2の更新だけでは解除されません。**
+>
+> **Embedded browser and WebView2-backed cache operations are temporarily paused. Library, local viewing and Manual Intake remain available. A reviewed DLM recovery release is required; updating WebView2 alone does not lift this hold.**
+
 # DLM Desktop — Doujin Library Manager Desktop
 
 **増えた同人・デジタル作品を、PC上でまとめて整理・閲覧するローカルライブラリ。**
 
 DLM Desktop is a local Windows library by Ertelun for organizing, finding and viewing digital works you keep on your PC.
 
-**1.3.17（r228）正式版 / Stable release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
+**1.3.18（r229）正式版 / Stable release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
 
-[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.17/DLM-Desktop-v1.3.17-r228-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.17) · [更新内容 / Release notes](RELEASE_NOTES-r228-JA-EN.md)
+[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.18/DLM-Desktop-v1.3.18-r229-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.18) · [更新内容 / Release notes](RELEASE_NOTES-r229-JA-EN.md)
 
 **[マニュアル / User manual](MANUAL.md)** · [日本語](manual/ja.md) · [English](manual/en.md)
 
 [開発支援のご案内 / Sponsorship information](SUPPORT.md) · **月額支援の申し込み・決済は未開始 / Monthly sponsorship signups and payments have not started**
 
-**1.3.17/r228：ダウンロード開始時の重複確認による一時停止を失敗と誤認し、転送の監視が終了する不具合を修正しました。登録済み作品のスキップと、作品詳細からの明示的な再ダウンロードは継続します。**
+**1.3.18/r229：新規Chromium Criticalへの緩和として埋込みブラウザーを一時停止しました。r228までの修正と既存のHTTP安全策は保持します。**
 
-**1.3.17/r228 fixes a download-start failure caused by treating the temporary duplicate-check pause as a terminal interruption. Duplicate skips and explicit Redownload remain available.**
+**1.3.18/r229 temporarily pauses the embedded browser for new Chromium Critical advisories. Earlier r228 corrections and existing HTTP safeguards are retained.**
 
 ## 起動方法 / Getting started
 
@@ -32,9 +36,9 @@ README.txt
 app/
 ```
 
-.NETランタイムを同梱しています。埋込みブラウザーには安定版WebView2 Runtime156.0.4314.58以降が必要です。詳細資料とライセンスはapp/docsにあります。既存のライブラリとユーザー設定を利用できます。
+.NETランタイムを同梱しています。埋込みブラウザーは一時停止中です。詳細資料とライセンスはapp/docsにあります。既存のライブラリとユーザー設定を利用できます。
 
-.NET is bundled. The embedded browser requires stable WebView2 Runtime156.0.4314.58 or later. Documentation and licenses are in app/docs. Existing libraries and user settings remain usable.
+.NET is bundled. The embedded browser is temporarily paused. Documentation and licenses are in app/docs. Existing libraries and user settings remain usable.
 
 ## 言語 / Language
 
@@ -78,11 +82,11 @@ During deletion, progress and elapsed time are shown. Esc returns to the library
 
 ## ブラウザー復旧と必要な更新 / Browser recovery and required update
 
-Microsoftの修正一覧と正式WebView2配布を照合し、CVE-2026-118306/118331/118348/118344とCVE-2026-76024への対応を確認した安定版156.0.4314.58を最低版としました。Runtime検出前の全面停止を解除し、安定版の検出時と実Environment生成後の両方で版を検査します。古い版・不明な版・プレビュー版はcontroller作成前に拒否します。
+r225以前のCriticalへの復旧判定は新しいCriticalへの解除根拠にはしません。r229はRuntime検出前に停止し、修正済み安定版WebView2への収録と製品の検証を完了した復旧版で解除します。 / Earlier recovery evidence does not establish fixes for the new Critical advisories. r229 blocks before Runtime discovery; a validated DLM recovery release is required.
 
-The reviewed stable floor156.0.4314.58 includes Microsoft's fixes for the four earlier Critical Chromium issues and CVE-2026-76024. Browser workflows and disk-cache management are restored. Stable-only discovery and the actual-environment version recheck remain; older/unknown/preview Runtime selections are rejected before controller admission. Update both DLM and the official external WebView2 Runtime, then restart DLM. The external engine is not bundled or installed by this ZIP.
+r225以前のCriticalへの復旧判定は新しいCriticalへの解除根拠にはしません。r229はRuntime検出前に停止し、修正済み安定版WebView2への収録と製品の検証を完了した復旧版で解除します。 / Earlier recovery evidence does not establish fixes for the new Critical advisories. r229 blocks before Runtime discovery; a validated DLM recovery release is required.
 
-[今回のリリースノート / Release notes](RELEASE_NOTES-r228-JA-EN.md) · [Security Policy](SECURITY.md)
+[今回のリリースノート / Release notes](RELEASE_NOTES-r229-JA-EN.md) · [Security Policy](SECURITY.md)
 
 ## 1.3.5から引き継ぐ修正 / Fixes retained from 1.3.5
 
@@ -100,12 +104,12 @@ Includes the 1.3.4 navigation crash fix, previous feature fixes and Japanese/Eng
 
 ## 配布物の確認 / Verify the download
 
-配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.17) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
+配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.18) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
 
-The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.17). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
+The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.18). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
 
 ```text
-a146d3e7b13d6cc8c919d1edda56e7e2609b2d751a2241f8edd3815bea2a91e4  DLM-Desktop-v1.3.17-r228-win-x64.zip
+557231ac8b93184b3c1347c0b68eb482147765c64ba33a08e205be943578bdaf  DLM-Desktop-v1.3.18-r229-win-x64.zip
 ```
 
 検証の結果と配布物の識別情報は、Release添付の検証記録と [PROVENANCE.json](PROVENANCE.json) にあります。
@@ -140,6 +144,6 @@ Settings → Storage maintenance → Cache storage and cleanup shows file/byte t
 
 Deletion runs before viewers and browser profiles open, is deferred while another DLM or Downloader Host is running, uses no-follow pinned Windows handles, preserves files written after the request, and never follows reparse points. Only exact app-owned cache roots are permitted; the saved request cannot supply arbitrary paths. Unexpected or locked files are reported and preserved.
 
-Library works, retained download originals, cookies/sign-ins, LocalStorage, IndexedDB, installed browser components (including Widevine), stored official thumbnails, organization/reading state, import receipts and user backups are excluded. Retained downloads and stored thumbnails have separate explicit-confirmation actions. Browser disk-cache clearing remains available immediately as a separate action; the new startup cleanup also handles code/shader/offline caches and obsolete SDK files without resetting sign-ins. Deleted caches can be downloaded or rebuilt again when needed.
+Library works, retained download originals, cookies/sign-ins, LocalStorage, IndexedDB, installed browser components (including Widevine), stored official thumbnails, organization/reading state, import receipts and user backups are excluded. Retained downloads and stored thumbnails have separate explicit-confirmation actions. WebView2-backed disk-cache clearing is temporarily paused by the security hold; the new startup cleanup also handles code/shader/offline caches and obsolete SDK files without resetting sign-ins. Deleted caches can be downloaded or rebuilt again when needed.
 
 作品・ログイン状態・ブラウザー実行部品・整理情報・閲覧位置・バックアップ・取り込み記録は対象外です。残存ダウンロードと保存サムネイルは個別操作で確認して削除します。削除したキャッシュは次回利用時に再生成・再取得される場合があります。

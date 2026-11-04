@@ -1,15 +1,19 @@
-# DLM Desktop 1.3.17（r228）日本語マニュアル
+> **1.3.18/r229：埋込みブラウザーとWebView2を起動するキャッシュ操作を安全のため一時停止しています。ライブラリ・ローカル閲覧・手動取り込みは利用できます。WebView2の更新だけでは解除されません。**
+>
+> **Embedded browser and WebView2-backed cache operations are temporarily paused. Library, local viewing and Manual Intake remain available. A reviewed DLM recovery release is required; updating WebView2 alone does not lift this hold.**
 
-**1.3.17/r228：ダウンロード開始時の重複確認による一時停止を失敗と誤認し、転送の監視が終了する不具合を修正しました。登録済み作品のスキップと、作品詳細からの明示的な再ダウンロードは継続します。**
+# DLM Desktop 1.3.18（r229）日本語マニュアル
 
-**1.3.17/r228 fixes a download-start failure caused by treating the temporary duplicate-check pause as a terminal interruption. Duplicate skips and explicit Redownload remain available.**
+**1.3.18/r229：新規Chromium Criticalへの緩和として埋込みブラウザーを一時停止しました。r228までの修正と既存のHTTP安全策は保持します。**
+
+**1.3.18/r229 temporarily pauses the embedded browser for new Chromium Critical advisories. Earlier r228 corrections and existing HTTP safeguards are retained.**
 
 
 [開始時の重複確認](../DOWNLOAD-PREFLIGHT.md)
 
 [マニュアル入口](../MANUAL.md) · [English](en.md) · [README](../README.md)
 
-Windows x64版 1.3.17（r228）が対象です。確認日：2026年11月3日（日本時間）。画面ラベルは配布記録に対応する最新ソース `ff3233174218332608f19cb7df66a239fe71916d` のXAML・表示用プロパティ・日英ローカライズ処理に基づきます。コード表記は日本語設定での実際のラベルです。公式サイト内のログイン・購入・ダウンロード操作は、各サイトの画面に従ってください。
+Windows x64版 1.3.18（r229）が対象です。確認日：2026年11月3日（日本時間）。画面ラベルは配布記録に対応する最新ソース `ff3233174218332608f19cb7df66a239fe71916d` のXAML・表示用プロパティ・日英ローカライズ処理に基づきます。コード表記は日本語設定での実際のラベルです。公式サイト内のログイン・購入・ダウンロード操作は、各サイトの画面に従ってください。
 
 <a id="contents"></a>
 ## 目次：やりたいことから選ぶ
@@ -37,11 +41,11 @@ Windows x64版 1.3.17（r228）が対象です。確認日：2026年11月3日（
 <a id="start"></a>
 ### 1. アプリを起動する
 
-1. [最新版の配布ページ](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.17)からWindows x64 ZIPを取得します。
+1. [最新版の配布ページ](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.18)からWindows x64 ZIPを取得します。
 2. 以前のDLM Desktopを終了し、ZIP全体を新しい空のフォルダへ展開します。
 3. `DoujinLibraryManagerDesktop.exe` を起動します。隣にある `app` フォルダも必要です。
 
-.NETは同梱されています。埋め込みブラウザの利用には安定版Microsoft Edge WebView2 Runtime156.0.4314.58以降が必要です。日本語以外で起動した場合は、[表示と言語](#language)で変更できます。
+.NETは同梱されています。埋め込みブラウザは安全のため一時停止中です。日本語以外で起動した場合は、[表示と言語](#language)で変更できます。
 
 左側の移動先は次の4つです。先頭の○は未選択、●は現在の画面を示します。
 
@@ -445,7 +449,7 @@ DLM内の確認と、専門ソフトで行う編集は別です。すべての�
 | 症状 | 確認すること |
 |---|---|
 | 保存先を設定するよう求められる | [ライブラリを指定](#library)。★保存先が接続されているか[設定](#roots)で確認 |
-| ブラウザが表示されない | 安定版WebView2 Runtime156.0.4314.58以降へ更新し、DLMを再起動してください。ZIP全体を展開して `app` をEXEの隣に置いているか確認 |
+| ブラウザが表示されない | r229はアプリ側で安全のため一時停止しています。WebView2の更新だけでは解除されません。ZIP全体を展開して `app` をEXEの隣に置いているか確認 |
 | ログインが拒否される | 公式の別ログイン方式や[外部ブラウザ](#browser)を使用。外部ブラウザのログインがDLMにも反映されるとは限らない |
 | 転送100%なのに作品がない | [DLセンター](#progress)で検証・展開・登録を確認。GOGは[受付確定](#gog)が必要 |
 | ZIPから展開した日本語の名前が文字化けする | 1.3.5以降で元ZIPから再展開。元ZIPがなければ作品詳細の[再ダウンロード](#redownload)で公式サイトから取得し直す。起動だけで既存の名前は修復されない |
@@ -495,6 +499,6 @@ Settings → Storage maintenance → Cache storage and cleanup shows file/byte t
 
 Deletion runs before viewers and browser profiles open, is deferred while another DLM or Downloader Host is running, uses no-follow pinned Windows handles, preserves files written after the request, and never follows reparse points. Only exact app-owned cache roots are permitted; the saved request cannot supply arbitrary paths. Unexpected or locked files are reported and preserved.
 
-Library works, retained download originals, cookies/sign-ins, LocalStorage, IndexedDB, installed browser components (including Widevine), stored official thumbnails, organization/reading state, import receipts and user backups are excluded. Retained downloads and stored thumbnails have separate explicit-confirmation actions. Browser disk-cache clearing remains available immediately as a separate action; the new startup cleanup also handles code/shader/offline caches and obsolete SDK files without resetting sign-ins. Deleted caches can be downloaded or rebuilt again when needed.
+Library works, retained download originals, cookies/sign-ins, LocalStorage, IndexedDB, installed browser components (including Widevine), stored official thumbnails, organization/reading state, import receipts and user backups are excluded. Retained downloads and stored thumbnails have separate explicit-confirmation actions. WebView2-backed disk-cache clearing is temporarily paused by the security hold; the new startup cleanup also handles code/shader/offline caches and obsolete SDK files without resetting sign-ins. Deleted caches can be downloaded or rebuilt again when needed.
 
 作品・ログイン状態・ブラウザー実行部品・整理情報・閲覧位置・バックアップ・取り込み記録は対象外です。残存ダウンロードと保存サムネイルは個別操作で確認して削除します。削除したキャッシュは次回利用時に再生成・再取得される場合があります。
