@@ -1,8 +1,12 @@
+> **1.3.18/r229：埋込みブラウザーとWebView2を起動するキャッシュ操作を安全のため一時停止しています。ライブラリ・ローカル閲覧・手動取り込みは利用できます。WebView2の更新だけでは解除されません。**
+>
+> **Embedded browser and WebView2-backed cache operations are temporarily paused. Library, local viewing and Manual Intake remain available. A reviewed DLM recovery release is required; updating WebView2 alone does not lift this hold.**
+
 # Provider Capabilities — DLM Desktop 1.3.5
 
-**1.3.17/r228：ダウンロード開始時の重複確認による一時停止を失敗と誤認し、転送の監視が終了する不具合を修正しました。登録済み作品のスキップと、作品詳細からの明示的な再ダウンロードは継続します。**
+**1.3.18/r229：新規Chromium Criticalへの緩和として埋込みブラウザーを一時停止しました。r228までの修正と既存のHTTP安全策は保持します。**
 
-**1.3.17/r228 fixes a download-start failure caused by treating the temporary duplicate-check pause as a terminal interruption. Duplicate skips and explicit Redownload remain available.**
+**1.3.18/r229 temporarily pauses the embedded browser for new Chromium Critical advisories. Earlier r228 corrections and existing HTTP safeguards are retained.**
 
 
 ログイン、購入、ダウンロード開始は、ユーザー自身が各サービスの公式画面で操作します。取得できる配信形式を限定し、保存したファイルを検証してローカルライブラリへ登録します。
