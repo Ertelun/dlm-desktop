@@ -58,9 +58,9 @@ Provider web pages and Windows file dialogs follow their own language settings.
 
 These qualification screenshots use synthetic data and contain no real accounts, purchase history or work imagery.
 
-## 主な機能 / Main features
+## 保存済み作品の検索・整理・閲覧 / Search, organize and view saved works
 
-- 登録済みライブラリの検索・並び替え・作者別表示・コレクション / Search, sort, group by creator and organize collections.
+- 登録済みライブラリの[検索・絞り込み](manual/ja.md#search)・並び替え・作者別表示・コレクション / [Search and filter](manual/en.md#search), sort, group by creator and organize collections.
 - 対応する画像・PDF・動画・音声・3Dモデル等のローカル閲覧 / View supported local images, PDFs, video, audio and 3D models.
 - 閲覧位置の保存・再開、ユーザー設定のバックアップ・復元 / Resume reading and back up or restore user state.
 - 対応する公式ダウンロードの保存・検証・登録補助 / Assist with saving, validating and registering supported downloads from official provider pages.
@@ -80,9 +80,7 @@ See [Provider Capabilities](PROVIDER_CAPABILITIES.md) and [Known Limitations](KN
 
 During deletion, progress and elapsed time are shown. Esc returns to the library while confirmed deletion continues. Permanent folder deletion cannot be undone; its duration depends on file count and storage. See the [release notes](RELEASE_NOTES-r219-JA-EN.md).
 
-## ブラウザー復旧と必要な更新 / Browser recovery and required update
-
-r225以前のCriticalへの復旧判定は新しいCriticalへの解除根拠にはしません。r229はRuntime検出前に停止し、修正済み安定版WebView2への収録と製品の検証を完了した復旧版で解除します。 / Earlier recovery evidence does not establish fixes for the new Critical advisories. r229 blocks before Runtime discovery; a validated DLM recovery release is required.
+## 埋込みブラウザーの現在の制限 / Current embedded-browser limitation
 
 r225以前のCriticalへの復旧判定は新しいCriticalへの解除根拠にはしません。r229はRuntime検出前に停止し、修正済み安定版WebView2への収録と製品の検証を完了した復旧版で解除します。 / Earlier recovery evidence does not establish fixes for the new Critical advisories. r229 blocks before Runtime discovery; a validated DLM recovery release is required.
 
