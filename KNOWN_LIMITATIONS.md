@@ -1,16 +1,16 @@
-> **1.3.18/r229：埋込みブラウザーとWebView2を起動するキャッシュ操作を安全のため一時停止しています。ライブラリ・ローカル閲覧・手動取り込みは利用できます。WebView2の更新だけでは解除されません。**
+> **1.3.19/r230：安定版WebView2 Runtime 157.0.4341.42以降を条件に、埋込みブラウザーとブラウザーキャッシュ操作を復旧しました。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。**
 >
-> **Embedded browser and WebView2-backed cache operations are temporarily paused. Library, local viewing and Manual Intake remain available. A reviewed DLM recovery release is required; updating WebView2 alone does not lift this hold.**
+> **1.3.19/r230 restores the embedded browser and browser-cache operations with stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.**
 
-# Known Limitations — DLM Desktop1.3.18
+# Known Limitations — DLM Desktop1.3.19
 
-**1.3.18/r229：新規Chromium Criticalへの緩和として埋込みブラウザーを一時停止しました。r228までの修正と既存のHTTP安全策は保持します。**
+**1.3.19/r230：安定版WebView2 Runtime 157.0.4341.42以降を条件に、埋込みブラウザーとブラウザーキャッシュ操作を復旧しました。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。**
 
-**1.3.18/r229 temporarily pauses the embedded browser for new Chromium Critical advisories. Earlier r228 corrections and existing HTTP safeguards are retained.**
+**1.3.19/r230 restores the embedded browser and browser-cache operations with stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.**
 
 
 - Windows x64、ZIP、コード署名なし。ARM64はこの版の検証対象外です。 / Windows x64 ZIP, unsigned; ARM64 is outside this release's qualification.
-- appフォルダを本体EXEの隣に置いてください。.NET同梱、ブラウザーは一時停止中です。 / Keep app beside the EXE. .NET is bundled; browser workflows are temporarily paused.
+- appフォルダを本体EXEの隣に置いてください。.NET同梱、ブラウザーは安定版WebView2 Runtime157.0.4341.42以降が必要です。 / Keep app beside the EXE. .NET is bundled; browser workflows require stable WebView2 Runtime157.0.4341.42 or later.
 - 日英の言語変更はアプリ画面へ即時反映します。作品情報は機械翻訳しません。WebページとWindows標準ファイル選択画面はそれぞれの言語設定に従います。 / Application language changes apply immediately. Work metadata is not machine-translated. Web pages and Windows file dialogs use their own language settings.
 - 各サービスの仕様は独立して変わるため、対応する通常配信に範囲を限定しています。 / Provider behavior can change independently; assistance is limited to supported delivery modes.
 - ログイン・購入・ダウンロード開始はユーザー操作です。保護された配信などは公式手段を利用してください。 / Login, purchases and downloads remain user actions. Protected delivery stays on official routes.

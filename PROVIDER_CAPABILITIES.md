@@ -1,12 +1,12 @@
-> **1.3.18/r229：埋込みブラウザーとWebView2を起動するキャッシュ操作を安全のため一時停止しています。ライブラリ・ローカル閲覧・手動取り込みは利用できます。WebView2の更新だけでは解除されません。**
+> **1.3.19/r230：安定版WebView2 Runtime 157.0.4341.42以降を条件に、埋込みブラウザーとブラウザーキャッシュ操作を復旧しました。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。**
 >
-> **Embedded browser and WebView2-backed cache operations are temporarily paused. Library, local viewing and Manual Intake remain available. A reviewed DLM recovery release is required; updating WebView2 alone does not lift this hold.**
+> **1.3.19/r230 restores the embedded browser and browser-cache operations with stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.**
 
 # Provider Capabilities — DLM Desktop 1.3.5
 
-**1.3.18/r229：新規Chromium Criticalへの緩和として埋込みブラウザーを一時停止しました。r228までの修正と既存のHTTP安全策は保持します。**
+**1.3.19/r230：安定版WebView2 Runtime 157.0.4341.42以降を条件に、埋込みブラウザーとブラウザーキャッシュ操作を復旧しました。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。**
 
-**1.3.18/r229 temporarily pauses the embedded browser for new Chromium Critical advisories. Earlier r228 corrections and existing HTTP safeguards are retained.**
+**1.3.19/r230 restores the embedded browser and browser-cache operations with stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.**
 
 
 ログイン、購入、ダウンロード開始は、ユーザー自身が各サービスの公式画面で操作します。取得できる配信形式を限定し、保存したファイルを検証してローカルライブラリへ登録します。
