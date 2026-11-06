@@ -1,15 +1,15 @@
-> **1.3.18/r229：埋込みブラウザーとWebView2を起動するキャッシュ操作を安全のため一時停止しています。ライブラリ・ローカル閲覧・手動取り込みは利用できます。WebView2の更新だけでは解除されません。**
+> **1.3.19/r230：安定版WebView2 Runtime 157.0.4341.42以降を条件に、埋込みブラウザーとブラウザーキャッシュ操作を復旧しました。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。**
 >
-> **Embedded browser and WebView2-backed cache operations are temporarily paused. Library, local viewing and Manual Intake remain available. A reviewed DLM recovery release is required; updating WebView2 alone does not lift this hold.**
+> **1.3.19/r230 restores the embedded browser and browser-cache operations with stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.**
 
 # DLM Desktop マニュアル / User manual
 
-**1.3.18/r229：新規Chromium Criticalへの緩和として埋込みブラウザーを一時停止しました。r228までの修正と既存のHTTP安全策は保持します。**
+**1.3.19/r230：安定版WebView2 Runtime 157.0.4341.42以降を条件に、埋込みブラウザーとブラウザーキャッシュ操作を復旧しました。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。**
 
-**1.3.18/r229 temporarily pauses the embedded browser for new Chromium Critical advisories. Earlier r228 corrections and existing HTTP safeguards are retained.**
+**1.3.19/r230 restores the embedded browser and browser-cache operations with stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.**
 
 
-**DLM Desktop 1.3.18（r229） / Windows x64**
+**DLM Desktop 1.3.19（r230） / Windows x64**
 
 - [日本語マニュアル](manual/ja.md) — ライブラリの指定からダウンロード・閲覧までの基本操作と、目的別の詳しい操作。
 - [English manual](manual/en.md) — Essential steps from choosing a library through downloading and viewing, followed by detailed task-based instructions.
@@ -28,7 +28,7 @@
 
 Screen labels were checked against the matching XAML, presentation properties and Japanese/English localization functions. The application uses DLD, DLM and Library in different places. Code-formatted labels in each manual match that interface language. Provider web pages and standard Windows dialogs have their own labels and language settings.
 
-対象版 / Version: [1.3.18（r229）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.18). 確認日 / Checked: 2026-11-03 (JST). 対応ソース / Matching source commit: `ff3233174218332608f19cb7df66a239fe71916d` ([配布記録 / Provenance](PROVENANCE.json)).
+対象版 / Version: [1.3.19（r230）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.19). 確認日 / Checked: 2026-11-03 (JST). 対応ソース / Matching source commit: `ff3233174218332608f19cb7df66a239fe71916d` ([配布記録 / Provenance](PROVENANCE.json)).
 
 [READMEへ / Back to README](README.md)
 
@@ -40,6 +40,6 @@ Settings → Storage maintenance → Cache storage and cleanup shows file/byte t
 
 Deletion runs before viewers and browser profiles open, is deferred while another DLM or Downloader Host is running, uses no-follow pinned Windows handles, preserves files written after the request, and never follows reparse points. Only exact app-owned cache roots are permitted; the saved request cannot supply arbitrary paths. Unexpected or locked files are reported and preserved.
 
-Library works, retained download originals, cookies/sign-ins, LocalStorage, IndexedDB, installed browser components (including Widevine), stored official thumbnails, organization/reading state, import receipts and user backups are excluded. Retained downloads and stored thumbnails have separate explicit-confirmation actions. WebView2-backed disk-cache clearing is temporarily paused by the security hold; the new startup cleanup also handles code/shader/offline caches and obsolete SDK files without resetting sign-ins. Deleted caches can be downloaded or rebuilt again when needed.
+Library works, retained download originals, cookies/sign-ins, LocalStorage, IndexedDB, installed browser components (including Widevine), stored official thumbnails, organization/reading state, import receipts and user backups are excluded. Retained downloads and stored thumbnails have separate explicit-confirmation actions. WebView2-backed disk-cache clearing requires the same stable Runtime157.0.4341.42 admission; the new startup cleanup also handles code/shader/offline caches and obsolete SDK files without resetting sign-ins. Deleted caches can be downloaded or rebuilt again when needed.
 
 作品・ログイン状態・ブラウザー実行部品・整理情報・閲覧位置・バックアップ・取り込み記録は対象外です。残存ダウンロードと保存サムネイルは個別操作で確認して削除します。削除したキャッシュは次回利用時に再生成・再取得される場合があります。

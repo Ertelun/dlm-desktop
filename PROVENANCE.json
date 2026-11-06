@@ -1,18 +1,18 @@
 {
-  "schema": "dlm-desktop-public-stable-v10",
+  "schema": "dlm-desktop-public-stable-v11",
   "product": "DLM Desktop",
   "publisher": "Ertelun",
-  "version": "1.3.18",
-  "revision": "r229",
+  "version": "1.3.19",
+  "revision": "r230",
   "stage": "Stable",
-  "releaseTag": "v1.3.18",
+  "releaseTag": "v1.3.19",
   "canonicalRepository": "Ertelun/dlm-desktop",
-  "releaseUrl": "https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.18",
+  "releaseUrl": "https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.19",
   "platform": "win-x64",
   "package": {
-    "file": "DLM-Desktop-v1.3.18-r229-win-x64.zip",
-    "sha256": "557231ac8b93184b3c1347c0b68eb482147765c64ba33a08e205be943578bdaf",
-    "size": 141338113,
+    "file": "DLM-Desktop-v1.3.19-r230-win-x64.zip",
+    "sha256": "71cea8b5ab1927b1627fb78c25af351a4328a71958c41bd4c3ceeb6ef38321ab",
+    "size": 141336647,
     "sdk": "10.0.402",
     "mainBundledRuntime": "10.0.14",
     "bundledRuntime": "Main application10.0.14; retained r218 Downloader Host10.0.12",
@@ -23,24 +23,29 @@
       "README.txt",
       "app/"
     ],
-    "embeddedBrowser": "temporarily-disabled-security-hold",
-    "minimumExternalWebView2Runtime": null,
-    "browserRecovery": "Reviewed DLM recovery release required. Runtime-only update does not lift hold; stable-only discovery and actual-environment recheck retained for future recovery.",
+    "embeddedBrowser": "restored-with-reviewed-stable-runtime-gate",
+    "minimumExternalWebView2Runtime": "157.0.4341.42",
+    "browserRecovery": "Update DLM and official stable WebView2 to157.0.4341.42 or later, then restart DLM. Stable-only discovery and actual-environment recheck retained; external Runtime not bundled.",
     "downloaderHost": "Byte-identical r2181.3.7.218; Runtime10.0.12"
   },
   "source": {
     "storage": "Owner-maintained local committed source/archive; not uploaded",
-    "commit": "7a7d2263ad779f5b45bc64d9416df8349a593f26",
-    "localTag": "desktop-v1.3.18-r229",
-    "file": "DLM-Desktop-v1.3.18-r229-SOURCE.zip",
-    "sha256": "70905f6481661dadaf401d8675b656b09cf5ff42ecac2ff863b94fb3924965dc",
-    "verifiedFiles": 4392,
+    "commit": "c46e5624b5291bf32e98b7ff3a3699cc47ff8efe",
+    "localTag": "desktop-v1.3.19-r230",
+    "file": "DLM-Desktop-v1.3.19-r230-SOURCE.zip",
+    "sha256": "f9ca051531c00fef3d906059431bf64c2ea3ebdb6ce9924e6904496fd2de6507",
+    "verifiedFiles": 4393,
     "publication": "LOCAL ONLY; do not upload source or source ZIP"
   },
-  "verificationFile": "DLM-Desktop-v1.3.18-r229-VERIFICATION.json",
+  "verificationFile": "DLM-Desktop-v1.3.19-r230-VERIFICATION.json",
   "verification": {
     "strictTestProjects": 23,
-    "browserSecurityHoldChecksSourcePackageZipEach": 85,
+    "browserRecoveryAdmissionChecksSourcePackageZipEach": 69,
+    "liveOfficialWebView2Checks": {
+      "source": 10,
+      "package": 10,
+      "zip": 10
+    },
     "httpDecompressionChecksSourcePackageZipEach": 93,
     "nativeParserProbes": 39,
     "exactPackageRegressionRunners": 7,
@@ -53,7 +58,7 @@
     "sourceAndDebugExcluded": true,
     "embeddedProductSourceRecords": 0,
     "checkedPEFiles": 4,
-    "frameworkNativeHostBytesUnchangedFromR228": true
+    "frameworkNativeHostBytesUnchangedFromR229": true
   },
   "security": {
     "cves": [
@@ -62,37 +67,28 @@
       "CVE-2026-121156",
       "CVE-2026-121203"
     ],
-    "vendorSeverity": "Chromium Critical; no numeric CVSS in Google CNA at verification",
-    "mitigation": "Central browser hold before Runtime discovery/profile/environment/controller",
-    "enginePatched": false,
-    "vendorFixStatus": "Microsoft 2026-11-03 states fix being prepared; no reviewed fixed stable WebView2 mapping. Latest reviewed Windows stable156.0.4314.58.",
-    "evidenceScope": "Vendor shared-Chromium memory-safety Critical classification plus enabled provider HTML/DOM product route; no exploit/RCE reproduction or claim of reproducing each CVE precondition.",
+    "vendorSeverity": "Chromium Critical; product restoration requires all four fixes",
+    "recovery": "Central emergency hold replaced by reviewed stable157.0.4341.42 admission floor",
+    "enginePatched": true,
+    "enginePatchScope": "Microsoft external stable Runtime, not patched or bundled by DLM. Actual same-version official WebView2 engine verified.",
+    "vendorFixStatus": "Microsoft Windowsx64 stable157.0.4341.42 API maps all four CVEs; official WebView2 distribution receives the same security updates and provides same-version fixedRuntime; actual Microsoft-signed engine verified and exercised through product gate.",
     "sources": [
-      "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop.html",
+      "https://edgeupdates.microsoft.com/api/products?view=enterprise",
       "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
-      "https://edgeupdates.microsoft.com/api/products?view=enterprise"
+      "https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/distribution",
+      "https://developer.microsoft.com/en-us/microsoft-edge/webview2/"
     ],
-    "retainedHttpBrotliRecovery": "Main .NET10.0.14 and actual-runtime guard unchanged. DownloaderHost10.0.12 does not gain Brotli path.",
-    "remainingTemporaryCveRestrictions": [
-      {
-        "feature": "provider embedded browser and WebView2-backed cache cleanup",
-        "cves": [
-          "CVE-2026-121035",
-          "CVE-2026-121126",
-          "CVE-2026-121156",
-          "CVE-2026-121203"
-        ],
-        "required": "Verified fixes for all applicable CVEs in actual stable WebView2, product application, fresh regression/Release/finalZIP gates; independently safe routes may recover first."
-      }
-    ],
-    "claimLimit": "Mitigation validated at product boundary; no blanket dependency safety."
+    "retainedHttpBrotliRecovery": "Main.NET10.0.14 and actual-runtime guard unchanged; DownloaderHost10.0.12 byte-identical with no Brotli newly enabled.",
+    "remainingTemporaryCveRestrictions": [],
+    "permanentBoundaries": "Stable-only, minimum version, actual-environment recheck, credentials/cookies/redirect/path/native boundaries remain.",
+    "claimLimit": "No blanket dependency safety or exploit/RCE reproduction."
   },
-  "scope": "Minimum central browser hold; library/local viewing/Manual Intake and prior HTTP recovery retained. No SDK/runtime/dependency update.",
+  "scope": "Minimum browser/provider/cache recovery with reviewed stable WebView2 floor. SDK10.0.402, main.NET10.0.14, retainedHost10.0.12, NuGet/native libraries and licenses unchanged.",
   "previousRelease": {
-    "tag": "v1.3.17",
-    "revision": "r228",
+    "tag": "v1.3.18",
+    "revision": "r229",
     "retained": true,
-    "rollbackLimit": "Browser-enabled predecessor; not recommended for security rollback."
+    "rollbackLimit": "r229 retains emergency browser hold; old browser-enabled versions do not enforce new floor."
   },
   "withdrawnRelease": {
     "tag": "v1.3.6",
