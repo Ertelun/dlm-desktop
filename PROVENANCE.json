@@ -1,18 +1,18 @@
 {
-  "schema": "dlm-desktop-public-stable-v11",
+  "schema": "dlm-desktop-public-stable-v12",
   "product": "DLM Desktop",
   "publisher": "Ertelun",
-  "version": "1.3.19",
-  "revision": "r230",
+  "version": "1.3.20",
+  "revision": "r231",
   "stage": "Stable",
-  "releaseTag": "v1.3.19",
+  "releaseTag": "v1.3.20",
   "canonicalRepository": "Ertelun/dlm-desktop",
-  "releaseUrl": "https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.19",
+  "releaseUrl": "https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.20",
   "platform": "win-x64",
   "package": {
-    "file": "DLM-Desktop-v1.3.19-r230-win-x64.zip",
-    "sha256": "71cea8b5ab1927b1627fb78c25af351a4328a71958c41bd4c3ceeb6ef38321ab",
-    "size": 141336647,
+    "file": "DLM-Desktop-v1.3.20-r231-win-x64.zip",
+    "sha256": "2771273c4a03ac866ba348cb6c50dd329bbd1927d7d495d8748e55bed24bd92b",
+    "size": 141359277,
     "sdk": "10.0.402",
     "mainBundledRuntime": "10.0.14",
     "bundledRuntime": "Main application10.0.14; retained r218 Downloader Host10.0.12",
@@ -30,35 +30,33 @@
   },
   "source": {
     "storage": "Owner-maintained local committed source/archive; not uploaded",
-    "commit": "c46e5624b5291bf32e98b7ff3a3699cc47ff8efe",
-    "localTag": "desktop-v1.3.19-r230",
-    "file": "DLM-Desktop-v1.3.19-r230-SOURCE.zip",
-    "sha256": "f9ca051531c00fef3d906059431bf64c2ea3ebdb6ce9924e6904496fd2de6507",
-    "verifiedFiles": 4393,
+    "commit": "8ab0c015d78aec033fdac12c85c32e6f34f8d5db",
+    "localTag": "desktop-v1.3.20-r231",
+    "file": "DLM-Desktop-v1.3.20-r231-SOURCE.zip",
+    "sha256": "0b86c98234d5909f09b6da888f6a82a671925a041fe62cd40788636bb4791125",
+    "verifiedFiles": 4400,
     "publication": "LOCAL ONLY; do not upload source or source ZIP"
   },
-  "verificationFile": "DLM-Desktop-v1.3.19-r230-VERIFICATION.json",
+  "verificationFile": "DLM-Desktop-v1.3.20-r231-VERIFICATION.json",
   "verification": {
-    "strictTestProjects": 23,
+    "strictTestProjects": 24,
     "browserRecoveryAdmissionChecksSourcePackageZipEach": 69,
     "liveOfficialWebView2Checks": {
-      "source": 10,
-      "package": 10,
-      "zip": 10
+      "source": 19,
+      "package": 19,
+      "zip": 19
     },
     "httpDecompressionChecksSourcePackageZipEach": 93,
+    "socialImageChecksSourcePackageZipEach": 41,
     "nativeParserProbes": 39,
-    "exactPackageRegressionRunners": 7,
-    "exactZipRegressionRunners": 7,
+    "exactPackageRegressionRunners": 9,
+    "exactZipRegressionRunners": 9,
     "finalZipFilesByteMatched": 587,
-    "packagedSelfTest": "PASS",
-    "packagedSmokeWindow": "PASS",
-    "zipSelfTest": "PASS",
-    "zipSmokeWindow": "PASS",
     "sourceAndDebugExcluded": true,
     "embeddedProductSourceRecords": 0,
     "checkedPEFiles": 4,
-    "frameworkNativeHostBytesUnchangedFromR229": true
+    "frameworkNativeHostBytesUnchangedFromR230": true,
+    "localSecurityOverrideShipped": false
   },
   "security": {
     "cves": [
@@ -83,12 +81,12 @@
     "permanentBoundaries": "Stable-only, minimum version, actual-environment recheck, credentials/cookies/redirect/path/native boundaries remain.",
     "claimLimit": "No blanket dependency safety or exploit/RCE reproduction."
   },
-  "scope": "Minimum browser/provider/cache recovery with reviewed stable WebView2 floor. SDK10.0.402, main.NET10.0.14, retainedHost10.0.12, NuGet/native libraries and licenses unchanged.",
+  "scope": "User-initiated pixiv creator-grouped saving with profile icon and current-post JSON fallback; X title/creator fields with timestamp defaults and first-image thumbnail; membership order. Retains reviewed r230 stable WebView2 gate, SDK10.0.402, main.NET10.0.14, retainedHost10.0.12, dependencies and licenses.",
   "previousRelease": {
-    "tag": "v1.3.18",
-    "revision": "r229",
+    "tag": "v1.3.19",
+    "revision": "r230",
     "retained": true,
-    "rollbackLimit": "r229 retains emergency browser hold; old browser-enabled versions do not enforce new floor."
+    "rollbackLimit": "r230 lacks new pixiv/X saving features; reviewed browser admission floor unchanged."
   },
   "withdrawnRelease": {
     "tag": "v1.3.6",

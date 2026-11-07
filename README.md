@@ -1,24 +1,25 @@
-> **1.3.19/r230：安定版WebView2 Runtime 157.0.4341.42以降を条件に、埋込みブラウザーとブラウザーキャッシュ操作を復旧しました。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。**
->
-> **1.3.19/r230 restores the embedded browser and browser-cache operations with stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.**
-
 # DLM Desktop — Doujin Library Manager Desktop
+
+**1.3.20/r231：pixiv・X（Twitter）の画像保存に対応。pixivは作者別整理と作者アイコン、Xは右操作欄の作品名・作者名で保存します。**
+
+**1.3.20/r231 adds pixiv and X image saving: creator grouping/profile icons for pixiv, and editable work title/creator fields for X.**
+
 
 **増えた同人・デジタル作品を、PC上でまとめて整理・閲覧するローカルライブラリ。**
 
 DLM Desktop is a local Windows library by Ertelun for organizing, finding and viewing digital works you keep on your PC.
 
-**1.3.19（r230）正式版 / Stable release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
+**1.3.20（r231）正式版 / Stable release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
 
-[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.19/DLM-Desktop-v1.3.19-r230-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.19) · [更新内容 / Release notes](RELEASE_NOTES-r230-JA-EN.md)
+[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.20/DLM-Desktop-v1.3.20-r231-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.20) · [更新内容 / Release notes](RELEASE_NOTES-r231-JA-EN.md)
 
 **[マニュアル / User manual](MANUAL.md)** · [日本語](manual/ja.md) · [English](manual/en.md)
 
 [開発支援のご案内 / Sponsorship information](SUPPORT.md) · **月額支援の申し込み・決済は未開始 / Monthly sponsorship signups and payments have not started**
 
-**1.3.19/r230：安定版WebView2 Runtime 157.0.4341.42以降を条件に、埋込みブラウザーとブラウザーキャッシュ操作を復旧しました。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。**
+**1.3.19/r230の正式復旧条件を継承：埋込みブラウザーとブラウザーキャッシュ操作には安定版WebView2 Runtime 157.0.4341.42以降が必要です。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。**
 
-**1.3.19/r230 restores the embedded browser and browser-cache operations with stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.**
+**Retains the reviewed browser recovery from1.3.19/r230: browser and browser-cache operations require stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.**
 
 ## 起動方法 / Getting started
 
@@ -82,9 +83,9 @@ During deletion, progress and elapsed time are shown. Esc returns to the library
 
 ## ブラウザー復旧と必要な更新 / Browser recovery and required update
 
-1.3.19/r230：安定版WebView2 Runtime 157.0.4341.42以降を条件に、埋込みブラウザーとブラウザーキャッシュ操作を復旧しました。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。 / 1.3.19/r230 restores the embedded browser and browser-cache operations with stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.
+1.3.19/r230の正式復旧条件を継承：埋込みブラウザーとブラウザーキャッシュ操作には安定版WebView2 Runtime 157.0.4341.42以降が必要です。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。 / Retains the reviewed browser recovery from1.3.19/r230: browser and browser-cache operations require stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.
 
-[今回のリリースノート / Release notes](RELEASE_NOTES-r230-JA-EN.md) · [Security Policy](SECURITY.md)
+[今回のリリースノート / Release notes](RELEASE_NOTES-r231-JA-EN.md) · [Security Policy](SECURITY.md)
 
 ## 1.3.5から引き継ぐ修正 / Fixes retained from 1.3.5
 
@@ -102,12 +103,12 @@ Includes the 1.3.4 navigation crash fix, previous feature fixes and Japanese/Eng
 
 ## 配布物の確認 / Verify the download
 
-配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.19) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
+配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.20) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
 
-The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.19). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
+The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.20). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
 
 ```text
-71cea8b5ab1927b1627fb78c25af351a4328a71958c41bd4c3ceeb6ef38321ab  DLM-Desktop-v1.3.19-r230-win-x64.zip
+2771273c4a03ac866ba348cb6c50dd329bbd1927d7d495d8748e55bed24bd92b  DLM-Desktop-v1.3.20-r231-win-x64.zip
 ```
 
 検証の結果と配布物の識別情報は、Release添付の検証記録と [PROVENANCE.json](PROVENANCE.json) にあります。

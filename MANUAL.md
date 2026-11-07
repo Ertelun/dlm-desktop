@@ -1,15 +1,32 @@
-> **1.3.19/r230：安定版WebView2 Runtime 157.0.4341.42以降を条件に、埋込みブラウザーとブラウザーキャッシュ操作を復旧しました。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。**
->
-> **1.3.19/r230 restores the embedded browser and browser-cache operations with stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.**
-
 # DLM Desktop マニュアル / User manual
 
-**1.3.19/r230：安定版WebView2 Runtime 157.0.4341.42以降を条件に、埋込みブラウザーとブラウザーキャッシュ操作を復旧しました。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。**
+## pixiv・X（Twitter）の画像保存 / pixiv and X image saving
 
-**1.3.19/r230 restores the embedded browser and browser-cache operations with stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.**
+会員・支援サイトにpixivとX（Twitter）を追加しました。並び順はpixiv → pixivFANBOX → Fantia → Patreon → Ci-en → Xです。保存したい画像の操作は、ユーザー自身が公式ページ上で開始します。一覧の巡回や一括取得は行いません。
+
+**pixiv:** 投稿詳細を開いて画像を保存します。現在の投稿情報から作者名・作者ID・タイトル・投稿ID・投稿URLを取得し、ライブラリ内のpixiv／作者ID／投稿IDへ分類します。同じ投稿の追加画像は同じ作品にまとめます。サムネイルには作者のプロフィールアイコンを使います。旧形式・新形式の初期ページ情報と、表示中のページ自身が受信した作品・作者情報を照合します。作者を特定できない場合は受付を止め、アイコンだけ取得できない場合は画像を保存して「作者アイコン未取得」と表示します。
+
+**X（Twitter）:** 右側の操作欄で「保存作品名」「作者名」を確認・編集してから画像を保存します。初期作者名は「X（twitter）」、初期作品名はXを初めて選んだ現在日時（日本時間）です。画像保存ごとのフォルダー選択画面は出ません。入力した名前からライブラリ内の保存先を自動作成し、同じ作品名・作者名なら同じ作品へ追加します。「新しい作品」で作品名を現在日時に戻せます。最初に保存した画像をサムネイルに保持し、投稿者のアカウントは推測しません。
+
+サイトのページ構造・配信方式によって取得できない場合があります。検証は隔離した合成データを使用し、実アカウントでの全作品・全保存方式への対応を保証するものではありません。ブラウザーは正式復旧版から引き継ぐ安定版WebView2 Runtime **157.0.4341.42以降**が必要です。
+
+## Saving images from pixiv and X (Twitter)
+
+Membership / Fan sites now includes pixiv and X, ordered pixiv → pixivFANBOX → Fantia → Patreon → Ci-en → X. You initiate each image save on the official page. No catalog crawling or bulk downloading is provided.
+
+**pixiv:** Open an artwork detail page and save an image. DLM reads the current artwork's creator name/ID, title, artwork ID and canonical URL, then groups saved images by creator ID and artwork ID. The creator's profile icon is used as the thumbnail. Legacy and Next page data and responses already requested by the displayed page are matched to the current artwork. An unidentified creator stops admission; an unavailable icon leaves the images saved with an explicit icon-unavailable status.
+
+**X:** Edit Work title and Creator in the controls on the right before saving an image. Creator defaults to “X（twitter）”; the title defaults to the current Japan date/time when X is first selected. A folder picker no longer opens for each image. DLM creates the destination within the configured library from the entered names. Identical title/creator values append to the same work; New work resets the title to the current time. The first saved image remains its thumbnail. Account ownership is not inferred from timeline images.
+
+Page structures and delivery modes can change. Qualification uses isolated synthetic data, not every real account, artwork or save route. The reviewed stable WebView2 Runtime floor remains **157.0.4341.42**. Authentication, browser-owned downloads and local validation boundaries remain in place.
 
 
-**DLM Desktop 1.3.19（r230） / Windows x64**
+**1.3.20/r231：安定版WebView2 Runtime 157.0.4341.42以降を条件に、埋込みブラウザーとブラウザーキャッシュ操作を復旧しました。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。**
+
+**1.3.20/r231 restores the embedded browser and browser-cache operations with stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.**
+
+
+**DLM Desktop 1.3.20（r231） / Windows x64**
 
 - [日本語マニュアル](manual/ja.md) — ライブラリの指定からダウンロード・閲覧までの基本操作と、目的別の詳しい操作。
 - [English manual](manual/en.md) — Essential steps from choosing a library through downloading and viewing, followed by detailed task-based instructions.
@@ -28,7 +45,7 @@
 
 Screen labels were checked against the matching XAML, presentation properties and Japanese/English localization functions. The application uses DLD, DLM and Library in different places. Code-formatted labels in each manual match that interface language. Provider web pages and standard Windows dialogs have their own labels and language settings.
 
-対象版 / Version: [1.3.19（r230）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.19). 確認日 / Checked: 2026-11-03 (JST). 対応ソース / Matching source commit: `ff3233174218332608f19cb7df66a239fe71916d` ([配布記録 / Provenance](PROVENANCE.json)).
+対象版 / Version: [1.3.20（r231）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.20). 確認日 / Checked: 2026-11-03 (JST). 対応ソース / Matching source commit: `ff3233174218332608f19cb7df66a239fe71916d` ([配布記録 / Provenance](PROVENANCE.json)).
 
 [READMEへ / Back to README](README.md)
 

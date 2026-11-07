@@ -1,19 +1,26 @@
-> **1.3.19/r230：安定版WebView2 Runtime 157.0.4341.42以降を条件に、埋込みブラウザーとブラウザーキャッシュ操作を復旧しました。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。**
->
-> **1.3.19/r230 restores the embedded browser and browser-cache operations with stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.**
+# DLM Desktop 1.3.20（r231）日本語マニュアル
 
-# DLM Desktop 1.3.19（r230）日本語マニュアル
+## pixiv・X（Twitter）の画像保存 / pixiv and X image saving
 
-**1.3.19/r230：安定版WebView2 Runtime 157.0.4341.42以降を条件に、埋込みブラウザーとブラウザーキャッシュ操作を復旧しました。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。**
+会員・支援サイトにpixivとX（Twitter）を追加しました。並び順はpixiv → pixivFANBOX → Fantia → Patreon → Ci-en → Xです。保存したい画像の操作は、ユーザー自身が公式ページ上で開始します。一覧の巡回や一括取得は行いません。
 
-**1.3.19/r230 restores the embedded browser and browser-cache operations with stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.**
+**pixiv:** 投稿詳細を開いて画像を保存します。現在の投稿情報から作者名・作者ID・タイトル・投稿ID・投稿URLを取得し、ライブラリ内のpixiv／作者ID／投稿IDへ分類します。同じ投稿の追加画像は同じ作品にまとめます。サムネイルには作者のプロフィールアイコンを使います。旧形式・新形式の初期ページ情報と、表示中のページ自身が受信した作品・作者情報を照合します。作者を特定できない場合は受付を止め、アイコンだけ取得できない場合は画像を保存して「作者アイコン未取得」と表示します。
+
+**X（Twitter）:** 右側の操作欄で「保存作品名」「作者名」を確認・編集してから画像を保存します。初期作者名は「X（twitter）」、初期作品名はXを初めて選んだ現在日時（日本時間）です。画像保存ごとのフォルダー選択画面は出ません。入力した名前からライブラリ内の保存先を自動作成し、同じ作品名・作者名なら同じ作品へ追加します。「新しい作品」で作品名を現在日時に戻せます。最初に保存した画像をサムネイルに保持し、投稿者のアカウントは推測しません。
+
+サイトのページ構造・配信方式によって取得できない場合があります。検証は隔離した合成データを使用し、実アカウントでの全作品・全保存方式への対応を保証するものではありません。ブラウザーは正式復旧版から引き継ぐ安定版WebView2 Runtime **157.0.4341.42以降**が必要です。
+
+
+**1.3.20/r231：安定版WebView2 Runtime 157.0.4341.42以降を条件に、埋込みブラウザーとブラウザーキャッシュ操作を復旧しました。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。**
+
+**1.3.20/r231 restores the embedded browser and browser-cache operations with stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.**
 
 
 [開始時の重複確認](../DOWNLOAD-PREFLIGHT.md)
 
 [マニュアル入口](../MANUAL.md) · [English](en.md) · [README](../README.md)
 
-Windows x64版 1.3.19（r230）が対象です。確認日：2026年11月3日（日本時間）。画面ラベルは配布記録に対応する最新ソース `ff3233174218332608f19cb7df66a239fe71916d` のXAML・表示用プロパティ・日英ローカライズ処理に基づきます。コード表記は日本語設定での実際のラベルです。公式サイト内のログイン・購入・ダウンロード操作は、各サイトの画面に従ってください。
+Windows x64版 1.3.20（r231）が対象です。確認日：2026年11月3日（日本時間）。画面ラベルは配布記録に対応する最新ソース `ff3233174218332608f19cb7df66a239fe71916d` のXAML・表示用プロパティ・日英ローカライズ処理に基づきます。コード表記は日本語設定での実際のラベルです。公式サイト内のログイン・購入・ダウンロード操作は、各サイトの画面に従ってください。
 
 <a id="contents"></a>
 ## 目次：やりたいことから選ぶ
@@ -41,7 +48,7 @@ Windows x64版 1.3.19（r230）が対象です。確認日：2026年11月3日（
 <a id="start"></a>
 ### 1. アプリを起動する
 
-1. [最新版の配布ページ](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.19)からWindows x64 ZIPを取得します。
+1. [最新版の配布ページ](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.20)からWindows x64 ZIPを取得します。
 2. 以前のDLM Desktopを終了し、ZIP全体を新しい空のフォルダへ展開します。
 3. `DoujinLibraryManagerDesktop.exe` を起動します。隣にある `app` フォルダも必要です。
 
@@ -449,7 +456,7 @@ DLM内の確認と、専門ソフトで行う編集は別です。すべての�
 | 症状 | 確認すること |
 |---|---|
 | 保存先を設定するよう求められる | [ライブラリを指定](#library)。★保存先が接続されているか[設定](#roots)で確認 |
-| ブラウザが表示されない | r230と安定版WebView2 Runtime157.0.4341.42以降へ更新し、DLMを再起動してください。ZIP全体を展開して `app` をEXEの隣に置いているか確認 |
+| ブラウザが表示されない | r231と安定版WebView2 Runtime157.0.4341.42以降へ更新し、DLMを再起動してください。ZIP全体を展開して `app` をEXEの隣に置いているか確認 |
 | ログインが拒否される | 公式の別ログイン方式や[外部ブラウザ](#browser)を使用。外部ブラウザのログインがDLMにも反映されるとは限らない |
 | 転送100%なのに作品がない | [DLセンター](#progress)で検証・展開・登録を確認。GOGは[受付確定](#gog)が必要 |
 | ZIPから展開した日本語の名前が文字化けする | 1.3.5以降で元ZIPから再展開。元ZIPがなければ作品詳細の[再ダウンロード](#redownload)で公式サイトから取得し直す。起動だけで既存の名前は修復されない |
