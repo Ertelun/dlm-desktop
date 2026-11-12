@@ -15,6 +15,8 @@ DLM Desktop is a local Windows library by Ertelun for organizing, finding and vi
 
 **[マニュアル / User manual](MANUAL.md)** · [日本語](manual/ja.md) · [English](manual/en.md)
 
+検索ガイド / Search guide: [保存した作品を探す](guides/search-and-filters.md#ja) · [Find saved works](guides/search-and-filters.md#en)
+
 [開発支援のご案内 / Sponsorship information](SUPPORT.md) · **月額支援の申し込み・決済は未開始 / Monthly sponsorship signups and payments have not started**
 
 **1.3.19/r230の正式復旧条件を継承：埋込みブラウザーとブラウザーキャッシュ操作には安定版WebView2 Runtime 157.0.4341.42以降が必要です。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。**
