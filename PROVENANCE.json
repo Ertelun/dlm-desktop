@@ -1,18 +1,18 @@
 {
-  "schema": "dlm-desktop-public-stable-v12",
+  "schema": "dlm-desktop-public-stable-v13",
   "product": "DLM Desktop",
   "publisher": "Ertelun",
-  "version": "1.3.20",
-  "revision": "r231",
+  "version": "1.3.21",
+  "revision": "r232",
   "stage": "Stable",
-  "releaseTag": "v1.3.20",
+  "releaseTag": "v1.3.21",
   "canonicalRepository": "Ertelun/dlm-desktop",
-  "releaseUrl": "https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.20",
+  "releaseUrl": "https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.21",
   "platform": "win-x64",
   "package": {
-    "file": "DLM-Desktop-v1.3.20-r231-win-x64.zip",
-    "sha256": "2771273c4a03ac866ba348cb6c50dd329bbd1927d7d495d8748e55bed24bd92b",
-    "size": 141359277,
+    "file": "DLM-Desktop-v1.3.21-r232-win-x64.zip",
+    "sha256": "1b7944c99f206fe89d14b476338aba24151357bf2e052d9ec6634a1dc787c48d",
+    "size": 141357532,
     "sdk": "10.0.402",
     "mainBundledRuntime": "10.0.14",
     "bundledRuntime": "Main application10.0.14; retained r218 Downloader Host10.0.12",
@@ -24,27 +24,27 @@
       "app/"
     ],
     "embeddedBrowser": "restored-with-reviewed-stable-runtime-gate",
-    "minimumExternalWebView2Runtime": "157.0.4341.42",
-    "browserRecovery": "Update DLM and official stable WebView2 to157.0.4341.42 or later, then restart DLM. Stable-only discovery and actual-environment recheck retained; external Runtime not bundled.",
+    "minimumExternalWebView2Runtime": "157.0.4341.57",
+    "browserRecovery": "Update DLM and official stable WebView2 to 157.0.4341.57 or later, then restart DLM. Runtime is external.",
     "downloaderHost": "Byte-identical r2181.3.7.218; Runtime10.0.12"
   },
   "source": {
     "storage": "Owner-maintained local committed source/archive; not uploaded",
-    "commit": "8ab0c015d78aec033fdac12c85c32e6f34f8d5db",
-    "localTag": "desktop-v1.3.20-r231",
-    "file": "DLM-Desktop-v1.3.20-r231-SOURCE.zip",
-    "sha256": "0b86c98234d5909f09b6da888f6a82a671925a041fe62cd40788636bb4791125",
-    "verifiedFiles": 4400,
+    "commit": "bd3f4b6623a38f8f60bada2a17c96e5bfbc85dd2",
+    "localTag": "desktop-v1.3.21-r232",
+    "file": "DLM-Desktop-v1.3.21-r232-SOURCE.zip",
+    "sha256": "f2b532b54f7e4da73121272e81165fbefdbdd261a29d82a033042424f80d3a06",
+    "verifiedFiles": 4401,
     "publication": "LOCAL ONLY; do not upload source or source ZIP"
   },
-  "verificationFile": "DLM-Desktop-v1.3.20-r231-VERIFICATION.json",
+  "verificationFile": "DLM-Desktop-v1.3.21-r232-VERIFICATION.json",
   "verification": {
     "strictTestProjects": 24,
-    "browserRecoveryAdmissionChecksSourcePackageZipEach": 69,
+    "browserRecoveryAdmissionChecksSourcePackageZipEach": 78,
     "liveOfficialWebView2Checks": {
-      "source": 19,
-      "package": 19,
-      "zip": 19
+      "source": 20,
+      "package": 20,
+      "zip": 20
     },
     "httpDecompressionChecksSourcePackageZipEach": 93,
     "socialImageChecksSourcePackageZipEach": 41,
@@ -55,38 +55,40 @@
     "sourceAndDebugExcluded": true,
     "embeddedProductSourceRecords": 0,
     "checkedPEFiles": 4,
-    "frameworkNativeHostBytesUnchangedFromR230": true,
+    "frameworkNativeHostBytesUnchangedFromR231": true,
     "localSecurityOverrideShipped": false
   },
   "security": {
     "cves": [
-      "CVE-2026-121035",
-      "CVE-2026-121126",
-      "CVE-2026-121156",
-      "CVE-2026-121203"
+      "CVE-2026-125350",
+      "CVE-2026-126879",
+      "CVE-2026-126885",
+      "CVE-2026-126895",
+      "CVE-2026-126911"
     ],
-    "vendorSeverity": "Chromium Critical; product restoration requires all four fixes",
-    "recovery": "Central emergency hold replaced by reviewed stable157.0.4341.42 admission floor",
+    "vendorSeverity": "Chromium Critical for four November candidates; CVE-2026-125350 is CISA KEV",
+    "recovery": "Require stable WebView2 157.0.4341.57 or later for embedded browser and WebView2-backed cache actions",
     "enginePatched": true,
     "enginePatchScope": "Microsoft external stable Runtime, not patched or bundled by DLM. Actual same-version official WebView2 engine verified.",
-    "vendorFixStatus": "Microsoft Windowsx64 stable157.0.4341.42 API maps all four CVEs; official WebView2 distribution receives the same security updates and provides same-version fixedRuntime; actual Microsoft-signed engine verified and exercised through product gate.",
+    "vendorFixStatus": "Microsoft Windows x64 Stable maps four CVEs to .57 and CVE-2026-125350 to .46. Microsoft ships .57 for WebView2 Evergreen and Fixed Version. The signed .57 fixed engine was verified through the product gate in isolation.",
     "sources": [
       "https://edgeupdates.microsoft.com/api/products?view=enterprise",
       "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
       "https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/distribution",
-      "https://developer.microsoft.com/en-us/microsoft-edge/webview2/"
+      "https://developer.microsoft.com/en-us/microsoft-edge/webview2/",
+      "https://www.catalog.update.microsoft.com/ScopedViewInline.aspx?updateid=6a525376-8d7d-4462-8dfc-fd67e1b9b33d"
     ],
     "retainedHttpBrotliRecovery": "Main.NET10.0.14 and actual-runtime guard unchanged; DownloaderHost10.0.12 byte-identical with no Brotli newly enabled.",
     "remainingTemporaryCveRestrictions": [],
     "permanentBoundaries": "Stable-only, minimum version, actual-environment recheck, credentials/cookies/redirect/path/native boundaries remain.",
     "claimLimit": "No blanket dependency safety or exploit/RCE reproduction."
   },
-  "scope": "User-initiated pixiv creator-grouped saving with profile icon and current-post JSON fallback; X title/creator fields with timestamp defaults and first-image thumbnail; membership order. Retains reviewed r230 stable WebView2 gate, SDK10.0.402, main.NET10.0.14, retainedHost10.0.12, dependencies and licenses.",
+  "scope": "Raise the minimum external stable WebView2 Runtime for browser and browser-cache operations; retain existing product features and bundled dependencies.",
   "previousRelease": {
-    "tag": "v1.3.19",
-    "revision": "r230",
+    "tag": "v1.3.20",
+    "revision": "r231",
     "retained": true,
-    "rollbackLimit": "r230 lacks new pixiv/X saving features; reviewed browser admission floor unchanged."
+    "rollbackLimit": "Use the latest release for embedded browsing. r231 admits older WebView2 builds."
   },
   "withdrawnRelease": {
     "tag": "v1.3.6",

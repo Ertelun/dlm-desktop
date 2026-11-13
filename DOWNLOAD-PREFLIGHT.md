@@ -1,6 +1,6 @@
 # Download duplicate preflight / ダウンロード開始時の重複確認
 
-DLM Desktop 1.3.20 / r231
+DLM Desktop 1.3.21 / r232
 
 ## 登録済み作品の不要な再転送を避ける
 
@@ -18,8 +18,8 @@ For updates or intentional replacements, select Redownload in the work details, 
 
 Unknown/conflicting IDs and content-hash providers retain completed-file validation. Unavailable libraries are not reported as verified clean. The local check pauses the transfer; initial requests, browser/TCP buffering and runtime Pause failures prevent any zero-bandwidth guarantee. Existing completed-file validation and collision checks remain in place.
 
-## 1.3.20 correction / 修正
+## 1.3.21 correction / 修正
 
-**1.3.20/r231：安定版WebView2 Runtime 157.0.4341.42以降を条件に、埋込みブラウザーとブラウザーキャッシュ操作を復旧しました。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。**
+**埋込みブラウザーとWebView2を使うキャッシュ操作には、公式の安定版 WebView2 Runtime 157.0.4341.57 以降が必要です。DLMと公式Runtimeを更新し、DLMを再起動してください。**
 
-**1.3.20/r231 restores the embedded browser and browser-cache operations with stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.**
+**The embedded browser and WebView2-backed cache controls require official stable WebView2 Runtime 157.0.4341.57 or later. Update DLM and the official Runtime, then restart DLM.**

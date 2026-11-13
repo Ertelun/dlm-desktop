@@ -1,4 +1,4 @@
-# DLM Desktop 1.3.20（r231）日本語マニュアル
+# DLM Desktop 1.3.21（r232）日本語マニュアル
 
 ## pixiv・X（Twitter）の画像保存 / pixiv and X image saving
 
@@ -8,19 +8,19 @@
 
 **X（Twitter）:** 右側の操作欄で「保存作品名」「作者名」を確認・編集してから画像を保存します。初期作者名は「X（twitter）」、初期作品名はXを初めて選んだ現在日時（日本時間）です。画像保存ごとのフォルダー選択画面は出ません。入力した名前からライブラリ内の保存先を自動作成し、同じ作品名・作者名なら同じ作品へ追加します。「新しい作品」で作品名を現在日時に戻せます。最初に保存した画像をサムネイルに保持し、投稿者のアカウントは推測しません。
 
-サイトのページ構造・配信方式によって取得できない場合があります。検証は隔離した合成データを使用し、実アカウントでの全作品・全保存方式への対応を保証するものではありません。ブラウザーは正式復旧版から引き継ぐ安定版WebView2 Runtime **157.0.4341.42以降**が必要です。
+サイトのページ構造・配信方式によって取得できない場合があります。検証は隔離した合成データを使用し、実アカウントでの全作品・全保存方式への対応を保証するものではありません。ブラウザーは正式復旧版から引き継ぐ安定版WebView2 Runtime **157.0.4341.57以降**が必要です。
 
 
-**1.3.20/r231：安定版WebView2 Runtime 157.0.4341.42以降を条件に、埋込みブラウザーとブラウザーキャッシュ操作を復旧しました。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。**
+**埋込みブラウザーとWebView2を使うキャッシュ操作には、公式の安定版 WebView2 Runtime 157.0.4341.57 以降が必要です。DLMと公式Runtimeを更新し、DLMを再起動してください。**
 
-**1.3.20/r231 restores the embedded browser and browser-cache operations with stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.**
+**The embedded browser and WebView2-backed cache controls require official stable WebView2 Runtime 157.0.4341.57 or later. Update DLM and the official Runtime, then restart DLM.**
 
 
 [開始時の重複確認](../DOWNLOAD-PREFLIGHT.md)
 
 [マニュアル入口](../MANUAL.md) · [English](en.md) · [README](../README.md)
 
-Windows x64版 1.3.20（r231）が対象です。確認日：2026年11月3日（日本時間）。画面ラベルは配布記録に対応する最新ソース `ff3233174218332608f19cb7df66a239fe71916d` のXAML・表示用プロパティ・日英ローカライズ処理に基づきます。コード表記は日本語設定での実際のラベルです。公式サイト内のログイン・購入・ダウンロード操作は、各サイトの画面に従ってください。
+Windows x64版 1.3.21（r232）が対象です。確認日：2026年11月3日（日本時間）。画面ラベルは配布記録に対応する最新ソース `bd3f4b6623a38f8f60bada2a17c96e5bfbc85dd2` のXAML・表示用プロパティ・日英ローカライズ処理に基づきます。コード表記は日本語設定での実際のラベルです。公式サイト内のログイン・購入・ダウンロード操作は、各サイトの画面に従ってください。
 
 <a id="contents"></a>
 ## 目次：やりたいことから選ぶ
@@ -48,11 +48,11 @@ Windows x64版 1.3.20（r231）が対象です。確認日：2026年11月3日（
 <a id="start"></a>
 ### 1. アプリを起動する
 
-1. [最新版の配布ページ](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.20)からWindows x64 ZIPを取得します。
+1. [最新版の配布ページ](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.21)からWindows x64 ZIPを取得します。
 2. 以前のDLM Desktopを終了し、ZIP全体を新しい空のフォルダへ展開します。
 3. `DoujinLibraryManagerDesktop.exe` を起動します。隣にある `app` フォルダも必要です。
 
-.NETは同梱されています。埋め込みブラウザには安定版WebView2 Runtime157.0.4341.42以降が必要です。日本語以外で起動した場合は、[表示と言語](#language)で変更できます。
+.NETは同梱されています。埋め込みブラウザには安定版WebView2 Runtime157.0.4341.57以降が必要です。日本語以外で起動した場合は、[表示と言語](#language)で変更できます。
 
 左側の移動先は次の4つです。先頭の○は未選択、●は現在の画面を示します。
 
@@ -456,7 +456,7 @@ DLM内の確認と、専門ソフトで行う編集は別です。すべての�
 | 症状 | 確認すること |
 |---|---|
 | 保存先を設定するよう求められる | [ライブラリを指定](#library)。★保存先が接続されているか[設定](#roots)で確認 |
-| ブラウザが表示されない | r231と安定版WebView2 Runtime157.0.4341.42以降へ更新し、DLMを再起動してください。ZIP全体を展開して `app` をEXEの隣に置いているか確認 |
+| ブラウザが表示されない | r232と安定版WebView2 Runtime157.0.4341.57以降へ更新し、DLMを再起動してください。ZIP全体を展開して `app` をEXEの隣に置いているか確認 |
 | ログインが拒否される | 公式の別ログイン方式や[外部ブラウザ](#browser)を使用。外部ブラウザのログインがDLMにも反映されるとは限らない |
 | 転送100%なのに作品がない | [DLセンター](#progress)で検証・展開・登録を確認。GOGは[受付確定](#gog)が必要 |
 | ZIPから展開した日本語の名前が文字化けする | 1.3.5以降で元ZIPから再展開。元ZIPがなければ作品詳細の[再ダウンロード](#redownload)で公式サイトから取得し直す。起動だけで既存の名前は修復されない |
@@ -506,6 +506,6 @@ Settings → Storage maintenance → Cache storage and cleanup shows file/byte t
 
 Deletion runs before viewers and browser profiles open, is deferred while another DLM or Downloader Host is running, uses no-follow pinned Windows handles, preserves files written after the request, and never follows reparse points. Only exact app-owned cache roots are permitted; the saved request cannot supply arbitrary paths. Unexpected or locked files are reported and preserved.
 
-Library works, retained download originals, cookies/sign-ins, LocalStorage, IndexedDB, installed browser components (including Widevine), stored official thumbnails, organization/reading state, import receipts and user backups are excluded. Retained downloads and stored thumbnails have separate explicit-confirmation actions. WebView2-backed disk-cache clearing requires the same stable Runtime157.0.4341.42 admission; the new startup cleanup also handles code/shader/offline caches and obsolete SDK files without resetting sign-ins. Deleted caches can be downloaded or rebuilt again when needed.
+Library works, retained download originals, cookies/sign-ins, LocalStorage, IndexedDB, installed browser components (including Widevine), stored official thumbnails, organization/reading state, import receipts and user backups are excluded. Retained downloads and stored thumbnails have separate explicit-confirmation actions. WebView2-backed disk-cache clearing requires the same stable Runtime157.0.4341.57 admission; the new startup cleanup also handles code/shader/offline caches and obsolete SDK files without resetting sign-ins. Deleted caches can be downloaded or rebuilt again when needed.
 
 作品・ログイン状態・ブラウザー実行部品・整理情報・閲覧位置・バックアップ・取り込み記録は対象外です。残存ダウンロードと保存サムネイルは個別操作で確認して削除します。削除したキャッシュは次回利用時に再生成・再取得される場合があります。
