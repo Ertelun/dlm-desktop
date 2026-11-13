@@ -1,8 +1,8 @@
-# Provider Capabilities — DLM Desktop 1.3.20
+# Provider Capabilities — DLM Desktop 1.3.21
 
-**1.3.20/r231：安定版WebView2 Runtime 157.0.4341.42以降を条件に、埋込みブラウザーとブラウザーキャッシュ操作を復旧しました。DLMと公式Runtimeの両方を更新し、DLMを再起動してください。**
+**埋込みブラウザーとWebView2を使うキャッシュ操作には、公式の安定版 WebView2 Runtime 157.0.4341.57 以降が必要です。DLMと公式Runtimeを更新し、DLMを再起動してください。**
 
-**1.3.20/r231 restores the embedded browser and browser-cache operations with stable WebView2 Runtime157.0.4341.42 or later. Update DLM and the official Runtime, then restart DLM. Older/unknown/preview runtimes remain blocked.**
+**The embedded browser and WebView2-backed cache controls require official stable WebView2 Runtime 157.0.4341.57 or later. Update DLM and the official Runtime, then restart DLM.**
 
 
 ログイン、購入、ダウンロード開始は、ユーザー自身が各サービスの公式画面で操作します。取得できる配信形式を限定し、保存したファイルを検証してローカルライブラリへ登録します。
@@ -46,7 +46,7 @@ DMM/FANZA, DLsite, BOOTH, Gumroad and GOG permit an explicit public-page update 
 
 **X（Twitter）:** 右側の操作欄で「保存作品名」「作者名」を確認・編集してから画像を保存します。初期作者名は「X（twitter）」、初期作品名はXを初めて選んだ現在日時（日本時間）です。画像保存ごとのフォルダー選択画面は出ません。入力した名前からライブラリ内の保存先を自動作成し、同じ作品名・作者名なら同じ作品へ追加します。「新しい作品」で作品名を現在日時に戻せます。最初に保存した画像をサムネイルに保持し、投稿者のアカウントは推測しません。
 
-サイトのページ構造・配信方式によって取得できない場合があります。検証は隔離した合成データを使用し、実アカウントでの全作品・全保存方式への対応を保証するものではありません。ブラウザーは正式復旧版から引き継ぐ安定版WebView2 Runtime **157.0.4341.42以降**が必要です。
+サイトのページ構造・配信方式によって取得できない場合があります。検証は隔離した合成データを使用し、実アカウントでの全作品・全保存方式への対応を保証するものではありません。ブラウザーは正式復旧版から引き継ぐ安定版WebView2 Runtime **157.0.4341.57以降**が必要です。
 
 ## Saving images from pixiv and X (Twitter)
 
@@ -56,4 +56,4 @@ Membership / Fan sites now includes pixiv and X, ordered pixiv → pixivFANBOX �
 
 **X:** Edit Work title and Creator in the controls on the right before saving an image. Creator defaults to “X（twitter）”; the title defaults to the current Japan date/time when X is first selected. A folder picker no longer opens for each image. DLM creates the destination within the configured library from the entered names. Identical title/creator values append to the same work; New work resets the title to the current time. The first saved image remains its thumbnail. Account ownership is not inferred from timeline images.
 
-Page structures and delivery modes can change. Qualification uses isolated synthetic data, not every real account, artwork or save route. The reviewed stable WebView2 Runtime floor remains **157.0.4341.42**. Authentication, browser-owned downloads and local validation boundaries remain in place.
+Page structures and delivery modes can change. Qualification uses isolated synthetic data, not every real account, artwork or save route. The reviewed stable WebView2 Runtime floor remains **157.0.4341.57**. Authentication, browser-owned downloads and local validation boundaries remain in place.
