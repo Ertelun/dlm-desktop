@@ -1,4 +1,4 @@
-# DLM Desktop 1.3.21 (r232) user manual
+# DLM Desktop 1.3.22 (r233) user manual
 
 ## Saving images from pixiv and X (Twitter)
 
@@ -20,7 +20,7 @@ Page structures and delivery modes can change. Qualification uses isolated synth
 
 [Manual home](../MANUAL.md) · [日本語](ja.md) · [README](../README.md)
 
-This manual covers Windows x64 version 1.3.21 (r232). Checked on November 3, 2026 (JST). Screen labels come from the XAML, presentation properties and localization functions in the latest source matching the distribution record: `bd3f4b6623a38f8f60bada2a17c96e5bfbc85dd2`. Code-formatted labels match the English interface. For sign-in, purchases and download initiation on provider websites, follow the provider's own interface.
+This manual covers Windows x64 version 1.3.22 (r233). Checked on November 3, 2026 (JST). Screen labels come from the XAML, presentation properties and localization functions in the latest source matching the distribution record: `6aa8ed01ae02f6e07b9916ad152115f3f149f991`. Code-formatted labels match the English interface. For sign-in, purchases and download initiation on provider websites, follow the provider's own interface.
 
 <a id="contents"></a>
 ## Contents: choose your task
@@ -48,7 +48,7 @@ These four steps take you from choosing a storage folder to downloading a suppor
 <a id="start"></a>
 ### 1. Launch the application
 
-1. Get the Windows x64 ZIP from the [current release page](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.21).
+1. Get the Windows x64 ZIP from the [current release page](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.22).
 2. Close any previously running DLM Desktop and extract the entire ZIP into a new, empty folder.
 3. Run `DoujinLibraryManagerDesktop.exe`. The adjacent `app` folder is also required.
 
@@ -456,7 +456,7 @@ Changing the interface language does not machine-translate work titles or creato
 | Symptom | What to check |
 |---|---|
 | DLM asks for a destination | [Choose a library](#library), then check that the ★ folder is connected in [Settings](#roots) |
-| The embedded browser does not appear | Update to r232 and stable WebView2 Runtime157.0.4341.57 or later, then restart DLM. Confirm the full ZIP was extracted with `app` beside the EXE |
+| The embedded browser does not appear | Update to r233 and stable WebView2 Runtime157.0.4341.57 or later, then restart DLM. Confirm the full ZIP was extracted with `app` beside the EXE |
 | Sign-in is rejected | Use another official method or the [external browser](#browser). External sign-in need not apply inside DLM |
 | Transfer is at 100%, but no work appears | Check validation/extraction/registration in [DL Center](#progress). GOG needs [finalization](#gog) |
 | Japanese names extracted from a ZIP are garbled | Extract again from the original ZIP using 1.3.5 or later. If it is unavailable, use [Redownload](#redownload) from work details and the official provider. Starting the application alone does not repair existing names |

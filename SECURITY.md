@@ -1,7 +1,7 @@
 # Security Policy
 
-Current supported distribution: **DLM Desktop 1.3.21/r232, Windows x64**.
-Canonical Release: https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.21
+Current supported distribution: **DLM Desktop 1.3.22/r233, Windows x64**.
+Canonical Release: https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.22
 
 埋込みブラウザーとWebView2を使うキャッシュ操作には、公式の安定版 WebView2 Runtime 157.0.4341.57 以降が必要です。DLMと公式Runtimeを更新し、DLMを再起動してください。
 

@@ -1,17 +1,17 @@
 # DLM Desktop — Doujin Library Manager Desktop
 
-**1.3.21/r232：埋込みブラウザーのセキュリティ更新。**
+**1.3.22/r233：ダウンロード先の切り替え時にアプリが終了する不具合を修正。**
 
-**1.3.21/r232 updates embedded browser security.**
+**1.3.22/r233 fixes a crash when switching the download destination.**
 
 
 **増えた同人・デジタル作品を、PC上でまとめて整理・閲覧するローカルライブラリ。**
 
 DLM Desktop is a local Windows library by Ertelun for organizing, finding and viewing digital works you keep on your PC.
 
-**1.3.21（r232）正式版 / Stable release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
+**1.3.22（r233）正式版 / Stable release · 日本語 / English · Windows x64 · ZIP · free · unsigned**
 
-[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.21/DLM-Desktop-v1.3.21-r232-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.21) · [更新内容 / Release notes](RELEASE_NOTES-r232-JA-EN.md)
+[Windows x64 ZIPをダウンロード / Download Windows x64 ZIP](https://github.com/Ertelun/dlm-desktop/releases/download/v1.3.22/DLM-Desktop-v1.3.22-r233-win-x64.zip) · [正式リリース / Stable release](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.22) · [更新内容 / Release notes](RELEASE_NOTES-r233-JA-EN.md)
 
 **[マニュアル / User manual](MANUAL.md)** · [日本語](manual/ja.md) · [English](manual/en.md)
 
@@ -87,7 +87,7 @@ During deletion, progress and elapsed time are shown. Esc returns to the library
 
 埋込みブラウザーとWebView2を使うキャッシュ操作には、公式の安定版 WebView2 Runtime 157.0.4341.57 以降が必要です。DLMと公式Runtimeを更新し、DLMを再起動してください。 / The embedded browser and WebView2-backed cache controls require official stable WebView2 Runtime 157.0.4341.57 or later. Update DLM and the official Runtime, then restart DLM.
 
-[今回のリリースノート / Release notes](RELEASE_NOTES-r232-JA-EN.md) · [Security Policy](SECURITY.md)
+[今回のリリースノート / Release notes](RELEASE_NOTES-r233-JA-EN.md) · [Security Policy](SECURITY.md)
 
 ## 1.3.5から引き継ぐ修正 / Fixes retained from 1.3.5
 
@@ -105,12 +105,12 @@ Includes the 1.3.4 navigation crash fix, previous feature fixes and Japanese/Eng
 
 ## 配布物の確認 / Verify the download
 
-配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.21) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
+配布元は [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.22) です。コード署名なしのWindows x64 ZIPです。SHA-256は公開した配布物との一致を確認するための値です。
 
-The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.21). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
+The canonical source is [Ertelun GitHub Releases](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.22). The Windows x64 ZIP is unsigned. Its SHA-256 verifies identity with the published package.
 
 ```text
-1b7944c99f206fe89d14b476338aba24151357bf2e052d9ec6634a1dc787c48d  DLM-Desktop-v1.3.21-r232-win-x64.zip
+0cfc988b0d985b3abb6661ea1e1db666951729f29feb9f8127b142e3ee470119  DLM-Desktop-v1.3.22-r233-win-x64.zip
 ```
 
 検証の結果と配布物の識別情報は、Release添付の検証記録と [PROVENANCE.json](PROVENANCE.json) にあります。
