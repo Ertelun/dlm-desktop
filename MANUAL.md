@@ -26,7 +26,7 @@ Page structures and delivery modes can change. Qualification uses isolated synth
 **The embedded browser and WebView2-backed cache controls require official stable WebView2 Runtime 157.0.4341.57 or later. Update DLM and the official Runtime, then restart DLM.**
 
 
-**DLM Desktop 1.3.21（r232） / Windows x64**
+**DLM Desktop 1.3.22（r233） / Windows x64**
 
 - [日本語マニュアル](manual/ja.md) — ライブラリの指定からダウンロード・閲覧までの基本操作と、目的別の詳しい操作。
 - [English manual](manual/en.md) — Essential steps from choosing a library through downloading and viewing, followed by detailed task-based instructions.
@@ -45,7 +45,7 @@ Page structures and delivery modes can change. Qualification uses isolated synth
 
 Screen labels were checked against the matching XAML, presentation properties and Japanese/English localization functions. The application uses DLD, DLM and Library in different places. Code-formatted labels in each manual match that interface language. Provider web pages and standard Windows dialogs have their own labels and language settings.
 
-対象版 / Version: [1.3.21（r232）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.21). 確認日 / Checked: 2026-11-03 (JST). 対応ソース / Matching source commit: `bd3f4b6623a38f8f60bada2a17c96e5bfbc85dd2` ([配布記録 / Provenance](PROVENANCE.json)).
+対象版 / Version: [1.3.22（r233）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.22). 確認日 / Checked: 2026-11-03 (JST). 対応ソース / Matching source commit: `6aa8ed01ae02f6e07b9916ad152115f3f149f991` ([配布記録 / Provenance](PROVENANCE.json)).
 
 [READMEへ / Back to README](README.md)
 

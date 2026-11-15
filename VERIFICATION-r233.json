@@ -1,0 +1,140 @@
+{
+  "version": "1.3.22",
+  "revision": "r233",
+  "tests": [
+    {
+      "project": "DlmDesktop.AutomaticSafeSnapshotContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.BrowserDownloadContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.BrowserRuntimeSecurityTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.CompactListRuntimeTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.DownloadProgressRuntimeTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.ImportPromotionContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.LibraryRelocationContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.LocalizationContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.LocalizationRuntimeTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.LocalProvenanceContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.ManualIntakeContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.MembershipPostWorkContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.NavigationRuntimeTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.SecurityBoundaryContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.SmokeTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.SocialImageRuntimeTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.UserStateBackupContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.ViewerDeletionRuntimeTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.WatchFolderContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.ZipEncodingContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDownloader.HostContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDownloader.NetworkSafetyContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDownloader.ProviderCapabilityContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDownloader.StagingContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    }
+  ],
+  "regression": {
+    "settingsButton": "PASS — switches between registered folders with an existing collection catalog",
+    "persistence": "PASS — new destination and registered library list are saved",
+    "existingFiles": "PASS — existing content and collection definitions stay in place",
+    "backupRestore": "PASS — create a fresh safety backup and restore existing v1 backup without replacing the collection catalog"
+  },
+  "package": {
+    "isolatedSelfTest": "PASS",
+    "isolatedWpfSmoke": "PASS",
+    "fileCount": 587,
+    "zipMatchesStaging": true,
+    "embeddedProductSourceRecords": 0,
+    "runtimeAndDependenciesRetainedFrom": "1.3.21/r232"
+  }
+}
