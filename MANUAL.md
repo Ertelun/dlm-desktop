@@ -8,7 +8,7 @@
 
 **X（Twitter）:** 右側の操作欄で「保存作品名」「作者名」を確認・編集してから画像を保存します。初期作者名は「X（twitter）」、初期作品名はXを初めて選んだ現在日時（日本時間）です。画像保存ごとのフォルダー選択画面は出ません。入力した名前からライブラリ内の保存先を自動作成し、同じ作品名・作者名なら同じ作品へ追加します。「新しい作品」で作品名を現在日時に戻せます。最初に保存した画像をサムネイルに保持し、投稿者のアカウントは推測しません。
 
-サイトのページ構造・配信方式によって取得できない場合があります。検証は隔離した合成データを使用し、実アカウントでの全作品・全保存方式への対応を保証するものではありません。ブラウザーは正式復旧版から引き継ぐ安定版WebView2 Runtime **157.0.4341.57以降**が必要です。
+サイトのページ構造・配信方式によって取得できない場合があります。検証は隔離した合成データを使用し、実アカウントでの全作品・全保存方式への対応を保証するものではありません。ブラウザーは正式復旧版から引き継ぐ安定版WebView2 Runtime **158.0.4370.33以降**が必要です。
 
 ## Saving images from pixiv and X (Twitter)
 
@@ -18,15 +18,15 @@ Membership / Fan sites now includes pixiv and X, ordered pixiv → pixivFANBOX �
 
 **X:** Edit Work title and Creator in the controls on the right before saving an image. Creator defaults to “X（twitter）”; the title defaults to the current Japan date/time when X is first selected. A folder picker no longer opens for each image. DLM creates the destination within the configured library from the entered names. Identical title/creator values append to the same work; New work resets the title to the current time. The first saved image remains its thumbnail. Account ownership is not inferred from timeline images.
 
-Page structures and delivery modes can change. Qualification uses isolated synthetic data, not every real account, artwork or save route. The reviewed stable WebView2 Runtime floor remains **157.0.4341.57**. Authentication, browser-owned downloads and local validation boundaries remain in place.
+Page structures and delivery modes can change. Qualification uses isolated synthetic data, not every real account, artwork or save route. The reviewed stable WebView2 Runtime floor remains **158.0.4370.33**. Authentication, browser-owned downloads and local validation boundaries remain in place.
 
 
-**埋込みブラウザーとWebView2を使うキャッシュ操作には、公式の安定版 WebView2 Runtime 157.0.4341.57 以降が必要です。DLMと公式Runtimeを更新し、DLMを再起動してください。**
+**埋込みブラウザーとWebView2を使うキャッシュ操作には、公式の安定版 WebView2 Runtime 158.0.4370.33 以降が必要です。DLMと公式Runtimeを更新し、DLMを再起動してください。**
 
-**The embedded browser and WebView2-backed cache controls require official stable WebView2 Runtime 157.0.4341.57 or later. Update DLM and the official Runtime, then restart DLM.**
+**The embedded browser and WebView2-backed cache controls require official stable WebView2 Runtime 158.0.4370.33 or later. Update DLM and the official Runtime, then restart DLM.**
 
 
-**DLM Desktop 1.3.22（r233） / Windows x64**
+**DLM Desktop 1.3.23（r234） / Windows x64**
 
 - [日本語マニュアル](manual/ja.md) — ライブラリの指定からダウンロード・閲覧までの基本操作と、目的別の詳しい操作。
 - [English manual](manual/en.md) — Essential steps from choosing a library through downloading and viewing, followed by detailed task-based instructions.
@@ -45,7 +45,7 @@ Page structures and delivery modes can change. Qualification uses isolated synth
 
 Screen labels were checked against the matching XAML, presentation properties and Japanese/English localization functions. The application uses DLD, DLM and Library in different places. Code-formatted labels in each manual match that interface language. Provider web pages and standard Windows dialogs have their own labels and language settings.
 
-対象版 / Version: [1.3.22（r233）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.22). 確認日 / Checked: 2026-11-03 (JST). 対応ソース / Matching source commit: `6aa8ed01ae02f6e07b9916ad152115f3f149f991` ([配布記録 / Provenance](PROVENANCE.json)).
+対象版 / Version: [1.3.23（r234）](https://github.com/Ertelun/dlm-desktop/releases/tag/v1.3.23). 確認日 / Checked: 2026-11-03 (JST). 対応ソース / Matching source commit: `a2cfaf12be70505cae3df13e50b3d4dd420b602f` ([配布記録 / Provenance](PROVENANCE.json)).
 
 [READMEへ / Back to README](README.md)
 
@@ -57,6 +57,6 @@ Settings → Storage maintenance → Cache storage and cleanup shows file/byte t
 
 Deletion runs before viewers and browser profiles open, is deferred while another DLM or Downloader Host is running, uses no-follow pinned Windows handles, preserves files written after the request, and never follows reparse points. Only exact app-owned cache roots are permitted; the saved request cannot supply arbitrary paths. Unexpected or locked files are reported and preserved.
 
-Library works, retained download originals, cookies/sign-ins, LocalStorage, IndexedDB, installed browser components (including Widevine), stored official thumbnails, organization/reading state, import receipts and user backups are excluded. Retained downloads and stored thumbnails have separate explicit-confirmation actions. WebView2-backed disk-cache clearing requires the same stable Runtime157.0.4341.57 admission; the new startup cleanup also handles code/shader/offline caches and obsolete SDK files without resetting sign-ins. Deleted caches can be downloaded or rebuilt again when needed.
+Library works, retained download originals, cookies/sign-ins, LocalStorage, IndexedDB, installed browser components (including Widevine), stored official thumbnails, organization/reading state, import receipts and user backups are excluded. Retained downloads and stored thumbnails have separate explicit-confirmation actions. WebView2-backed disk-cache clearing requires the same stable Runtime158.0.4370.33 admission; the new startup cleanup also handles code/shader/offline caches and obsolete SDK files without resetting sign-ins. Deleted caches can be downloaded or rebuilt again when needed.
 
 作品・ログイン状態・ブラウザー実行部品・整理情報・閲覧位置・バックアップ・取り込み記録は対象外です。残存ダウンロードと保存サムネイルは個別操作で確認して削除します。削除したキャッシュは次回利用時に再生成・再取得される場合があります。

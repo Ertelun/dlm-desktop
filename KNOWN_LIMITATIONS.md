@@ -1,12 +1,12 @@
-# Known Limitations — DLM Desktop1.3.22
+# Known Limitations — DLM Desktop1.3.23
 
-**埋込みブラウザーとWebView2を使うキャッシュ操作には、公式の安定版 WebView2 Runtime 157.0.4341.57 以降が必要です。DLMと公式Runtimeを更新し、DLMを再起動してください。**
+**埋込みブラウザーとWebView2を使うキャッシュ操作には、公式の安定版 WebView2 Runtime 158.0.4370.33 以降が必要です。DLMと公式Runtimeを更新し、DLMを再起動してください。**
 
-**The embedded browser and WebView2-backed cache controls require official stable WebView2 Runtime 157.0.4341.57 or later. Update DLM and the official Runtime, then restart DLM.**
+**The embedded browser and WebView2-backed cache controls require official stable WebView2 Runtime 158.0.4370.33 or later. Update DLM and the official Runtime, then restart DLM.**
 
 
 - Windows x64、ZIP、コード署名なし。ARM64はこの版の検証対象外です。 / Windows x64 ZIP, unsigned; ARM64 is outside this release's qualification.
-- appフォルダを本体EXEの隣に置いてください。.NET同梱、ブラウザーは安定版WebView2 Runtime157.0.4341.57以降が必要です。 / Keep app beside the EXE. .NET is bundled; browser workflows require stable WebView2 Runtime157.0.4341.57 or later.
+- appフォルダを本体EXEの隣に置いてください。.NET同梱、ブラウザーは安定版WebView2 Runtime158.0.4370.33以降が必要です。 / Keep app beside the EXE. .NET is bundled; browser workflows require stable WebView2 Runtime158.0.4370.33 or later.
 - 日英の言語変更はアプリ画面へ即時反映します。作品情報は機械翻訳しません。WebページとWindows標準ファイル選択画面はそれぞれの言語設定に従います。 / Application language changes apply immediately. Work metadata is not machine-translated. Web pages and Windows file dialogs use their own language settings.
 - 各サービスの仕様は独立して変わるため、対応する通常配信に範囲を限定しています。 / Provider behavior can change independently; assistance is limited to supported delivery modes.
 - ログイン・購入・ダウンロード開始はユーザー操作です。保護された配信などは公式手段を利用してください。 / Login, purchases and downloads remain user actions. Protected delivery stays on official routes.

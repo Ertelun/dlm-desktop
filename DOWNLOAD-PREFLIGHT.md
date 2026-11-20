@@ -20,6 +20,6 @@ Unknown/conflicting IDs and content-hash providers retain completed-file validat
 
 ## 1.3.21 correction / 修正
 
-**埋込みブラウザーとWebView2を使うキャッシュ操作には、公式の安定版 WebView2 Runtime 157.0.4341.57 以降が必要です。DLMと公式Runtimeを更新し、DLMを再起動してください。**
+**埋込みブラウザーとWebView2を使うキャッシュ操作には、公式の安定版 WebView2 Runtime 158.0.4370.33 以降が必要です。DLMと公式Runtimeを更新し、DLMを再起動してください。**
 
-**The embedded browser and WebView2-backed cache controls require official stable WebView2 Runtime 157.0.4341.57 or later. Update DLM and the official Runtime, then restart DLM.**
+**The embedded browser and WebView2-backed cache controls require official stable WebView2 Runtime 158.0.4370.33 or later. Update DLM and the official Runtime, then restart DLM.**

@@ -1,0 +1,198 @@
+{
+  "status": "PASS",
+  "version": "1.3.23",
+  "revision": "r234",
+  "sourceCommit": "a2cfaf12be70505cae3df13e50b3d4dd420b602f",
+  "tests": [
+    {
+      "project": "DlmDesktop.AutomaticSafeSnapshotContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.BrowserDownloadContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.BrowserRuntimeSecurityTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.CompactListRuntimeTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.DownloadProgressRuntimeTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.ImportPromotionContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.LibraryRelocationContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.LocalizationContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.LocalizationRuntimeTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.LocalProvenanceContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.ManualIntakeContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.MembershipPostWorkContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.NavigationRuntimeTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.SecurityBoundaryContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.SmokeTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.SocialImageRuntimeTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.UserStateBackupContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.ViewerDeletionRuntimeTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.WatchFolderContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDesktop.ZipEncodingContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDownloader.HostContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDownloader.NetworkSafetyContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDownloader.ProviderCapabilityContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    },
+    {
+      "project": "DlmDownloader.StagingContractTests",
+      "lockedRestore": "PASS",
+      "isolatedRuntime": "PASS"
+    }
+  ],
+  "strictTestProjects": 24,
+  "browserAdmissionChecks": {
+    "source": 91,
+    "package": 91,
+    "zip": 91
+  },
+  "httpDecompressionChecks": {
+    "source": 93,
+    "package": 93,
+    "zip": 93
+  },
+  "liveOfficialWebView2Checks": {
+    "source": 20,
+    "package": 20,
+    "zip": 20
+  },
+  "actualEngineVersion": "158.0.4370.33",
+  "runtimeIdentity": {
+    "version": "158.0.4370.33",
+    "sha256": "b9845539affbb9c8346bf56fcc28f57fcc5a9e8f7ddc67b20fad6ebcc663418e",
+    "signature": "Valid",
+    "signer": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "isolated": true
+  },
+  "minimumStableWebView2": "158.0.4370.33",
+  "localSecurityOverrideShipped": false,
+  "package": {
+    "fileCount": 587,
+    "zipMatchesStaging": true,
+    "embeddedProductSourceRecords": 0
+  },
+  "exactPackageRegressionRunners": [
+    "DlmDesktop.ViewerDeletionRuntimeTests",
+    "DlmDesktop.BrowserRuntimeSecurityTests",
+    "DlmDesktop.NavigationRuntimeTests",
+    "DlmDesktop.DownloadProgressRuntimeTests",
+    "DlmDesktop.ZipEncodingContractTests",
+    "DlmDesktop.LocalizationRuntimeTests",
+    "DlmDesktop.BrowserDownloadContractTests",
+    "DlmDesktop.SocialImageRuntimeTests",
+    "DlmDesktop.SecurityBoundaryContractTests"
+  ],
+  "exactZipRegressionRunners": [
+    "DlmDesktop.ViewerDeletionRuntimeTests",
+    "DlmDesktop.BrowserRuntimeSecurityTests",
+    "DlmDesktop.NavigationRuntimeTests",
+    "DlmDesktop.DownloadProgressRuntimeTests",
+    "DlmDesktop.ZipEncodingContractTests",
+    "DlmDesktop.LocalizationRuntimeTests",
+    "DlmDesktop.BrowserDownloadContractTests",
+    "DlmDesktop.SocialImageRuntimeTests",
+    "DlmDesktop.SecurityBoundaryContractTests"
+  ],
+  "packagedSelfTest": "PASS",
+  "packagedSmokeWindow": "PASS",
+  "hostSelfTest": "PASS",
+  "zipSelfTest": "PASS",
+  "zipSmokeWindow": "PASS",
+  "nativeParserProbes": 39,
+  "sourceAndDebugFilesInZip": 0,
+  "embeddedProductSourceRecords": 0,
+  "checkedPEFiles": 4,
+  "changedProductFiles": [
+    "DlmDesktop.Core.dll",
+    "DoujinLibraryManagerDesktop.deps.json",
+    "DoujinLibraryManagerDesktop.dll"
+  ],
+  "frameworkNativeHostDependenciesByteIdenticalTo": "1.3.22/r233",
+  "retainedDependencyFiles": 531,
+  "limitations": "Isolated synthetic data only. No real provider account or user library modified. Benign navigation and product boundary regressions, not exploit reproduction. Unmapped Chromium candidates and standalone PDFium applicability remain under review."
+}
